@@ -1,7 +1,7 @@
 import { MdLocationPin } from "react-icons/md";
 import { IoMdMail } from "react-icons/io";
 import { FaPhone } from "react-icons/fa6";
-import bg4 from '../assets/bg4.jpeg'
+import bg4 from '../../assets/bg4.jpeg'
 
 import React from "react";
 
@@ -9,7 +9,7 @@ const ContactPage = () => {
   return (
     <div className="w-full mx-auto bg-center bg-white rounded-lg">
       <div
-        className="w-full lg:h-[450px] h-[300px] bg-center bg-cover object-cover border-[#070F4E] border-2 p-5"
+        className="w-full lg:h-[450px] h-[300px] bg-center bg-cover object-cover"
         style={{
           backgroundImage: `url(${bg4})`,
           backgroundPosition: "center",
@@ -72,7 +72,7 @@ const ContactPage = () => {
         </div>
 
         {/* Google Form Embed */}
-{/* <div 
+<div 
   className="max-w-4xl mx-auto shadow-md shadow-primary border-2 lg:py-10 lg:px-10 py-5 px-0 rounded-lg border-primary mb-5 bg-slate-300 "
   data-aos="fade-right"
   data-aos-duration="800"
@@ -82,7 +82,7 @@ const ContactPage = () => {
   <h2 className="lg:text-2xl text-xl font-semibold mb-4 text-primary text-center tracking-wider">
     Send Us a Message
   </h2>
-  <div className="w-full h-full">
+  {/* <div className="w-full h-full">
     <iframe
       src="https://docs.google.com/forms/d/e/1FAIpQLScNwRqQbyrLG29_3vE-2fa6LU6kLRF_BcwZk0rcxdZ-qLv2gw/viewform?embedded=true"
       width="100%" // Full width on all screen sizes
@@ -96,7 +96,7 @@ const ContactPage = () => {
 </div>
 
       </div>
-    // </div>
+    </div>
   );
 };
 
