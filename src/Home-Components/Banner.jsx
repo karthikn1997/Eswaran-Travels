@@ -7,7 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 import pac1Image from "../assets/traditional.jpeg";
 import pac2Image from "../assets/pac-2.jpeg";
 import pac3Image from "../assets/bamban.jpeg";
-import { img } from "framer-motion/m";
+
 
 const Banner = () => {
   useEffect(() => {

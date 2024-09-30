@@ -1,5 +1,5 @@
 import React from 'react'
-import Package from '../Components/ServiceSection/Package'
+// import Package from '../Components/ServiceSection/Package'
 
 const Services = () => {
   return (
