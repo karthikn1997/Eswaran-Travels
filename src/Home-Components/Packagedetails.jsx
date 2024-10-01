@@ -73,12 +73,12 @@ const Packagedetails = () => {
   };
 
   return (
-    <div className="container mx-auto p-4 lg:py-20">
+    <div className=" mx-auto p-4 pb-10 lg:py-20">
       <h2
-        className="text-center lg:text-4xl text-3xl font-bold tracking-wider text-secondary lg:pb-16 lg:py-0 py-5"
+        className="text-center lg:text-4xl text-3xl font-bold tracking-wider text-secondary pb-8 lg:pb-16 lg:py-0 py-5"
         style={{ textShadow: "2px 3px 1px rgba(0, 0, 0, 0.7)" }}
       >
-        Tour Packages
+        Popular Packages
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
         {gridItems.map((item) => (

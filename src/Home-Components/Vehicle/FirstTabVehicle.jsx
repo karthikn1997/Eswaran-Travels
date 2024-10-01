@@ -53,13 +53,13 @@ const Vehicledetails = () => {
 
   return (
     <>
-      <section className="lg:w-full lg:h-auto lg:py-5 sm:py-5">
+      <section className="lg:w-full lg:h-auto lg:py-5 sm:py-5 px-2 sm:px-10">
         <div className="lg:w-full mx-auto lg:px-4 px-2 lg:py-8 py-4 ">
           <div className="grid lg:grid-cols-2 lg:gap-10 gap-8 ">
             {items.map((item, itemIndex) => (
               <div
                 key={item.id}
-                className="w-full h-auto rounded-lg hover:shadow shadow-xl  flex flex-col justify-center items-center transform transition-all duration-500 border-[1px]  hover:border-[1px] hover:border-[#070F4E] hover:scale-[1.05] "
+                className="w-full h-auto rounded-lg hover:shadow shadow-xl  flex flex-col justify-center items-center transform transition-all duration-500 border-[1px]  hover:border-[1px] hover:border-[#070F4E] sm:hover:scale-[1.05] "
               >
                 <div className="bg-yellow-300 w-full rounded-t-lg">
                   <h3 className="lg:text-xl font-bold py-2 tracking-wide text-center text-[#070F4E]">

@@ -21,7 +21,7 @@ const Tab = () => {
       >
         Vehicle Packages
       </h2>
-      <div className="w-full flex justify-center items-center flex-wrap text-xs sm:text-sm sm:text-[16px] tracking-wider gap-2 sm:gap-4 px-4">
+      <div className="w-full flex justify-center items-center flex-wrap text-sm sm:text-[16px] tracking-wider gap-2 sm:gap-4 px-4">
         <button
           className={
             activeTab === 1
