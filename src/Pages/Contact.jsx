@@ -1,7 +1,7 @@
 import { MdLocationPin } from "react-icons/md";
 import { IoMdMail } from "react-icons/io";
 import { FaPhone } from "react-icons/fa6";
-import bg4 from '../assets/bg4.jpeg'
+// import bg4 from '../assets/bg4.jpeg'
 
 import React from "react";
 
@@ -10,12 +10,12 @@ const ContactPage = () => {
     <div className="w-full mx-auto bg-center bg-white rounded-lg">
       <div
         className="w-full lg:h-[450px] h-[300px] bg-center bg-cover object-cover border-[#070F4E] border-2 p-5"
-        style={{
-          backgroundImage: `url(${bg4})`,
-          backgroundPosition: "center",
-          backgroundSize: "cover",
-          backgroundAttachment: "fixed",
-        }}
+        // style={{
+        //   backgroundImage: `url(${bg4})`,
+        //   backgroundPosition: "center",
+        //   backgroundSize: "cover",
+        //   backgroundAttachment: "fixed",
+        // }}
       >
         <div className="w-full lg:h-[450px] h-[300px] bg-primary bg-opacity-20 backdrop-blur-[1px] bg-center bg-cover object-cover text-center lg:pt-44 pt-32">
           <h2

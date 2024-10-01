@@ -48,7 +48,7 @@ const HomeTestimonial = () => {
   ];
 
   return (
-    <div className="  w-full flex flex-col justify-center items-center py-20 text-center gap-10 px-10">
+    <div className="w-full flex flex-col justify-center items-center py-20 text-center gap-10 px-6 sm:px-10">
       <h2 className="lg:text-5xl text-3xl font-bold  text-secondary pb-3" style={{ textShadow: "2px 2px 0px rgba(0,0,0,0.7)" }}>
         Testimonial
       </h2>

@@ -1,116 +1,141 @@
 import React from "react";
-// import { motion } from 'framer-motion';
-import { FaLongArrowAltRight } from "react-icons/fa";
+import { FaLongArrowAltRight, FaStar, FaStarHalfAlt } from "react-icons/fa";
 import pac1Image from "../assets/pac-1.jpeg";
 import pac2Image from "../assets/pac-2.jpeg";
+import { RiPoliceCarLine } from "react-icons/ri";
+import { PiCarProfileLight } from "react-icons/pi";
+import { FaArrowRightLong } from "react-icons/fa6";
+import { GoPerson } from "react-icons/go";
+import Offer from "../assets/Offer.png"
 
 const Packagedetails = () => {
   const gridItems = [
     {
       id: 1,
-      icon: <FaLongArrowAltRight />,
-      title: "Madurai One day Package",
-      description:
-        'Madurai, often referred to as the "Temple City" or the "Athens of the East," is famous for its stunning Meenakshi Amman Temple.',
+      icon: <PiCarProfileLight />,
+      car: <RiPoliceCarLine />,
+      title: "Madurai",
+      price: "750",
+      destination: "Madurai Sightseening",
       img: pac1Image,
+      rating: 4.5,
     },
     {
       id: 2,
-      icon: <FaLongArrowAltRight />,
-      title: "Madurai to Kodaikanal",
-      description:
-        "Kodaikanal, features a cool climate, beautiful landscapes, and attractions like Kodaikanal Lake,nature lover perfect for nature lovers.",
+      icon: <PiCarProfileLight />,
+      car: <RiPoliceCarLine />,
+      title: "Kodaikanal",
+      price: "1300",
+      destination: "Madurai to Kodaikanal",
       img: pac2Image,
+      rating: 4.5,
     },
     {
       id: 3,
-      icon: <FaLongArrowAltRight />,
-      title: "Madurai to Rameshwaram",
-      description:
-        "Rameshwaram is renowned for its historical and spiritual significance and is a key pilgrimage destination for Hindus.",
+      icon: <PiCarProfileLight />,
+      car: <RiPoliceCarLine />,
+      title: "Rameshwaram",
+      price: "1400",
+      destination: "Madurai to Rameshwaram",
       img: pac1Image,
+      rating: 4.5,
     },
     {
       id: 4,
-      icon: <FaLongArrowAltRight />,
+      icon: <PiCarProfileLight />,
+      car: <RiPoliceCarLine />,
       title: "Specific package",
-      description: "Explore the best wonderful Tour Package with us that takes you through the breathtaking  Kodaikanal, Rameshwaram,  Madurai. ",
+      price: "3000",
+      destination: "Specific package",
       img: pac2Image,
+      rating: 4.5,
     },
   ];
+
+  // Function to render stars based on rating
+  const renderStars = (rating) => {
+    const fullStars = Math.floor(rating);
+    const halfStar = rating % 1 !== 0;
+    const totalStars = 5;
+
+    const stars = [];
+
+    for (let i = 0; i < fullStars; i++) {
+      stars.push(<FaStar key={`full-${i}`} className="text-yellow-500" />);
+    }
+    if (halfStar) {
+      stars.push(<FaStarHalfAlt key="half" className="text-yellow-500" />);
+    }
+    for (let i = stars.length; i < totalStars; i++) {
+      stars.push(<FaStar key={`empty-${i}`} className="text-gray-300" />);
+    }
+    return stars;
+  };
+
   return (
-    <>
-      <div className="container mx-auto p-4 lg:py-20 ">
-        <h2
-          className="text-center lg:text-4xl text-2xl font-bold tracking-wider text-secondary lg:pb-16 lg:py-0 py-5"
-          style={{ textShadow: "2px 3px 1px rgba(0, 0, 0, 0.7)" }}
-        >
-          Tour Package
-        </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 ">
-          {gridItems.map((item) => (
-            <div
-              key={item.id}
-              className="bg-white shadow-md rounded-lg overflow-hidden border-2 "
-            >
+    <div className="container mx-auto p-4 lg:py-20">
+      <h2
+        className="text-center lg:text-4xl text-3xl font-bold tracking-wider text-secondary lg:pb-16 lg:py-0 py-5"
+        style={{ textShadow: "2px 3px 1px rgba(0, 0, 0, 0.7)" }}
+      >
+        Tour Packages
+      </h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        {gridItems.map((item) => (
+          <div
+            key={item.id}
+            className="relative bg-white shadow-md rounded overflow-hidden border border-secondary"
+          >
+            <div className="relative w-full overflow-hidden">
               <img
                 className="w-full h-52 object-cover transform transition-all duration-300 hover:scale-[1.05]"
                 src={item.img}
                 alt=""
               />
-              <div className="p-5 h-auto">
-                <h3 className="text-base font-semibold flex justify-left items-center gap-5 text-primary">
-                  <span className="text-secondary font-semibold ">
-                    {item.icon}
-                  </span>
-                  {item.title}
-                </h3>
-                <p className="lg:text-base text-sm text-gray-600 mt-2 tracking-wide">{item.description}</p>
+              <div className="absolute bottom-0 left-0 w-full bg-opacity-40 bg-black p-2 px-6 flex justify-between items-center">
+                <h1 className="text-lg font-semibold text-white flex items-center gap-3">
+                  {item.car} {item.title}
+                </h1>
+                <span className="text-white font-semibold flex justify-center items-center gap-2">₹ {item.price} <GoPerson /></span>
               </div>
-              <div className="flex justify-center items-center mb-5"><button className='lg:px-10 px-5 py-1 lg:py-2  text-center lg:text-base text-sm font-semibold rounded-lg bg-[#070F4E] text-white hover:scale-[1.05] transform transition-all tracking-wide'>Package Details</button></div>
             </div>
-          ))}
-        </div>
+
+            <div className="px-3 sm:px-6 h-auto mt-2">
+              <h3 className="text-base font-semibold flex justify-left items-center gap-5 text-primary mb-1">
+                {item.destination}
+                <span className="text-black font-semibold text-2xl mt-1">
+                  {item.icon}
+                </span>
+              </h3>
+              <div className="flex items-center gap-2">
+                {renderStars(item.rating)}
+                <span className="font-thin text-sm">( Top Rating )</span>
+              </div>
+            </div>
+
+            <div className="p-2 px-3 sm:px-6 h-auto text-sm flex gap-2 sm:gap-4 my-2 whitespace-nowrap">
+              <span>Special Offers:</span>
+              <div className="flex gap-1 xl:gap-3">
+                <span className="border px-2">1D </span>
+                <span className="border px-2">1 Person </span>
+                <span className="border px-2">Toll </span>
+              </div>
+            </div>
+
+            <div className="w-full flex justify-center items-center mb-0 p-1">
+              <button className="w-full px-5 py-2 text-center lg:text-base text-sm font-semibold bg-[#070F4E] rounded text-secondary hover:scale-[1.05] transform transition-all tracking-wide flex justify-center items-center gap-3">
+                More Details <FaArrowRightLong className="mt-1 text-white" />
+              </button>
+            </div>
+
+            <div className="absolute z-10 top-2 left-2">
+              <img src={Offer} className="w-14 h-14" alt="" />
+            </div>
+          </div>
+        ))}
       </div>
-    </>
+    </div>
   );
 };
 
 export default Packagedetails;
-
-//border-[#070F4E] border-2 p-5
-
-{
-  /* <div className="container mx-auto p-4">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        {gridItems.map((item) => (
-          <motion.div 
-            key={item.id}
-            className="bg-white shadow-md rounded-lg overflow-hidden"
-            initial={{ opacity: 0, scale: 0.9 }} 
-            animate={{ opacity: 1, scale: 1 }} 
-            transition={{ duration: 0.5, delay: item.id * 0.2 }} // Delay animations based on ID
-            whileHover={{ scale: 1.05 }} // Add subtle hover scaling
-          >
-            <motion.img
-              className="w-full h-40 object-cover"
-              src={item.img}
-              alt={item.title}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 1 }}
-            />
-            <div className="p-4">
-              <motion.h3 className="text-lg font-semibold"
-                whileHover={{ color: "#3b82f6" }} // Change color on hover
-                transition={{ duration: 0.3 }}
-              >
-                {item.title}
-              </motion.h3>
-              <p className="text-gray-600 mt-2">{item.description}</p>
-            </div>
-          </motion.div>
-        ))}
-      </div>
-    </div> */
-}

@@ -48,11 +48,11 @@ const Banner = () => {
 
   return (
     <section
-      className="relative w-full h-[500px] flex items-center justify-center bg-gray-100 lg:mb-20"
+      className="relative w-full min-h-[500px] flex items-center justify-center bg-gray-100 mb-10 lg:mb-20"
       data-aos="slide-left"
     >
       
-      <div className="relative w-full h-[500px] flex justify-center items-center ">
+      <div className="relative w-full min-h-[500px] flex justify-center items-center ">
       
       <Slider {...settings} className="w-full h-[500px]  flex items-center justify-center">
         {slidesData.map((slide, index) => (

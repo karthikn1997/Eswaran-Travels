@@ -45,10 +45,10 @@ const Vehicledetails = () => {
 
   // Values corresponding to each vehicle
   const vehicleDetails = [
-    { detail: "Madurai", km: "120 km", seat: "4+1", amt: "Rs.3000" },
-    { detail: "Madurai", km: "120 km", seat: "6+1", amt: "Rs.3850" },
-    { detail: "Madurai", km: "120 km", seat: "6+1", amt: "Rs.4850" },
-    { detail: "Madurai", km: "120 km", seat: "12+1", amt: "Rs.5200" },
+    { detail: "Madurai", km: "120 km", seat: "4+1", amt: "Rs.3000", },
+    { detail: "Madurai", km: "120 km", seat: "6+1", amt: "Rs.3850", },
+    { detail: "Madurai", km: "120 km", seat: "6+1", amt: "Rs.4850", },
+    { detail: "Madurai", km: "120 km", seat: "12+1", amt: "Rs.5200", },
   ];
 
   return (
@@ -59,62 +59,62 @@ const Vehicledetails = () => {
             {items.map((item, itemIndex) => (
               <div
                 key={item.id}
-                className="w-full h-auto rounded-lg hover:shadow shadow-xl  flex flex-col justify-center items-center transform transition-all duration-500 border-[1px]  hover:border-[1px]  hover:border-[#070F4E] hover:scale-[1.05] "
+                className="w-full h-auto rounded-lg hover:shadow shadow-xl  flex flex-col justify-center items-center transform transition-all duration-500 border-[1px]  hover:border-[1px] hover:border-[#070F4E] hover:scale-[1.05] "
               >
                 <div className="bg-yellow-300 w-full rounded-t-lg">
                   <h3 className="lg:text-xl font-bold py-2 tracking-wide text-center text-[#070F4E]">
                     {item.title}
                   </h3>
-                 
+
                 </div>
-             
-              <div className="flex lg:flex-row flex-col justify-center items-center ">
-               <img
-                  src={item.image}
-                  alt=""
-                  className="bg-center bg-cover object-contain lg:w-3/4 lg:h-[300px] rounded-l-lg lg:p-5"
-                />
-                <div
-                  className="lg:w-1/4 lg:h-[300px] flex flex-col justify-center items-left gap-4 rounded-r-lg py-3"
-                  data-aos="fade-up"
-                  data-aos-delay="300"
-                  data-aos-easing="ease-in-sine"
-                  data-aos-duration="600"
-                >
-                   <button className="lg:text-lg font-semibold w-32 bg-[#070F4E] text-white rounded-lg py-1  lg:mr-3 lg:mb-3 text-center">{item.description}</button>
-                  {/* Displaying each icon with its corresponding value */}
-                  {icons1.map((iconItem, iconIndex) => (
-                    <div
-                      className="flex items-center gap-3"
-                      key={iconIndex}
-                      data-aos="fade-left"
-                      data-aos-delay="800"
-                      data-aos-duration="400"
-                    >
-                      <span className="lg:text-lg font-bold text-[#070F4E]  border-[1px] border-secondary hover:text-white hover:bg-[#070F4E]  hover:border-trasparent p-1 transform transition-all duration-400">
-                        {iconItem.icon}
-                      </span>
-                      <p
-                        className="text-base text-gray-600 tracking-wide font-medium"
+
+                <div className="w-full min-h-80 flex xl:flex-row flex-col justify-center items-center xl:gap-10 my-8">
+                  <img
+                    src={item.image}
+                    alt=""
+                    className="w-[80%] sm:w-[60%] bg-center bg-cover object-contain rounded-l-lg lg:p-5 xl:ml-8"
+                  />
+                  <div
+                    className="w-full xl:w-[40%] flex xl:flex-col justify-center items-left gap-4 rounded-r-lg py-3 whitespace-nowrap flex-wrap px-4"
+                    data-aos="fade-up"
+                    data-aos-delay="300"
+                    data-aos-easing="ease-in-sine"
+                    data-aos-duration="600"
+                  >
+                    <button className="w-full xl:w-[80%] xl:block lg:text-lg font-semibold bg-[#070F4E] text-white rounded py-1 xl:mr-3 xl:mb-3 text-center">{item.description}</button>
+
+                    {icons1.map((iconItem, iconIndex) => (
+                      <div
+                        className="flex items-center gap-3"
+                        key={iconIndex}
                         data-aos="fade-left"
-                        data-aos-delay="400"
-                        data-aos-easing="ease-in-sine"
+                        data-aos-delay="800"
                         data-aos-duration="400"
                       >
-                        {iconIndex === 0
-                          ? vehicleDetails[itemIndex].detail
-                          : iconIndex === 1
-                          ? vehicleDetails[itemIndex].km
-                          : iconIndex === 2
-                          ? vehicleDetails[itemIndex].seat
-                          : vehicleDetails[itemIndex].amt}
-                      </p>
-                    </div>
-                  ))}
+                        <span className="lg:text-lg font-bold text-[#070F4E] border-[1px] border-secondary hover:text-white hover:bg-[#070F4E]  hover:border-trasparent p-1 transform transition-all duration-400">
+                          {iconItem.icon}
+                        </span>
+                        <p
+                          className="text-base text-gray-600 tracking-wide font-medium"
+                          data-aos="fade-left"
+                          data-aos-delay="400"
+                          data-aos-easing="ease-in-sine"
+                          data-aos-duration="400"
+                        >
+                          {iconIndex === 0
+                            ? vehicleDetails[itemIndex].detail
+                            : iconIndex === 1
+                              ? vehicleDetails[itemIndex].km
+                              : iconIndex === 2
+                                ? vehicleDetails[itemIndex].seat
+                                : vehicleDetails[itemIndex].amt}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
                 </div>
-               </div>
               </div>
-             
+
             ))}
           </div>
         </div>
