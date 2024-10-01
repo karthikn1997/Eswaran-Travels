@@ -6,7 +6,7 @@ import { RiPoliceCarLine } from "react-icons/ri";
 import { PiCarProfileLight } from "react-icons/pi";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { GoPerson } from "react-icons/go";
-import Offer from "../assets/Offer.png"
+import Offer from "../assets/offer.png"
 
 const Packagedetails = () => {
   const gridItems = [
