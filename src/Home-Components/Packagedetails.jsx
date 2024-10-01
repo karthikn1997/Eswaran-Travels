@@ -73,7 +73,7 @@ const Packagedetails = () => {
   };
 
   return (
-    <div className=" mx-auto p-4 pb-10 lg:py-20">
+    <div className="w-full mx-auto p-4 pb-10 lg:py-20 px-4 sm:px-10">
       <h2
         className="text-center lg:text-4xl text-3xl font-bold tracking-wider text-secondary pb-8 lg:pb-16 lg:py-0 py-5"
         style={{ textShadow: "2px 3px 1px rgba(0, 0, 0, 0.7)" }}

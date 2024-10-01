@@ -53,7 +53,7 @@ const Vehicledetails = () => {
 
   return (
     <>
-      <section className="lg:w-full lg:h-auto lg:py-5 sm:py-5">
+      <section className="lg:w-full lg:h-auto lg:py-5 sm:py-5 px-2 sm:px-10">
         <div className="lg:w-full mx-auto lg:px-4 px-2 lg:py-8 py-4 ">
           <div className="grid lg:grid-cols-2 lg:gap-10 gap-8 ">
             {items.map((item, itemIndex) => (
