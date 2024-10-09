@@ -1,29 +1,54 @@
-import React, { useState } from "react";
+import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import emoji from "./../assets/emoji.png";
+import quote from "./../assets/quote.png";
+import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
+
+// Custom Next Arrow
+const NextArrow = ({ onClick }) => {
+  return (
+    <div
+      className="absolute right-[-25px] md:right-[-40px] top-1/2 transform -translate-y-1/2 z-10 cursor-pointer text-[#070F4E] bg-[#FACC15] p-2 md:p-3 rounded-full shadow-lg hover:bg-[#070F4E] hover:text-[#FACC15] transition-all"
+      onClick={onClick}
+    >
+      <FaArrowRight size={20} />
+    </div>
+  );
+};
+
+// Custom Prev Arrow
+const PrevArrow = ({ onClick }) => {
+  return (
+    <div
+      className="absolute left-[-25px] md:left-[-40px] top-1/2 transform -translate-y-1/2 z-10 cursor-pointer text-[#070F4E] bg-[#FACC15] p-2 md:p-3 rounded-full shadow-lg hover:bg-[#070F4E] hover:text-[#FACC15] transition-all"
+      onClick={onClick}
+    >
+      <FaArrowLeft size={20} />
+    </div>
+  );
+};
 
 const HomeTestimonial = () => {
-  const [active, setActive] = useState();
-
   const settings = {
-    dots: false,
+    dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
+    nextArrow: <NextArrow />,  // Use custom next arrow
+    prevArrow: <PrevArrow />,  // Use custom prev arrow
     responsive: [
       {
-        breakpoint: 768, // For tablets and small screens
+        breakpoint: 768, // For tablets and smaller devices
         settings: {
-          slidesToShow: 1, // Show 2 slides
+          slidesToShow: 1, // Show 1 slide on small devices
         },
       },
       {
-        breakpoint: 1024, // For laptops and medium screens
+        breakpoint: 1024, // For medium devices
         settings: {
-          slidesToShow: 2, // Show 3 slides
+          slidesToShow: 2, // Show 2 slides on medium devices
         },
       },
     ],
@@ -31,55 +56,51 @@ const HomeTestimonial = () => {
 
   const testimonials = [
     {
-      img: emoji,
+      img: quote,
       h: "Karthikeyan",
-      p: '"I recently booked a tour package with Eswaran Travels for  Madurai to Kodaikanal, and I must say, it was an unforgettable experience! From the beginning, the team was very professional and attentive, ensuring that all our travel needs were met."',
+      p: "I recently booked a tour package with Eswaran Travels for Madurai to Kodaikanal, and I must say, it was an unforgettable experience! From the beginning, the team was very professional and attentive, ensuring that all our travel needs were met.",
     },
     {
-      img: emoji,
+      img: quote,
       h: "Naveen Kumar",
-      p: '"Kodaikanal was serene, and our accommodation offered breathtaking views of the hills. The itinerary was perfectly balanced between sightseeing and leisure time, allowing us to explore famous spots like Coakers Walk, Bryant Park, and the mesmerizing Pillar Rocks."',
+      p: "I signed up for a tour package with Eswaran Travels for a trip to Kodaikanal, and it was an absolutely magical experience! The town's mist-covered hills and lush greenery were breathtaking. Eswaran Travels ensured everything went smoothly.",
     },
     {
-      img: emoji,
+      img: quote,
       h: "Aananthi",
-      p: '" Rameshwaram was a spiritual journey, and Eswaran Travels made sure we had a hassle-free experience with the temple visits. The guides were knowledgeable, offering insightful stories and history, enhancing our overall experience."',
+      p: "I organized a trip with Eswaran Travels for a trip to Rameshwaram, and it was an unforgettable spiritual journey! Eswaran Travels ensured a seamless experience, allowing us to focus on the spiritual significance of the trip without any worries.",
     },
   ];
 
   return (
-    <div className="w-full flex flex-col justify-center items-center py-20 text-center gap-10 px-6 sm:px-10">
-      <h2 className="lg:text-5xl text-3xl font-bold  text-secondary pb-3" style={{ textShadow: "2px 2px 0px rgba(0,0,0,0.7)" }}>
+    <div className="w-full flex flex-col justify-center items-center py-20 text-center gap-10 px-6 sm:px-10 bg-gradient-to-r from-blue-50 via-white to-blue-50">
+      <h2
+        className="lg:text-5xl text-3xl font-bold text-[#070F4E]"
+        style={{ textShadow: "2px 2px 3px rgba(0,0,0,0.5)" }}
+      >
         Testimonial
       </h2>
-      <div
-        className="w-full h-full lg:w-[80%] lg:h-auto gap-5 rounded-xl cursor-pointer "
-        data-aos="fade-right"
-        data-aos-duration="800"
-        data-aos-delay="200"
-        data-aos-easing="ease-in-out"
-      >
+      <div className="w-full h-full lg:w-[90%] relative px-2 lg:px-5">
         <Slider {...settings}>
-          {testimonials.map((image, index) => (
+          {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className=" rounded-xl border-2 border-primary flex justify-center items-center max-w-[350px] lg:h-[550px] lg:py-14 lg:px-10 py-5 px-3 gap-10"
+              className="flex flex-col items-center justify-center bg-white gap-6 px-4 py-10 transition-all transform shadow-md rounded-md"
             >
-              <div className="flex justify-center items-center lg:mb-5 ">
+              <div className="flex justify-center items-center py-5">
                 <img
-                  src={image.img}
-                  // alt={`Image ${index + 1}`}
-                  className="lg:w-[150px] lg:h-[150px] w-[100px] h-[100px] object-cover rounded-full mb-5 border-2  border-secondary p-2 border-primary hover:scale-[1.2] transfrom transition-all"
+                  src={testimonial.img}
+                  alt={testimonial.h}
+                  className="w-[80px] h-[80px] lg:w-[100px] lg:h-[100px] object-cover rounded-full border-4 border-[#FACC15] p-4 text-secondary"
                 />
               </div>
-
-              <div className="lg:pb-5">
-                <h2 className="lg:text-2xl text-xl text-[#070F4E] font-bold text-darkred  tracking-wider mb-3">
-                  {image.h}
-                </h2>
-                <h2 className="lg:text-base text-sm text-gray-600 tracking-wider leading-noraml">
-                  {image.p}
-                </h2>
+              <div className="text-center">
+                <h3 className="text-xl lg:text-2xl font-semibold text-[#070F4E] py-2">
+                  {testimonial.h}
+                </h3>
+                <p className="text-gray-600 text-sm lg:text-lg max-w-[700px] leading-relaxed">
+                  "{testimonial.p}"
+                </p>
               </div>
             </div>
           ))}

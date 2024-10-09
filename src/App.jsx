@@ -3,13 +3,19 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Layout from "./Layout"
 import Home from "./Pages/Home"
 import About from "./Pages/About"
-import Products from "./Pages/Products"
 import Services from "./Pages/Services"
 import Contact from "./Pages/Contact"
+import Tariff from "./Home-Components/Vehicle/Tariff"
+// import Tabsection from './Components/Tabsection';
+import Vehicledetails from './Home-Components/Vehicledetails';
+import MaduraiPackage from './Components/ServiceSection/MaduraiPackage';
+import KodaikanalPackage from './Components/ServiceSection/KodaikanalPackage';
+import RameshwaramPackage from './Components/ServiceSection/RameshwaramPackage';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Loading from './Components/Loading';
+import Packagedetails from './Home-Components/Packagedetails';
 
 
 function App() {
@@ -37,8 +43,14 @@ function App() {
           <Route element={<Layout />}>
           <Route path="/" element={<Home/>}/>
           <Route path="/about" element={<About />} />
-          <Route path="/products" element={<Products/>} />
           <Route path="/services" element={<Services />} />
+          <Route path="/tariff" element={<Tariff/>} />
+          {/* <Route path="/tabsection" element={<Tabsection/>} /> */}
+          <Route path="/packagedetails" element={<Packagedetails/>} />
+          <Route path="/vehicledetails" element={<Vehicledetails/>} />
+          <Route path="/maduraipackage" element={<MaduraiPackage/>} />
+          <Route path="/kodaikanalpackage" element={<KodaikanalPackage/>} />
+          <Route path="/rameshwarampackage" element={<RameshwaramPackage/>} />
           <Route path="/contact" element={<Contact />} />
           </Route>
         </Routes>

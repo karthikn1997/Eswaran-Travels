@@ -17,7 +17,7 @@ const Banner = () => {
   }, []);
 
   const settings = {
-    dots: true, // Enable dots for navigation
+    dots: false, // Enable dots for navigation
     arrows: true, // Show navigation arrows
     infinite: true,
     speed: 500,
@@ -48,7 +48,7 @@ const Banner = () => {
 
   return (
     <section
-      className="relative w-full min-h-[500px] flex items-center justify-center bg-gray-100 mb-10 lg:mb-20"
+      className="relative w-full min-h-[500px] flex items-center justify-center bg-gray-100 mb-10 "
       data-aos="slide-left"
     >
       

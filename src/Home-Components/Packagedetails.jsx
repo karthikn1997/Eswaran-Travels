@@ -6,7 +6,8 @@ import { RiPoliceCarLine } from "react-icons/ri";
 import { PiCarProfileLight } from "react-icons/pi";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { GoPerson } from "react-icons/go";
-import Offer from "../assets/offer.png"
+import Offer from "../assets/offer.png";
+import {Link} from 'react-router-dom';
 
 const Packagedetails = () => {
   const gridItems = [
@@ -19,6 +20,7 @@ const Packagedetails = () => {
       destination: "Madurai Sightseening",
       img: pac1Image,
       rating: 4.5,
+      link:'/maduraipackage'
     },
     {
       id: 2,
@@ -29,6 +31,7 @@ const Packagedetails = () => {
       destination: "Madurai to Kodaikanal",
       img: pac2Image,
       rating: 4.5,
+      link:'/kodaikanalpackage'
     },
     {
       id: 3,
@@ -39,16 +42,7 @@ const Packagedetails = () => {
       destination: "Madurai to Rameshwaram",
       img: pac1Image,
       rating: 4.5,
-    },
-    {
-      id: 4,
-      icon: <PiCarProfileLight />,
-      car: <RiPoliceCarLine />,
-      title: "Specific package",
-      price: "3000",
-      destination: "Specific package",
-      img: pac2Image,
-      rating: 4.5,
+      link:'/rameshwarampackage'
     },
   ];
 
@@ -74,13 +68,16 @@ const Packagedetails = () => {
 
   return (
     <div className="w-full mx-auto p-4 pb-10 lg:py-20 px-4 sm:px-10">
-      <h2
-        className="text-center lg:text-4xl text-3xl font-bold tracking-wider text-secondary pb-8 lg:pb-16 lg:py-0 py-5"
-        style={{ textShadow: "2px 3px 1px rgba(0, 0, 0, 0.7)" }}
-      >
-        Popular Packages
-      </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+   <h2
+  className="text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-wider text-secondary bg-gradient-to-b from-blue-400 via-blue-200 to-blue-400 py-5 lg:py-3 px-4 lg:px-8 mb-6 lg:mb-16 text-center lg:rounded-ss-full rounded-ss-3xl lg:rounded-ee-full rounded-ee-3xl"
+  style={{ textShadow: "2px 2px 2px rgba(0, 0, 0, 0.7)" }}
+>
+  Our Popular Packages
+</h2>
+
+
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6">
         {gridItems.map((item) => (
           <div
             key={item.id}
@@ -123,8 +120,9 @@ const Packagedetails = () => {
             </div>
 
             <div className="w-full flex justify-center items-center mb-0 p-1">
-              <button className="w-full px-5 py-2 text-center lg:text-base text-sm font-semibold bg-[#070F4E] rounded text-secondary hover:scale-[1.05] transform transition-all tracking-wide flex justify-center items-center gap-3">
-                More Details <FaArrowRightLong className="mt-1 text-white" />
+              <button className="w-full px-5 py-2 text-center lg:text-base text-sm font-semibold bg-[#070F4E] rounded text-secondary hover:scale-[1.05] transform transition-all tracking-wider ">
+               <Link to={item.link} className="flex justify-center items-center gap-3"> More Details <FaArrowRightLong className="mt-1 text-white" /></Link>
+               
               </button>
             </div>
 
@@ -134,6 +132,7 @@ const Packagedetails = () => {
           </div>
         ))}
       </div>
+
     </div>
   );
 };

@@ -59,7 +59,7 @@ const Vehicledetails = () => {
             {items.map((item, itemIndex) => (
               <div
                 key={item.id}
-                className="w-full h-auto rounded-lg hover:shadow shadow-xl  flex flex-col justify-center items-center transform transition-all duration-500 border-[1px]  hover:border-[1px] hover:border-[#070F4E] sm:hover:scale-[1.05] "
+                className="w-full h-auto rounded-lg hover:shadow shadow-xl  flex flex-col justify-center items-center transform transition-all duration-500 border-[1px]  hover:border-[1px] hover:border-[#070F4E] sm:hover:scale-[1.05] p-3"
               >
                 <div className="bg-yellow-300 w-full rounded-t-lg">
                   <h3 className="lg:text-xl font-bold py-2 tracking-wide text-center text-[#070F4E]">
@@ -68,11 +68,11 @@ const Vehicledetails = () => {
 
                 </div>
 
-                <div className="w-full min-h-80 flex xl:flex-row flex-col justify-center items-center xl:gap-10 my-8">
+                <div className="w-full min-h-64 flex xl:flex-row flex-col justify-center items-center xl:gap-10 my-8">
                   <img
                     src={item.image}
                     alt=""
-                    className="w-[80%] sm:w-[60%] bg-center bg-cover object-contain rounded-l-lg lg:p-5 xl:ml-8"
+                    className="w-[80%] sm:w-[60%] bg-center bg-cover object-contain rounded-l-lg hover:rounded-none lg:p-5 xl:ml-8"
                   />
                   <div
                     className="w-full xl:w-[40%] flex xl:flex-col justify-center items-left gap-4 rounded-r-lg py-3 whitespace-nowrap flex-wrap px-4"
@@ -88,7 +88,7 @@ const Vehicledetails = () => {
                         className="flex items-center gap-3"
                         key={iconIndex}
                         data-aos="fade-left"
-                        data-aos-delay="800"
+                        data-aos-delay="600"
                         data-aos-duration="400"
                       >
                         <span className="lg:text-lg font-bold text-[#070F4E] border-[1px] border-secondary hover:text-white hover:bg-[#070F4E]  hover:border-trasparent p-1 transform transition-all duration-400">
@@ -111,12 +111,18 @@ const Vehicledetails = () => {
                         </p>
                       </div>
                     ))}
+                   
                   </div>
                 </div>
-              </div>
+                <button className="text-center w-[50%] py-2 lg:text-base text-md font-normal text-white bg-[#070F4E] rounded-lg lg:mb-8 tracking-wider hover:bg-secondarytransform transition-all duration-500 active:bg-[#050c3a] shadow-lg" >BOOK NOW</button>
+               </div>
+            
 
             ))}
+              
           </div>
+        
+
         </div>
       </section>
     </>
