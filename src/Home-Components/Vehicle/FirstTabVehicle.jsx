@@ -59,7 +59,7 @@ const Vehicledetails = () => {
             {items.map((item, itemIndex) => (
               <div
                 key={item.id}
-                className="w-full h-auto rounded-lg hover:shadow shadow-xl  flex flex-col justify-center items-center transform transition-all duration-500 border-2  hover:border-2 hover:border-[#070F4E] sm:hover:scale-[1.05] p-3"
+                className="w-full h-auto rounded-lg hover:shadow shadow-xl  flex flex-col justify-center items-center transform transition-all duration-500 border-2  hover:border-2 hover:border-[#070F4E] sm:lg:hover:scale-[1.02] p-3"
               >
                 <div className="bg-yellow-300 w-full rounded-t-lg">
                   <h3 className="lg:text-xl font-bold py-2 tracking-wide text-center text-[#070F4E]">
@@ -111,17 +111,15 @@ const Vehicledetails = () => {
                         </p>
                       </div>
                     ))}
-                   
+
                   </div>
                 </div>
                 <button className="text-center w-[80%] py-2 lg:text-base text-md font-semibold text-white bg-[#070F4E] rounded-lg lg:mb-8 tracking-wider hover:bg-blue-500 transform transition-all duration-500 active:bg-[#050c3a] shadow-lg sm:mb-5" >BOOK NOW</button>
-               </div> 
-            
+              </div>
 
             ))}
-              
+
           </div>
-        
 
         </div>
       </section>

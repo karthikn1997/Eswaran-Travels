@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import HeroBg from "../assets/hero-bg.png";
 import Slider from "react-slick";
 import AOS from "aos";
 import "aos/dist/aos.css";

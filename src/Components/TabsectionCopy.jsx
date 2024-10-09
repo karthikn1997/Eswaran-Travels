@@ -24,16 +24,6 @@ const Tab = () => {
 
       {/* Tab Buttons */}
       <div className="w-full flex justify-center items-center flex-wrap text-sm sm:text-[16px] tracking-wider gap-2 sm:gap-4 px-4">
-        {/* <button
-          className={`${
-            activeTab === 1
-              ? "bg-[#070F4E] text-white"
-              : "hover:text-secondary"
-          } border sm:border-2 border-[#070F4E] p-1 sm:p-2 px-2 sm:px-4 rounded-3xl transition-colors duration-300`}
-          onClick={() => handleChangeTab(1)}
-        >
-          Madurai
-        </button> */}
         <button
           className={`${
             activeTab === 1
@@ -58,10 +48,6 @@ const Tab = () => {
 
       {/* Tab Content */}
       <div className="flex flex-col justify-center items-center gap-10 w-full py-5">
-        {/* First Tab Content */}
-        {/* <div className={activeTab === 1 ? "block w-full" : "hidden"}>
-          <FirstTabVehicleCopy />
-        </div> */}
 
         {/* Second Tab Content */}
         <div className={activeTab === 1 ? "block w-full" : "hidden"}>

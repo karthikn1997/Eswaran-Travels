@@ -111,7 +111,7 @@ const MaduraiPackage = () => {
 
       {/* Gallery Section */}
       <div className="w-full h-auto gap-5">
-        <h2 className="text-center lg:text-3xl  text-xl font-bold text-primary mb-10">
+        <h2 className="text-center lg:text-3xl text-xl font-bold text-primary mb-10">
           Gallery of Madurai - Kodaikanal
         </h2>
         <Gallery />
