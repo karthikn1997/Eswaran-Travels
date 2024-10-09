@@ -53,7 +53,7 @@ const Vehicledetails = () => {
   ];
 
   return (
-    <section className="w-full lg:py-10 ">
+    <section className="w-full lg:py-5 ">
       <div className=" mx-auto lg:pt-10">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {items.map((item, itemIndex) => (
@@ -78,13 +78,13 @@ const Vehicledetails = () => {
               </div>
 
               {/* Details Section */}
-              <div className="w-full px-4 py-4 space-y-3">
+              <div className="w-full flex flex-col items-center justify-center  px-4 py-4 space-y-3">
                
 
                 {/* Icon Details */}
                 {icons1.map((iconItem, iconIndex) => (
                   <div
-                    className="flex  items-center lg:ml-5 gap-3 text-[#070F4E] font-medium "
+                    className="flex sm:text-center items-center lg:ml-5 gap-3 text-[#070F4E] font-medium "
                     key={iconIndex}
                   >
                     <span className="text-xl border p-1 rounded-full">

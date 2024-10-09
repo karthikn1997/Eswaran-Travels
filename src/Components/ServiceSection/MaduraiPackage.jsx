@@ -14,9 +14,7 @@ const MaduraiPackage = () => {
     { id: 5, title: "Teppakulam Mariyamman Temple" },
     { id: 6, title: "Palamuthir solai Murugan temple" },
     { id: 7, title: "Kallazhagar Perumal Temple (Alagar Kovil)" },
-    { id: 8, title: "Yoga Narasinga Perumal Temple" },
-    { id: 9, title: "Shri Kalamega Perumal Temple (Thirumogoor)" },
-    { id: 10, title: "Subramaniya Swamy Temple (Thiruparankunram)" },
+    { id: 8, title: "Subramaniya Swamy Temple (Thiruparankunram)" },
   ];
 
   const items2 = [

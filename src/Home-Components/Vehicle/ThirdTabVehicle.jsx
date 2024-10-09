@@ -81,7 +81,7 @@ const Vehicledetails = () => {
                     data-aos-easing="ease-in-sine"
                     data-aos-duration="600"
                   >
-                    <button className="w-full xl:w-[80%] xl:block lg:text-lg font-semibold bg-[#070F4E] text-white rounded py-1 xl:mr-3 xl:mb-3 text-center">{item.description}</button>
+                   <button className="lg:w-full w-[50%] xl:block lg:text-lg font-bold border-2 border-primary text-primary rounded py-1 xl:mr-3 xl:mb-3 text-center">{item.description}</button>
 
                     {icons1.map((iconItem, iconIndex) => (
                       <div
@@ -113,7 +113,7 @@ const Vehicledetails = () => {
                     ))}
                   </div>
                 </div>
-                <button className="text-center w-[50%] py-2 lg:text-base text-md font-normal text-white bg-[#070F4E] rounded-lg lg:mb-8 tracking-wider hover:bg-secondarytransform transition-all duration-500 shadow-lg" >BOOK NOW</button>
+                <button className="text-center w-[80%] py-2 lg:text-base text-md font-semibold text-white bg-[#070F4E] rounded-lg lg:mb-8 tracking-wider hover:bg-blue-500 transform transition-all duration-500 shadow-lg" >BOOK NOW</button>
               </div>
 
             ))}

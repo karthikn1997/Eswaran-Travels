@@ -42,7 +42,7 @@ const Vehicledetails = () => {
           {items.map((item, itemIndex) => (
             <div
               key={item.id}
-              className="bg-white hover:shadow-xl shadow-lg rounded-lg hover:scale-[1.05] transition-transform duration-300 border border-gray-200 flex flex-col items-center p-3"
+              className="bg-[rgba(249,249,249)] hover:shadow-xl shadow-lg rounded-lg hover:scale-[1.05] transition-transform duration-300 border-2 border-gray-200 hover:border-2 hover:border-primary flex flex-col items-center p-3"
             >
               {/* Title Section */}
               <div className="bg-yellow-300 w-full rounded-t-lg py-2 text-center">
@@ -59,9 +59,9 @@ const Vehicledetails = () => {
               </div>
 
               {/* One Day and 2 Days/1 Night Details Section */}
-              <div className="w-[90%] flex flex-col sm:flex-row justify-between gap-4 px-4 py-4 border border-secondary rounded-lg ">
+              <div className="w-[90%] flex flex-col sm:flex-row justify-between px-4 py-4 border border-secondary rounded-lg bg-white">
                 {/* One Day Package */}
-                <div className="flex flex-col items-center border-b sm:border-b-0 sm:border-r border-secondary w-full sm:w-1/2">
+                <div className="flex flex-col items-center border-b sm:border-b-0 sm:border-r border-secondary lg:w-1/2 w-full ">
                   <h4 className="text-xl font-semibold text-center text-[#070F4E] mb-5 border-b-2 border-secondary pb-1">
                     One Day
                   </h4>
@@ -81,7 +81,7 @@ const Vehicledetails = () => {
                 </div>
 
                 {/* 2 Days/1 Night Package */}
-                <div className="flex flex-col items-center w-full sm:w-1/2">
+                <div className="flex flex-col items-center lg:w-1/2 w-full">
                   <h4 className="text-xl font-semibold text-center text-[#070F4E] mb-5 border-b-2 border-secondary pb-1">
                     2 Days / 1 Night
                   </h4>
