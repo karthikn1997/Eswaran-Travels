@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import kodaikanal from "../../assets/Kodaikanal.jpg";
 import { FaLongArrowAltLeft, FaStar, FaStarHalfAlt } from "react-icons/fa";
 import SecondTabVehicleCopy from "../../Home-Components/Vehicle/SecondTabVehicleCopy";
@@ -6,6 +6,11 @@ import Gallery from "../ServiceSection/Gallery";
 import { Link } from "react-router-dom";
 
 const MaduraiPackage = () => {
+   // Scroll to the top of the page when the component is mounted
+   useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const items = [
     { id: 1, title: "Manjalaru Dam View" },
     { id: 2, title: "Silver Cascade Falls" },
