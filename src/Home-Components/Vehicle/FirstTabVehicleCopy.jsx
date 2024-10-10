@@ -59,7 +59,7 @@ const Vehicledetails = () => {
           {items.map((item, itemIndex) => (
             <div
               key={item.id}
-              className="bg-white hover:shadow-xl shadow-lg rounded-lg hover:scale-[1.05] transition-transform duration-300 border border-gray-200 flex flex-col items-center p-3"
+              className="bg-white hover:shadow-xl shadow-lg rounded-lg lg:hover:scale-[1.02] transition-transform duration-300 border border-gray-200 flex flex-col items-center p-3"
             >
               {/* Title Section */}
               <div className="bg-yellow-300 w-full rounded-t-lg py-2 text-center">

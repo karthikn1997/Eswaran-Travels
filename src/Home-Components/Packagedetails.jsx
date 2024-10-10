@@ -85,7 +85,7 @@ const Packagedetails = () => {
           >
             <div className="relative w-full overflow-hidden">
               <img
-                className="w-full h-52 object-cover transform transition-all duration-300 hover:scale-[1.05]"
+                className="w-full h-52 object-cover transform transition-all duration-300 lg:hover:scale-[1.02]"
                 src={item.img}
                 alt=""
               />
@@ -120,7 +120,7 @@ const Packagedetails = () => {
             </div>
 
             <div className="w-full flex justify-center items-center mb-0 p-1">
-              <button className="w-full px-5 py-2 text-center lg:text-base text-sm font-semibold bg-[#070F4E] rounded text-secondary hover:scale-[1.05] transform transition-all tracking-wider ">
+              <button className="w-full px-5 py-2 text-center lg:text-base text-sm font-semibold bg-[#070F4E] rounded text-secondary lg:hover:scale-[1.02] transform transition-all tracking-wider ">
                <Link to={item.link} className="flex justify-center items-center gap-3"> More Details <FaArrowRightLong className="mt-1 text-white" /></Link>
                
               </button>

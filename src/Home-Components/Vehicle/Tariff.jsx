@@ -53,7 +53,7 @@ const Vehicledetails = () => {
           {items.map((item, itemIndex) => (
             <div
               key={item.id}
-              className=" hover:shadow-xl shadow-lg rounded-lg hover:scale-[1.05] transition-transform duration-300 border-2 border-gray-200 flex flex-col items-center p-3 bg-[rgba(249,249,249)] hover:border-primary h0ver:border-2"
+              className=" hover:shadow-xl shadow-lg rounded-lg lg:hover:scale-[1.01] transition-transform duration-300 border-2 border-gray-200 flex flex-col items-center p-3 bg-[rgba(249,249,249)] hover:border-primary h0ver:border-2"
             >
               {/* Title Section */}
               <div className="bg-yellow-300 w-full rounded-t-lg py-2 text-center">
@@ -72,7 +72,7 @@ const Vehicledetails = () => {
               </div>
 
               {/* Pricing Details Section */}
-              <div className="w-[90%] flex flex-col lg:flex-row items-center justify-between px-4 py-4 border-[1px] border-secondary rounded-lg bg-white">
+              <div className="w-[90%] flex flex-col xl:flex-row items-center justify-between px-4 py-4 border-[1px] border-secondary rounded-lg bg-white">
                 {/* Above 300 Km Details */}
                 <div className="w-1/2 flex flex-col items-center lg:border-r-[1px] lg:border-secondary text-[#070F4E]  hover:bg-primary hover:text-white transform transition-all duration-500">
                   <h4 className="lg:text-lg  font-semibold text-center  mb-5 border-b-2  border-secondary pb-1">

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import rameshwaram from "../../assets/rameshwaram.jpg";
 import { FaLongArrowAltLeft, FaStar, FaStarHalfAlt } from "react-icons/fa";
 import ThirdTabVehicleCopy from "../../Home-Components/Vehicle/ThirdTabVehicleCopy";
@@ -6,6 +6,11 @@ import Gallery from "../ServiceSection/Gallery";
 import { Link } from 'react-router-dom';
 
 const MaduraiPackage = () => {
+   // Scroll to the top of the page when the component is mounted
+   useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   const items = [
     { id: 1, title: "Agni Theertham" },
     { id: 2, title: "Ramanatha Swamy Temple" },

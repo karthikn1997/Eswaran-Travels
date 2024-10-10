@@ -1,23 +1,57 @@
 import { MdLocationPin } from "react-icons/md";
 import { IoMdMail } from "react-icons/io";
 import { FaPhone } from "react-icons/fa6";
-// import bg4 from '../assets/bg4.jpeg'
-
-import React from "react";
+import React, { useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import ClipLoader from 'react-spinners/ClipLoader';
+import ContactBg from "../assets/car.jpg"
 
 const ContactPage = () => {
+  const form = useRef();
+  const [loading, setLoading] = useState(false); // Loading state
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    setLoading(true); // Set loading to true before sending the email
+
+    emailjs
+      .sendForm(
+        'service_u7ectm4',
+        'template_sv16143',
+        form.current,
+        'IJ7EEY9C_YJvZ3SLZ'
+      )
+      .then(
+        () => {
+          toast.success('Email sent successfully!', {
+            position: "top-center",
+          });
+        },
+        (error) => {
+          toast.error(`Failed to send email: ${error.text}`, {
+            position: "top-center",
+          });
+        }
+      )
+      .finally(() => {
+        setLoading(false); // Set loading to false after email sending is completed
+      });
+  };
+
   return (
     <div className="w-full mx-auto bg-center bg-white rounded-lg">
       <div
-        className="w-full lg:h-[450px] h-[300px] bg-center bg-cover object-cover border-[#070F4E] border-2 p-5"
-        // style={{
-        //   backgroundImage: `url(${bg4})`,
-        //   backgroundPosition: "center",
-        //   backgroundSize: "cover",
-        //   backgroundAttachment: "fixed",
-        // }}
+        className="w-full lg:h-[350px] h-[200px] bg-center bg-cover object-cover border-[#070F4E] border-2"
+      style={{
+        backgroundImage: `url(${ContactBg})`,
+        backgroundPosition: "center",
+        backgroundSize: "cover",
+        backgroundAttachment: "fixed",
+      }}
       >
-        <div className="w-full lg:h-[450px] h-[300px] bg-primary bg-opacity-20 backdrop-blur-[1px] bg-center bg-cover object-cover text-center lg:pt-44 pt-32">
+        <div className="w-full h-full bg-black bg-opacity-30 backdrop-blur-[2px] bg-center bg-cover object-cover text-center flex justify-center items-center">
           <h2
             className="lg:text-5xl text-3xl font-bold text-white tracking-wider"
             style={{ textShadow: "3px 3px 0px rgba(0,0,0,0.9)" }}
@@ -30,10 +64,69 @@ const ContactPage = () => {
         </div>
       </div>
 
+      {/* Toast Notification Container */}
+      <ToastContainer
+        position="top-center"
+        autoClose={3000}
+        hideProgressBar={false}
+        closeOnClick
+        pauseOnHover
+        draggable
+        pauseOnFocusLoss
+      />
+
       <div className="lg:py-20 py-5">
         <h1 className="lg:text-3xl text-xl font-bold mb-6 text-center text-primary tracking-wider">
-          Contact Us
+          Get In Touch
         </h1>
+
+        {/* Form Section */}
+        <div className="w-full lg:w-[60%] mx-auto mb-8 px-8">
+          <form ref={form} onSubmit={sendEmail} className="space-y-6">
+            <div>
+              <label className="block text-gray-700 font-medium mb-1">Name</label>
+              <input
+                type="text"
+                name="user_name"
+                required
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
+                placeholder="Enter your name"
+              />
+            </div>
+
+            <div>
+              <label className="block text-gray-700 font-medium mb-1">Email</label>
+              <input
+                type="email"
+                name="user_email"
+                required
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
+                placeholder="Enter your email"
+              />
+            </div>
+
+            <div>
+              <label className="block text-gray-700 font-medium mb-1">Message</label>
+              <textarea
+                name="message"
+                required
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
+                placeholder="Write your message here"
+                rows="4"
+              />
+            </div>
+
+            <div className="flex items-center justify-between">
+              <button
+                type="submit"
+                disabled={loading} // Disable button while loading
+                className={`w-full py-2 px-4 rounded-lg shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 ${loading ? 'bg-gray-300' : 'bg-blue-500 hover:bg-blue-600'} text-white`}
+              >
+                {loading ? <ClipLoader size={25} color={"#123abc"} loading={loading} /> : 'Send Message'}
+              </button>
+            </div>
+          </form>
+        </div>
 
         <div className="mb-8 flex flex-col justify-center items-center" data-aos="fade-up"
           data-aos-duration="800"
@@ -65,38 +158,14 @@ const ContactPage = () => {
               <p className="text-primary text-sm font-medium text-center tracking-wider">
                 Email
                 <br />
-                admin@eswarantravels.com
+                maduraieswarantravels@gmail.com
               </p>
             </div>
           </div>
         </div>
-
-        {/* Google Form Embed */}
-{/* <div 
-  className="max-w-4xl mx-auto shadow-md shadow-primary border-2 lg:py-10 lg:px-10 py-5 px-0 rounded-lg border-primary mb-5 bg-slate-300 "
-  data-aos="fade-right"
-  data-aos-duration="800"
-  data-aos-delay="300"
-  style={{ height: "100%", overflow: "visible" }} // Full height container, allow overflow for page scrolling
->
-  <h2 className="lg:text-2xl text-xl font-semibold mb-4 text-primary text-center tracking-wider">
-    Send Us a Message
-  </h2>
-  <div className="w-full h-full">
-    <iframe
-      src="https://docs.google.com/forms/d/e/1FAIpQLScNwRqQbyrLG29_3vE-2fa6LU6kLRF_BcwZk0rcxdZ-qLv2gw/viewform?embedded=true"
-      width="100%" // Full width on all screen sizes
-      // height="" // Set the height to a large enough value to ensure no iframe scroll
-      className="border-none rounded-lg min-h-auto h-[1400px] md:h-[1200px]"
-      // style={{ height: "1550px" }} // Make sure it is taller than the outer container
-    >
-      Loading…
-    </iframe>
-  </div> */}
-</div>
-
       </div>
-    // </div>
+
+    </div>
   );
 };
 

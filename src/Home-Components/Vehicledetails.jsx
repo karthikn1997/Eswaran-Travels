@@ -60,7 +60,7 @@ const Vehicledetails = () => {
             {items.map((item, itemIndex) => (
               <div
                 key={item.id}
-                className="w-full h-[350px] rounded-lg hover:shadow shadow-xl p-5 flex transform transition-all duration-500 border-[1px] hover:border-[1px]  hover:border-[#070F4E] hover:scale-[1.05]"
+                className="w-full h-[350px] rounded-lg hover:shadow shadow-xl p-5 flex transform transition-all duration-500 border-[1px] hover:border-[1px]  hover:border-[#070F4E] lg:hover:scale-[1.02]"
               >
                 <img
                   src={item.image}

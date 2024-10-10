@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import logo from "../assets/neotek-logo.jpeg"
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
