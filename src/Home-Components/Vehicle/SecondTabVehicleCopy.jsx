@@ -62,7 +62,7 @@ const Vehicledetails = () => {
               <div className="w-[90%] flex flex-col lg:flex-row justify-between px-4 py-4 border border-secondary rounded-lg bg-white gap-4">
                 {/* One Day Package */}
                 <div className="flex flex-col items-center border-b lg:border-b-0 lg:border-r border-secondary lg:w-1/2 w-full ">
-                  <h4 className="text-xl lg:font-semibold text-center text-[#070F4E] mb-5 border-b-2 border-secondary pb-1 font-bold">
+                  <h4 className="lg:text-lg lg:font-semibold text-center text-[#070F4E] mb-5 border-b-2 border-secondary pb-1 font-bold">
                     One Day
                   </h4>
 
@@ -82,7 +82,7 @@ const Vehicledetails = () => {
 
                 {/* 2 Days/1 Night Package */}
                 <div className="flex flex-col items-center lg:w-1/2 w-full">
-                  <h4 className="text-lg lg:font-semibold font-bold text-center text-[#070F4E] mb-5 border-b-2 border-secondary pb-1">
+                  <h4 className="lg:text-lg lg:font-semibold font-bold text-center text-[#070F4E] mb-5 border-b-2 border-secondary pb-1">
                     2 Days / 1 Night
                   </h4>
 
@@ -103,7 +103,7 @@ const Vehicledetails = () => {
               </div>
               <div className="py-5 text-center">
                     <h2 className="lg:border-b-2 lg:border-secondary pb-1 tracking-wider font-medium text-primary">
-                      Fuel cost , Driver beta , Toll , Parking , Hills charges included.
+                      Fuel cost , Driver betta , Toll , Parking , Hills charges included.
                     </h2> 
                   </div>
               {/* Book Now Button */}

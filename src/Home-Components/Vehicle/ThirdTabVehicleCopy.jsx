@@ -62,7 +62,7 @@ const Vehicledetails = () => {
               <div className="w-[90%] flex flex-col lg:flex-row items-center justify-between gap-6 px-4 py-4 border-[1px] border-secondary rounded-lg">
                 {/* One Day Package */}
                 <div className="w-full lg:w-1/2 flex flex-col items-center border-b lg:border-b-0 lg:border-r border-secondary">
-                  <h4 className="text-xl font-semibold text-center text-[#070F4E] mb-5 border-b-2 border-secondary pb-1">
+                  <h4 className="lg:text-lg lg:font-semibold font-bold text-center text-[#070F4E] mb-5 border-b-2 border-secondary pb-1">
                     One Day
                   </h4>
 
@@ -82,13 +82,13 @@ const Vehicledetails = () => {
 
                 {/* 2 Days/1 Night Package */}
                 <div className="w-full lg:w-1/2 flex flex-col items-center">
-                  <h4 className="text-xl font-semibold text-center text-[#070F4E] mb-5 border-b-2 border-secondary pb-1">
+                  <h4 className="lg:text-lg lg:font-semibold font-bold text-center text-[#070F4E] mb-5 border-b-2 border-secondary pb-1">
                     2 Days / 1 Night
                   </h4>
 
                   {icons1.map((iconItem, iconIndex) => (
                     <div className="flex items-center gap-3 text-[#070F4E] font-medium mb-3 px-4" key={iconIndex}>
-                      <span className="text-xl border p-1 rounded-full">{iconItem.icon}</span>
+                      <span className="lg:text-lg border p-1 rounded-full">{iconItem.icon}</span>
                       <p>
                         {iconIndex === 0
                           ? vehicleDetails1[itemIndex].km
@@ -102,11 +102,11 @@ const Vehicledetails = () => {
               </div>
               <div className="py-5 text-center">
                     <h2 className="lg:border-b-2 lg:border-secondary pb-1 tracking-wider font-medium text-primary">
-                      Fuel cost , Driver beta , Toll , Parking included.
+                      Fuel cost , Driver betta , Toll , Parking included.
                     </h2> 
                   </div>
               {/* Book Now Button */}
-              <button className="w-3/4 py-2 my-4 text-white bg-[#070F4E] rounded-lg hover:bg-blue-700 transition-colors duration-300">
+              <button className="w-3/4 py-2 my-4 text-white bg-[#070F4E] rounded-lg hover:bg-blue-700 transition-colors duration-300 font-semibold">
                 BOOK NOW
               </button>
             </div>

@@ -115,7 +115,7 @@ const Vehicledetails = () => {
                 </div>
                 <div className="py-5 text-center">
                     <h2 className="lg:border-b-2 lg:border-secondary pb-1 tracking-wider font-medium text-primary">
-                      Fuel cost , Driver beta ,Toll , Parking ,Hills charges included.
+                      Fuel cost , Driver betta ,Toll , Parking ,Hills charges included.
                     </h2> 
                   </div>
                 <button className="text-center w-[80%] py-2 lg:text-base text-md font-semibold text-white bg-[#070F4E] rounded-lg lg:mb-8 tracking-wider hover:bg-blue-500 transform transition-all duration-500 shadow-lg" >BOOK NOW</button>

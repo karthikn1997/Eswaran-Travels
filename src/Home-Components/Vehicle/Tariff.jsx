@@ -15,7 +15,7 @@ const Vehicledetails = () => {
   const icons1 = [
     { id: 1, icon: "Per km -", label: "Distance" },
     { id: 2, icon: "Seats -", label: "Seats" },
-    { id: 3, icon: "Driver Beta -", label: "Price" },
+    { id: 3, icon: "Driver Betta -", label: "Price" },
   ];
 
   const icons2 = [
