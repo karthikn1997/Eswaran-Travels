@@ -1,16 +1,15 @@
 import React, { useEffect } from "react";
 import rameshwaram from "../../assets/rameshwaram.jpg";
 import { FaLongArrowAltLeft, FaStar, FaStarHalfAlt } from "react-icons/fa";
-import ThirdTabVehicleCopy from "../../Home-Components/Vehicle/ThirdTabVehicleCopy";
 import Gallery from "../ServiceSection/Gallery";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 const MaduraiPackage = () => {
-   // Scroll to the top of the page when the component is mounted
-   useEffect(() => {
+  // Scroll to the top of the page when the component is mounted
+  useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  
+
   const items = [
     { id: 1, title: "Agni Theertham" },
     { id: 2, title: "Ramanatha Swamy Temple" },
@@ -67,13 +66,14 @@ const MaduraiPackage = () => {
         {items2.map(({ id, price, rating, description }) => (
           <div
             key={id}
-            className="lg:w-1/2  h-auto lg:h-[380px] shadow-lg p-5 lg:p-5 text-center lg:text-left rounded-lg border-[1px] border-primary"
+            className="lg:w-1/2 w-full h-auto lg:h-[400px] shadow-lg p-5 lg:p-5 text-center lg:text-left rounded-lg border-[1px] border-primary"
           >
             <h2 className="lg:text-2xl text-xl font-semibold text-gray-900 mb-4">
               Package Details
             </h2>
             <p className="text-gray-600 mb-2">
-              <span className="font-semibold">Price:</span> ₹{price} / per person
+              <span className="font-semibold">Price:</span> ₹{price} / per
+              person
             </p>
             <div className="flex items-center justify-center lg:justify-start gap-2 py-5">
               {renderStars(rating)}
@@ -85,17 +85,20 @@ const MaduraiPackage = () => {
             <button className="bg-primary hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg">
               Book Now
             </button>
-            <div className=" tracking-wide text-white bg-gradient-to-b from-blue-500 to-blue-400 shadow-md lg:my-5 rounded-md">
-              <ul className="list-disc flex items-center gap-10 p-5 text-base">
-                <h2 className="font-medium">Package includes :</h2>
-                <li className="">Fuel Cost</li>
-                <li>Toll Parking</li>
+            <h2 className="font-medium pt-3 mb-3 lg:mb-0 text-gray-600">Package includes:</h2>
+            <div className="w-full tracking-wide text-white lg:px-5 lg:py-1 lg:my-2 bg-gradient-to-b from-blue-500 to-blue-400 shadow-md  rounded-md">
+             
+              <ul className="list-disc flex lg:flex-row flex-col items-center gap-3 lg:gap-10 p-3 text-base">
+                <li>Fuel Cost</li>
+                <li>Toll</li>
+                <li>Parking</li>
                 <li>Driver Beta</li>
+                
               </ul>
             </div>
           </div>
         ))}
-        <div className="lg:w-1/2 h-auto lg:h-[380px] shadow-lg p-5 lg:px-10 lg:text-lg text-medium leading-relaxed text-gray-700 rounded-lg border-[1px] border-primary">
+        <div className="lg:w-1/2 h-auto lg:h-[400px] shadow-lg p-5 lg:px-10 lg:text-lg text-medium leading-relaxed text-gray-700 rounded-lg border-[1px] border-primary">
           <h2 className="lg:text-2xl text-xl font-semibold text-primary tracking-wider mb-5">
             Popular places:
           </h2>
@@ -108,13 +111,8 @@ const MaduraiPackage = () => {
           </ul>
         </div>
       </section>
-      <div className="lg:px-10 lg:py-20 py-10">
-        <h2 className="text-center lg:text-3xl text-xl font-bold text-primary tracking-wider">
-          Vehicle Package
-        </h2>
-        <ThirdTabVehicleCopy />
-      </div>
-      <div className="w-full lg:h-auto gap-2 py-5">
+
+      <div className="w-full lg:h-auto gap-2 lg:mt-20 mt-10">
         <h2 className="text-center lg:text-3xl text-xl font-bold text-primary lg:pb-10 mb-5 tracking-wider">
           Gallery of Madurai - Rameshwaram
         </h2>
@@ -122,7 +120,7 @@ const MaduraiPackage = () => {
       </div>
       <div className="flex justify-center items-center py-5">
         <button className="lg:mt-10 bg-primary text-white font-semibold py-2 px-8 rounded-lg shadow-md hover:bg-blue-600 transition duration-200 ease-in-out">
-          <Link to="/packagedetails" className="flex items-center gap-3">
+          <Link to="/" className="flex items-center gap-3">
             <FaLongArrowAltLeft className="" /> Go Back
           </Link>
         </button>

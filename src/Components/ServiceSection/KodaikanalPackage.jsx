@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import kodaikanal from "../../assets/Kodaikanal.jpg";
 import { FaLongArrowAltLeft, FaStar, FaStarHalfAlt } from "react-icons/fa";
-import SecondTabVehicleCopy from "../../Home-Components/Vehicle/SecondTabVehicleCopy";
 import Gallery from "../ServiceSection/Gallery";
 import { Link } from "react-router-dom";
 
@@ -67,11 +66,11 @@ const MaduraiPackage = () => {
       />
 
       {/* Package Details & Popular Places */}
-      <section className="w-full flex flex-col lg:flex-row justify-between gap-5 mt-10">
+      <section className="w-full flex flex-col lg:flex-row lg:justify-between gap-5 mt-10">
         {items2.map(({ id, price, rating, description }) => (
           <div
             key={id}
-            className="lg:w-1/2 h-auto shadow-lg p-5 text-gray-700 bg-white rounded-lg border-[1px] border-primary"
+            className="lg:w-1/2 h-auto shadow-lg p-5 text-center lg:text-left text-gray-700 bg-white rounded-lg border-[1px] border-primary"
           >
             <h2 className="text-2xl font-semibold mb-4 text-gray-900">Package Details</h2>
             <p className="mb-2">
@@ -88,12 +87,13 @@ const MaduraiPackage = () => {
             <button className="bg-primary hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg">
               Book Now
             </button>
-            <div className=" tracking-wide text-white  p-5 bg-gradient-to-b from-blue-500 to-blue-400 shadow-md lg:my-5 rounded-md">
-            <h2 className="font-medium ">Package includes :</h2>
-              <ul className="list-disc grid grid-cols-4 gap-5 p-5 text-base">
-               
-                <li className="">Fuel Cost</li>
-                <li>Toll Parking</li>
+            <h2 className="font-medium pt-3 mb-3 lg:mb-0 text-gray-600">Package includes:</h2>
+            <div className="w-full tracking-wide text-white lg:px-5 lg:py-1 lg:my-2 bg-gradient-to-b from-blue-500 to-blue-400 shadow-md  rounded-md">
+             
+              <ul className="list-disc flex lg:flex-row flex-col items-center gap-3 lg:gap-10 p-3 text-base">
+                <li>Fuel Cost</li>
+                <li>Toll</li>
+                <li>Parking</li>
                 <li>Driver Beta</li>
                 <li>Hills Charges</li>
               </ul>
@@ -116,16 +116,8 @@ const MaduraiPackage = () => {
         </div>
       </section>
 
-      {/* Vehicle Package Section */}
-      <div className="w-full py-10">
-        <h2 className="text-center text-3xl font-bold text-primary mb-5">
-          Vehicle Package
-        </h2>
-        <SecondTabVehicleCopy />
-      </div>
-
       {/* Gallery Section */}
-      <div className="w-full h-auto gap-5">
+      <div className="w-full h-auto gap-5 py-5">
         <h2 className="text-center lg:text-3xl text-xl font-bold text-primary mb-10">
           Gallery of Madurai - Kodaikanal
         </h2>
@@ -134,7 +126,7 @@ const MaduraiPackage = () => {
 
       {/* Go Back Button */}
       <div className="flex justify-center items-center mt-10">
-        <Link to="/packagedetails" className="flex items-center gap-3">
+        <Link to="/" className="flex items-center gap-3">
           <button className="bg-primary text-white font-semibold py-2 px-8 rounded-lg shadow-md hover:bg-blue-600 transition duration-200 ease-in-out flex items-center gap-3">
             <FaLongArrowAltLeft /> Go Back
           </button>

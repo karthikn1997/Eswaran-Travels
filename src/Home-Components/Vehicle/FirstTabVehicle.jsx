@@ -77,9 +77,9 @@ const Vehicledetails = () => {
                   <div
                     className="w-full xl:w-[40%] flex xl:flex-col justify-center items-left gap-4 rounded-r-lg py-3 whitespace-nowrap flex-wrap px-4"
                     data-aos="fade-up"
-                    data-aos-delay="300"
+                    duration-aos-delay="300"
                     data-aos-easing="ease-in-sine"
-                    data-aos-duration="600"
+                    data-aos-duration="300"
                   >
                     <button className="lg:w-full w-[50%] xl:block lg:text-lg font-bold border-2 border-primary text-primary rounded py-1 xl:mr-3 xl:mb-3 text-center">{item.description}</button>
 
@@ -87,19 +87,19 @@ const Vehicledetails = () => {
                       <div
                         className="flex items-center gap-3"
                         key={iconIndex}
-                        data-aos="fade-left"
-                        data-aos-delay="600"
-                        data-aos-duration="400"
+                        data-aos="fade-up"
+                      duration-aos-delay="300"
+                        data-aos-duration="600"
                       >
                         <span className="lg:text-lg font-bold text-[#070F4E] border-[1px] border-secondary hover:text-white hover:bg-[#070F4E]  hover:border-trasparent p-1 transform transition-all duration-400">
                           {iconItem.icon}
                         </span>
                         <p
                           className="text-base text-gray-600 tracking-wide font-medium"
-                          data-aos="fade-left"
-                          data-aos-delay="400"
+                          data-aos="fade-up"
+                        duration-aos-delay="300"
                           data-aos-easing="ease-in-sine"
-                          data-aos-duration="400"
+                          data-aos-duration="700"
                         >
                           {iconIndex === 0
                             ? vehicleDetails[itemIndex].detail

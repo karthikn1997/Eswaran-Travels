@@ -62,7 +62,7 @@ const Vehicledetails = () => {
               <div className="w-[90%] flex flex-col lg:flex-row justify-between px-4 py-4 border border-secondary rounded-lg bg-white gap-4">
                 {/* One Day Package */}
                 <div className="flex flex-col items-center border-b lg:border-b-0 lg:border-r border-secondary lg:w-1/2 w-full ">
-                  <h4 className="text-xl font-semibold text-center text-[#070F4E] mb-5 border-b-2 border-secondary pb-1">
+                  <h4 className="text-xl lg:font-semibold text-center text-[#070F4E] mb-5 border-b-2 border-secondary pb-1 font-bold">
                     One Day
                   </h4>
 
@@ -82,7 +82,7 @@ const Vehicledetails = () => {
 
                 {/* 2 Days/1 Night Package */}
                 <div className="flex flex-col items-center lg:w-1/2 w-full">
-                  <h4 className="text-xl font-semibold text-center text-[#070F4E] mb-5 border-b-2 border-secondary pb-1">
+                  <h4 className="text-lg lg:font-semibold font-bold text-center text-[#070F4E] mb-5 border-b-2 border-secondary pb-1">
                     2 Days / 1 Night
                   </h4>
 
@@ -102,7 +102,7 @@ const Vehicledetails = () => {
               </div>
 
               {/* Book Now Button */}
-              <button className="w-3/4 py-2 my-4 text-white bg-[#070F4E] rounded-lg hover:bg-blue-700 transition-colors duration-300">
+              <button className="w-3/4 py-2 my-4 text-white bg-[#070F4E] rounded-lg hover:bg-blue-700 font-semibold transition-colors duration-300">
                 BOOK NOW
               </button>
             </div>

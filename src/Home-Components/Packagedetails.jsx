@@ -7,7 +7,7 @@ import { PiCarProfileLight } from "react-icons/pi";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { GoPerson } from "react-icons/go";
 import Offer from "../assets/offer.png";
-import {Link} from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 const Packagedetails = () => {
   const gridItems = [
@@ -20,7 +20,7 @@ const Packagedetails = () => {
       destination: "Madurai Sightseening",
       img: pac1Image,
       rating: 4.5,
-      link:'/maduraipackage'
+      link: "/maduraipackage",
     },
     {
       id: 2,
@@ -31,7 +31,7 @@ const Packagedetails = () => {
       destination: "Madurai to Kodaikanal",
       img: pac2Image,
       rating: 4.5,
-      link:'/kodaikanalpackage'
+      link: "/kodaikanalpackage",
     },
     {
       id: 3,
@@ -42,7 +42,7 @@ const Packagedetails = () => {
       destination: "Madurai to Rameshwaram",
       img: pac1Image,
       rating: 4.5,
-      link:'/rameshwarampackage'
+      link: "/rameshwarampackage",
     },
   ];
 
@@ -68,21 +68,24 @@ const Packagedetails = () => {
 
   return (
     <div className="w-full mx-auto p-4 pb-10 lg:py-20 px-4 sm:px-10">
-   <h2
-  className="text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-wider text-secondary bg-gradient-to-b from-blue-400 via-blue-200 to-blue-400 py-5 lg:py-3 px-4 lg:px-8 mb-6 lg:mb-16 text-center lg:rounded-ss-full rounded-ss-3xl lg:rounded-ee-full rounded-ee-3xl"
-  style={{ textShadow: "2px 2px 2px rgba(0, 0, 0, 0.7)" }}
->
-  Our Popular Packages
-</h2>
+      <h2
+        className="text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-wider text-secondary bg-gradient-to-b from-blue-400 via-blue-200 to-blue-400 py-5 lg:py-3 px-4 lg:px-8 mb-6 lg:mb-16 text-center lg:rounded-ss-full rounded-ss-3xl lg:rounded-ee-full rounded-ee-3xl"
+        style={{ textShadow: "2px 2px 2px rgba(0, 0, 0, 0.7)" }}
+      >
+        Our Popular Packages
+      </h2>
 
-
-
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6"data-aos="fade-up"
+            duration-aos-delay="300"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="400">
         {gridItems.map((item) => (
           <div
             key={item.id}
             className="relative bg-white shadow-md rounded overflow-hidden border border-secondary"
+            
           >
+            <Link to={item.link}>
             <div className="relative w-full overflow-hidden">
               <img
                 className="w-full h-52 object-cover transform transition-all duration-300 lg:hover:scale-[1.02]"
@@ -93,7 +96,9 @@ const Packagedetails = () => {
                 <h1 className="text-lg font-semibold text-white flex items-center gap-3">
                   {item.car} {item.title}
                 </h1>
-                <span className="text-white font-semibold flex justify-center items-center gap-2">₹ {item.price} <GoPerson /></span>
+                <span className="text-white font-semibold flex justify-center items-center gap-2">
+                  ₹ {item.price} <GoPerson />
+                </span>
               </div>
             </div>
 
@@ -110,29 +115,37 @@ const Packagedetails = () => {
               </div>
             </div>
 
-            <div className="p-2 px-3 sm:px-6 h-auto text-sm flex gap-2 sm:gap-4 my-2 whitespace-nowrap">
+            <div className="p-2 px-3 sm:px-6 h-auto text-sm flex flex-col gap-2 sm:gap-4 my-2 whitespace-nowrap tracking-wide">
               <span>Special Offers:</span>
-              <div className="flex gap-1 xl:gap-3">
-                <span className="border px-2">1D </span>
-                <span className="border px-2">1 Person </span>
+              <div className="flex flex-wrap gap-1 xl:gap-3">
+                <span className="border px-2">Parking </span>
+                <span className="border px-2">Driver beta</span>
                 <span className="border px-2">Toll </span>
+                {item.title === "Kodaikanal" && (
+                  <span className="border px-2 text-balance ">Hills Charges </span>
+                )}
               </div>
             </div>
 
             <div className="w-full flex justify-center items-center mb-0 p-1">
               <button className="w-full px-5 py-2 text-center lg:text-base text-sm font-semibold bg-[#070F4E] rounded text-secondary lg:hover:scale-[1.02] transform transition-all tracking-wider ">
-               <Link to={item.link} className="flex justify-center items-center gap-3"> More Details <FaArrowRightLong className="mt-1 text-white" /></Link>
-               
+                <Link
+                  to={item.link}
+                  className="flex justify-center items-center gap-3"
+                >
+                  {" "}
+                  More Details <FaArrowRightLong className="mt-1 text-white" />
+                </Link>
               </button>
             </div>
 
             <div className="absolute z-10 top-2 left-2">
               <img src={Offer} className="w-14 h-14" alt="" />
             </div>
+            </Link>
           </div>
         ))}
       </div>
-
     </div>
   );
 };
