@@ -22,7 +22,7 @@ const MaduraiPackage = () => {
   const items2 = [
     {
       id: 1,
-      price: "1300",
+      price: "1400",
       rating: 4.5,
       description:
         "Rameshwaram is a serene and sacred town located on Pamban Island, off the southeastern coast of Tamil Nadu, India. It is renowned for its rich spiritual significance, picturesque landscapes, and historical importance.",
@@ -80,6 +80,14 @@ const MaduraiPackage = () => {
             <button className="bg-primary hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg">
               Book Now
             </button>
+            <div className=" tracking-wide text-white bg-gradient-to-b from-blue-500 to-blue-400 shadow-md lg:my-5 rounded-md">
+              <ul className="list-disc flex items-center gap-10 p-5 text-base">
+                <h2 className="font-medium">Package includes :</h2>
+                <li className="">Fuel Cost</li>
+                <li>Toll Parking</li>
+                <li>Driver Beta</li>
+              </ul>
+            </div>
           </div>
         ))}
         <div className="lg:w-1/2 h-auto lg:h-[380px] shadow-lg p-5 lg:px-10 lg:text-lg text-medium leading-relaxed text-gray-700 rounded-lg border-[1px] border-primary">

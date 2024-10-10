@@ -83,6 +83,16 @@ const MaduraiPackage = () => {
             <button className="bg-primary hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg">
               Book Now
             </button>
+            <div className=" tracking-wide text-white  p-5 bg-gradient-to-b from-blue-500 to-blue-400 shadow-md lg:my-5 rounded-md">
+            <h2 className="font-medium ">Package includes :</h2>
+              <ul className="list-disc grid grid-cols-4 gap-5 p-5 text-base">
+               
+                <li className="">Fuel Cost</li>
+                <li>Toll Parking</li>
+                <li>Driver Beta</li>
+                <li>Hills Charges</li>
+              </ul>
+            </div>
           </div>
         ))}
 

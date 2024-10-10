@@ -3,7 +3,7 @@ import maduraiimg from "../../assets/maduraiimg.jpeg";
 import { FaLongArrowAltLeft, FaStar, FaStarHalfAlt } from "react-icons/fa";
 import FirstTabVehicleCopy from "../../Home-Components/Vehicle/FirstTabVehicleCopy";
 import Gallery from "../ServiceSection/Gallery";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 const MaduraiPackage = () => {
   const items = [
@@ -61,13 +61,14 @@ const MaduraiPackage = () => {
         {items2.map(({ id, duration, price, rating, description }) => (
           <div
             key={id}
-            className="w-full lg:w-1/2  h-auto lg:h-[430px] shadow-lg p-5 rounded-md border-[1px] border-primary"
+            className="w-full lg:w-1/2  h-auto lg:h-[400px] shadow-lg p-5 rounded-md border-[1px] border-primary"
           >
             <h2 className="text-xl lg:text-2xl font-semibold text-gray-900 mb-4 ">
               Package Details
             </h2>
             <p className="text-gray-600 mb-2">
-              <span className="font-semibold">Price:</span> ₹{price} / per person
+              <span className="font-semibold">Price:</span> ₹{price} / per
+              person
             </p>
             <div className="flex items-center gap-2 py-2 lg:py-5">
               {renderStars(rating)}
@@ -79,10 +80,18 @@ const MaduraiPackage = () => {
             <button className="bg-primary hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg">
               Book Now
             </button>
+            <div className=" tracking-wide text-white bg-gradient-to-b from-blue-500 to-blue-400 shadow-md lg:my-5 rounded-md">
+              <ul className="list-disc flex items-center gap-10 p-5 text-base">
+                <h2 className="font-medium">Package includes :</h2>
+                <li className="">Fuel Cost</li>
+                <li>Toll Parking</li>
+                <li>Driver Beta</li>
+              </ul>
+            </div>
           </div>
         ))}
 
-        <div className="w-full lg:w-1/2  h-auto lg:h-[430px] p-5 rounded-md shadow-lg text-gray-700 leading-relaxed border-[1px] border-primary">
+        <div className="w-full lg:w-1/2  h-auto lg:h-[400px] p-5 rounded-md shadow-lg text-gray-700 leading-relaxed border-[1px] border-primary">
           <h2 className="text-xl lg:text-2xl font-semibold text-primary mb-5">
             Popular places in Madurai:
           </h2>

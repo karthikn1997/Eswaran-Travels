@@ -16,9 +16,9 @@ const Vehicledetails = () => {
   ];
 
   const icons1 = [
-    { id: 1, icon: <FaRoad />, label: "Distance" },
-    { id: 2, icon: <MdOutlineAirlineSeatReclineExtra />, label: "Seats" },
-    { id: 3, icon: <GiTakeMyMoney />, label: "Price" },
+    { id: 1, icon: "Per km", label: "Distance" },
+    { id: 3, icon: <MdOutlineAirlineSeatReclineExtra />, label: "Seats" },
+    { id: 2, icon:"Driver Beta", label: "Price" },
   ];
 
   const vehicleDetails = [
@@ -75,7 +75,7 @@ const Vehicledetails = () => {
               <div className="w-[90%] flex flex-col lg:flex-row items-center justify-between px-4 py-4 border-[1px] border-secondary rounded-lg bg-white">
                 {/* Above 300 Km Details */}
                 <div className="w-1/2 flex flex-col items-center lg:border-r-[1px] lg:border-secondary text-[#070F4E]  hover:bg-primary hover:text-white transform transition-all duration-500">
-                  <h4 className="text-lg font-semibold text-center  mb-5 border-b-2  border-secondary pb-1">
+                  <h4 className="lg:text-lg  font-semibold text-center  mb-5 border-b-2  border-secondary pb-1">
                     Above 300 Km (Per day)
                   </h4>
 
@@ -84,7 +84,7 @@ const Vehicledetails = () => {
                       className="flex items-left gap-3 font-medium mb-3 px-4"
                       key={iconIndex}
                     >
-                      <span className="text-xl border p-1 rounded-full">
+                      <span className="text-lg border p-1 rounded-full">
                         {iconItem.icon}
                       </span>
                       <p>
@@ -100,7 +100,7 @@ const Vehicledetails = () => {
 
                 {/* Below 300 Km Details */}
                 <div className="w-1/2 flex flex-col items-center text-[#070F4E]  hover:bg-primary hover:text-white transform transition-all duration-500">
-                  <h4 className="text-lg font-semibold text-center  mb-5 border-b-2 border-secondary pb-1">
+                  <h4 className="lg:text-lg font-semibold text-center  mb-5 border-b-2 border-secondary pb-1">
                     Below 300 Km (Per day)
                   </h4>
 
