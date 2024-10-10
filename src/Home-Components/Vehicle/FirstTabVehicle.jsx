@@ -45,10 +45,10 @@ const Vehicledetails = () => {
 
   // Values corresponding to each vehicle
   const vehicleDetails = [
-    { detail: "Madurai", km: "120 km", seat: "4+1", amt: "Rs.3000", },
-    { detail: "Madurai", km: "120 km", seat: "6+1", amt: "Rs.3850", },
-    { detail: "Madurai", km: "120 km", seat: "6+1", amt: "Rs.4850", },
-    { detail: "Madurai", km: "120 km", seat: "12+1", amt: "Rs.5200", },
+    { detail: "Madurai", km: "120 km", seat: "4+1", amt: "Rs.3000" },
+    { detail: "Madurai", km: "120 km", seat: "6+1", amt: "Rs.3850" },
+    { detail: "Madurai", km: "120 km", seat: "6+1", amt: "Rs.4850" },
+    { detail: "Madurai", km: "120 km", seat: "12+1", amt: "Rs.5200" },
   ];
 
   return (
@@ -65,30 +65,31 @@ const Vehicledetails = () => {
                   <h3 className="lg:text-xl font-bold py-2 tracking-wide text-center text-[#070F4E]">
                     {item.title}
                   </h3>
-
                 </div>
 
-                <div className="w-full min-h-64 flex xl:flex-row flex-col justify-center items-center xl:gap-10 my-8">
+                <div className="w-full min-h-64 flex  xl:flex-row flex-col justify-center items-center xl:gap-10 ">
                   <img
                     src={item.image}
                     alt=""
                     className="w-[80%] sm:w-[60%] bg-center bg-cover object-contain rounded-l-lg hover:rounded-none lg:p-5 xl:ml-8"
                   />
                   <div
-                    className="w-full xl:w-[40%] flex xl:flex-col justify-center items-left gap-4 rounded-r-lg py-3 whitespace-nowrap flex-wrap px-4"
+                    className="w-full xl:w-[40%] flex  xl:flex-col justify-center items-left gap-4 rounded-r-lg py-3 whitespace-nowrap flex-wrap px-4"
                     data-aos="fade-up"
                     duration-aos-delay="300"
                     data-aos-easing="ease-in-sine"
                     data-aos-duration="300"
                   >
-                    <button className="lg:w-full w-[50%] xl:block lg:text-lg font-bold border-2 border-primary text-primary rounded py-1 xl:mr-3 xl:mb-3 text-center">{item.description}</button>
+                    <button className="lg:w-full w-[50%] xl:block lg:text-lg font-bold border-2 border-primary text-primary rounded py-1 xl:mr-3 xl:mb-3 text-center">
+                      {item.description}
+                    </button>
 
                     {icons1.map((iconItem, iconIndex) => (
                       <div
                         className="flex items-center gap-3"
                         key={iconIndex}
                         data-aos="fade-up"
-                      duration-aos-delay="300"
+                        duration-aos-delay="300"
                         data-aos-duration="600"
                       >
                         <span className="lg:text-lg font-bold text-[#070F4E] border-[1px] border-secondary hover:text-white hover:bg-[#070F4E]  hover:border-trasparent p-1 transform transition-all duration-400">
@@ -97,30 +98,34 @@ const Vehicledetails = () => {
                         <p
                           className="text-base text-gray-600 tracking-wide font-medium"
                           data-aos="fade-up"
-                        duration-aos-delay="300"
+                          duration-aos-delay="300"
                           data-aos-easing="ease-in-sine"
                           data-aos-duration="700"
                         >
                           {iconIndex === 0
                             ? vehicleDetails[itemIndex].detail
                             : iconIndex === 1
-                              ? vehicleDetails[itemIndex].km
-                              : iconIndex === 2
-                                ? vehicleDetails[itemIndex].seat
-                                : vehicleDetails[itemIndex].amt}
+                            ? vehicleDetails[itemIndex].km
+                            : iconIndex === 2
+                            ? vehicleDetails[itemIndex].seat
+                            : vehicleDetails[itemIndex].amt}
                         </p>
                       </div>
                     ))}
-
                   </div>
+                
                 </div>
-                <button className="text-center w-[80%] py-2 lg:text-base text-md font-semibold text-white bg-[#070F4E] rounded-lg lg:mb-8 tracking-wider hover:bg-blue-500 transform transition-all duration-500 active:bg-[#050c3a] shadow-lg sm:mb-5" >BOOK NOW</button>
+                <div className="py-5 text-center">
+                    <h2 className="lg:border-b-2 lg:border-secondary pb-1 tracking-wider font-medium text-primary">
+                      Fuel cost , Driver beta , Toll , Parking included.
+                    </h2> 
+                  </div>
+                <button className="text-center w-[80%] py-2 lg:text-base text-md font-semibold text-white bg-[#070F4E] rounded-lg lg:mb-8 tracking-wider hover:bg-blue-500 transform transition-all duration-500 active:bg-[#050c3a] shadow-lg sm:mb-5">
+                  BOOK NOW
+                </button>
               </div>
-
             ))}
-
           </div>
-
         </div>
       </section>
     </>

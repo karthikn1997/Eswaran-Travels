@@ -115,17 +115,17 @@ const Packagedetails = () => {
               </div>
             </div>
 
-            <div className="p-2 px-3 sm:px-6 h-auto text-sm flex flex-col gap-2 sm:gap-4 my-2 whitespace-nowrap tracking-wide">
+            {/* <div className="p-2 px-3 sm:px-6 h-auto text-sm flex flex-col gap-2 sm:gap-4 my-2 whitespace-nowrap tracking-wide">
               <span>Special Offers:</span>
               <div className="flex flex-wrap gap-1 xl:gap-3">
-                <span className="border px-2">Parking </span>
+                <span className="border px-2">1 Day</span>
                 <span className="border px-2">Driver beta</span>
                 <span className="border px-2">Toll </span>
                 {item.title === "Kodaikanal" && (
                   <span className="border px-2 text-balance ">Hills Charges </span>
                 )}
               </div>
-            </div>
+            </div> */}
 
             <div className="w-full flex justify-center items-center mb-0 p-1">
               <button className="w-full px-5 py-2 text-center lg:text-base text-sm font-semibold bg-[#070F4E] rounded text-secondary lg:hover:scale-[1.02] transform transition-all tracking-wider ">

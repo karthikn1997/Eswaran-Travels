@@ -20,7 +20,7 @@ const MaduraiPackage = () => {
     { id: 7, title: "House of Kalam" },
     { id: 8, title: "Rama Theertham (Sri Ram Temple)" },
     { id: 9, title: "Sri Panchamuki Hanuman Temple" },
-    { id: 10, title: "Dr.ABJ Memorial & Bamban Bridge" },
+    { id: 10, title: "Dr.ABJ Abdul Kalam Memorial & Bamban Bridge" },
   ];
 
   const items2 = [
@@ -66,7 +66,7 @@ const MaduraiPackage = () => {
         {items2.map(({ id, price, rating, description }) => (
           <div
             key={id}
-            className="lg:w-1/2 w-full h-auto lg:h-[400px] shadow-lg p-5 lg:p-5 text-center lg:text-left rounded-lg border-[1px] border-primary"
+            className="lg:w-1/2 w-full h-auto lg:h-[380px] shadow-lg p-5 lg:p-5 text-center lg:text-left rounded-lg border-[1px] border-primary"
           >
             <h2 className="lg:text-2xl text-xl font-semibold text-gray-900 mb-4">
               Package Details
@@ -85,7 +85,7 @@ const MaduraiPackage = () => {
             <button className="bg-primary hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg">
               Book Now
             </button>
-            <h2 className="font-medium pt-3 mb-3 lg:mb-0 text-gray-600">Package includes:</h2>
+            {/* <h2 className="font-medium pt-3 mb-3 lg:mb-0 text-gray-600">Package includes:</h2>
             <div className="w-full tracking-wide text-white lg:px-5 lg:py-1 lg:my-2 bg-gradient-to-b from-blue-500 to-blue-400 shadow-md  rounded-md">
              
               <ul className="list-disc flex lg:flex-row flex-col items-center gap-3 lg:gap-10 p-3 text-base">
@@ -95,10 +95,10 @@ const MaduraiPackage = () => {
                 <li>Driver Beta</li>
                 
               </ul>
-            </div>
+            </div> */}
           </div>
         ))}
-        <div className="lg:w-1/2 h-auto lg:h-[400px] shadow-lg p-5 lg:px-10 lg:text-lg text-medium leading-relaxed text-gray-700 rounded-lg border-[1px] border-primary">
+        <div className="lg:w-1/2 h-auto lg:h-[380px] shadow-lg p-5 lg:px-10 lg:text-lg text-medium leading-relaxed text-gray-700 rounded-lg border-[1px] border-primary">
           <h2 className="lg:text-2xl text-xl font-semibold text-primary tracking-wider mb-5">
             Popular places:
           </h2>

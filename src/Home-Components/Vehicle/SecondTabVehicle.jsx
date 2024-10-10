@@ -45,7 +45,7 @@ const Vehicledetails = () => {
 
   // Values corresponding to each vehicle
   const vehicleDetails = [
-    { detail: "Kodaikanal", km: "280 km", seat: "4+1", amt: "Rs.5400" },
+    { detail: "Kodaikanal", km: "280 km", seat: "4+1", amt: "Rs.5000" },
     { detail: "Kodaikanal", km: "280 km", seat: "6+1", amt: "Rs.6600" },
     { detail: "Kodaikanal", km: "280 km", seat: "6+1", amt: "Rs.8400" },
     { detail: "Kodaikanal", km: "280 km", seat: "12+1", amt: "Rs.9200" },
@@ -68,7 +68,7 @@ const Vehicledetails = () => {
 
                 </div>
 
-                <div className="w-full min-h-64 flex xl:flex-row flex-col justify-center items-center xl:gap-10 my-8">
+                <div className="w-full min-h-64 flex xl:flex-row flex-col justify-center items-center xl:gap-10 ">
                   <img
                     src={item.image}
                     alt=""
@@ -113,6 +113,11 @@ const Vehicledetails = () => {
                     ))}
                   </div>
                 </div>
+                <div className="py-5 text-center">
+                    <h2 className="lg:border-b-2 lg:border-secondary pb-1 tracking-wider font-medium text-primary">
+                      Fuel cost , Driver beta ,Toll , Parking ,Hills charges included.
+                    </h2> 
+                  </div>
                 <button className="text-center w-[80%] py-2 lg:text-base text-md font-semibold text-white bg-[#070F4E] rounded-lg lg:mb-8 tracking-wider hover:bg-blue-500 transform transition-all duration-500 shadow-lg" >BOOK NOW</button>
               </div>
 

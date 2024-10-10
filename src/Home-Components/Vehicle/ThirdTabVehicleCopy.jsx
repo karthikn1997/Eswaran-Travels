@@ -100,7 +100,11 @@ const Vehicledetails = () => {
                   ))}
                 </div>
               </div>
-
+              <div className="py-5 text-center">
+                    <h2 className="lg:border-b-2 lg:border-secondary pb-1 tracking-wider font-medium text-primary">
+                      Fuel cost , Driver beta , Toll , Parking included.
+                    </h2> 
+                  </div>
               {/* Book Now Button */}
               <button className="w-3/4 py-2 my-4 text-white bg-[#070F4E] rounded-lg hover:bg-blue-700 transition-colors duration-300">
                 BOOK NOW

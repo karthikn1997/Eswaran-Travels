@@ -87,7 +87,7 @@ const MaduraiPackage = () => {
             <button className="bg-primary hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg">
               Book Now
             </button>
-            <h2 className="font-medium pt-3 mb-3 lg:mb-0 text-gray-600">Package includes:</h2>
+            {/* <h2 className="font-medium pt-3 mb-3 lg:mb-0 text-gray-600">Package includes:</h2>
             <div className="w-full tracking-wide text-white lg:px-5 lg:py-1 lg:my-2 bg-gradient-to-b from-blue-500 to-blue-400 shadow-md  rounded-md">
              
               <ul className="list-disc flex lg:flex-row flex-col items-center gap-3 lg:gap-10 p-3 text-base">
@@ -97,7 +97,7 @@ const MaduraiPackage = () => {
                 <li>Driver Beta</li>
                 <li>Hills Charges</li>
               </ul>
-            </div>
+            </div> */}
           </div>
         ))}
 

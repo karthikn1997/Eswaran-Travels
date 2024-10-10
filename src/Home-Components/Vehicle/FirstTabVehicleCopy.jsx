@@ -103,6 +103,8 @@ const Vehicledetails = () => {
                 ))}
               </div>
 
+               
+
               {/* Book Now Button */}
               <button className="w-3/4 py-2 mb-4 text-white bg-[#070F4E] rounded-lg hover:bg-blue-700 transition-colors duration-300">
                 BOOK NOW
