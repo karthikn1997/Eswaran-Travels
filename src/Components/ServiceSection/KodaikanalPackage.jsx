@@ -76,7 +76,7 @@ const MaduraiPackage = () => {
             <p className="mb-2">
               <span className="font-semibold">Price:</span> ₹{price} / per person
             </p>
-            <div className="flex items-center gap-2 py-2">
+            <div className="flex items-center justify-center lg:justify-start gap-2 py-2">
               {renderStars(rating)}
               <span className="text-sm font-thin">(4.5) Top Rating</span>
             </div>
