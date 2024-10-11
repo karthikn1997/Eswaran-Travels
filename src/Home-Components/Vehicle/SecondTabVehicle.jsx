@@ -81,7 +81,7 @@ const Vehicledetails = () => {
                     data-aos-easing="ease-in-sine"
                     data-aos-duration="600"
                   >
-                 <button className="lg:w-full w-[80%] flex-wrap xl:block lg:text-lg font-bold border-2 border-primary text-primary rounded py-1 xl:mr-3 xl:mb-3 text-center">{item.description}</button>
+                 <button className="lg:w-full w-[80%] flex-wrap xl:block lg:text-lg font-bold border-2 border-primary text-primary rounded py-1 xl:mr-3 xl:mb-3 text-center">{item.description}</button>  
 
                     {icons1.map((iconItem, iconIndex) => (
                       <div
@@ -113,7 +113,7 @@ const Vehicledetails = () => {
                     ))}
                   </div>
                 </div>
-                <div className="w-[80%] py-5 lg:px-0 px-5 text-center">
+                <div className="w-[80%] py-5 lg:px-0 px-8 text-center">
                     <h2 className="lg:border-b-2 lg:border-secondary pb-1 tracking-wider font-medium text-primary">
                       Fuel cost, Driver betta, Toll, Parking, Hills charges included.
                     </h2> 
