@@ -3,6 +3,7 @@ import maduraiimg from "../../assets/maduraiimg.jpeg";
 import { FaLongArrowAltLeft, FaStar, FaStarHalfAlt } from "react-icons/fa";
 import Gallery from "../ServiceSection/Gallery";
 import { Link } from "react-router-dom";
+import TermsCondition from "./TermsCondition";
 
 const MaduraiPackage = () => {
   // Scroll to the top of the page when the component is mounted
@@ -74,7 +75,7 @@ const MaduraiPackage = () => {
               <span className="font-semibold">Price:</span> ₹{price} / per
               person
             </p>
-            <div className="flex items-center gap-2 py-2 lg:py-5">
+            <div className="flex items-center justify-center lg:justify-start gap-2 py-2 lg:py-5">
               {renderStars(rating)}
               <span className="font-thin text-sm">(4.5) Top Rating</span>
             </div>
@@ -116,6 +117,10 @@ const MaduraiPackage = () => {
           Gallery of Madurai
         </h2>
         <Gallery />
+      </div>
+
+      <div>
+        <TermsCondition/>
       </div>
 
       <div className="flex justify-center items-center py-5">

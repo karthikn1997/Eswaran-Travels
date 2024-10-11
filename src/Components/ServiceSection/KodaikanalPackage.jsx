@@ -3,6 +3,7 @@ import kodaikanal from "../../assets/Kodaikanal.jpg";
 import { FaLongArrowAltLeft, FaStar, FaStarHalfAlt } from "react-icons/fa";
 import Gallery from "../ServiceSection/Gallery";
 import { Link } from "react-router-dom";
+import TermsCondition from "./TermsCondition";
 
 const MaduraiPackage = () => {
    // Scroll to the top of the page when the component is mounted
@@ -117,11 +118,15 @@ const MaduraiPackage = () => {
       </section>
 
       {/* Gallery Section */}
-      <div className="w-full h-auto gap-5 py-5">
+      <div className="w-full h-auto gap-5 py-5 lg:mt-10">
         <h2 className="text-center lg:text-3xl text-xl font-bold text-primary mb-10">
           Gallery of Madurai - Kodaikanal
         </h2>
         <Gallery />
+      </div>
+
+      <div>
+        <TermsCondition/>
       </div>
 
       {/* Go Back Button */}

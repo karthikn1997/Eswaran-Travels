@@ -3,6 +3,7 @@ import rameshwaram from "../../assets/rameshwaram.jpg";
 import { FaLongArrowAltLeft, FaStar, FaStarHalfAlt } from "react-icons/fa";
 import Gallery from "../ServiceSection/Gallery";
 import { Link } from "react-router-dom";
+import TermsCondition from "./TermsCondition";
 
 const MaduraiPackage = () => {
   // Scroll to the top of the page when the component is mounted
@@ -117,6 +118,10 @@ const MaduraiPackage = () => {
           Gallery of Madurai - Rameshwaram
         </h2>
         <Gallery />
+
+        <div>
+          <TermsCondition />
+        </div>
       </div>
       <div className="flex justify-center items-center py-5">
         <button className="lg:mt-10 bg-primary text-white font-semibold py-2 px-8 rounded-lg shadow-md hover:bg-blue-600 transition duration-200 ease-in-out">
