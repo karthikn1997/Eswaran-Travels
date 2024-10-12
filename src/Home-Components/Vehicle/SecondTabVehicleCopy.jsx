@@ -22,7 +22,7 @@ const Vehicledetails = () => {
   ];
 
   const vehicleDetails = [
-    { km: "280 km", seat: "4+1", amt: "Rs.5400" },
+    { km: "280 km", seat: "4+1", amt: "Rs.5000" },
     { km: "280 km", seat: "6+1", amt: "Rs.6600" },
     { km: "280 km", seat: "6+1", amt: "Rs.8400" },
     { km: "280 km", seat: "12+1", amt: "Rs.9200" },
