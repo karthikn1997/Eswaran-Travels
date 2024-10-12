@@ -79,7 +79,7 @@ const Vehicledetails = () => {
 
               {/* Details Section */}
               <div className="w-full flex flex-col items-center justify-center  px-4 py-4 space-y-3">
-               
+
 
                 {/* Icon Details */}
                 {icons1.map((iconItem, iconIndex) => (
@@ -94,21 +94,23 @@ const Vehicledetails = () => {
                       {iconIndex === 0
                         ? vehicleDetails[itemIndex].detail
                         : iconIndex === 1
-                        ? vehicleDetails[itemIndex].km
-                        : iconIndex === 2
-                        ? vehicleDetails[itemIndex].seat
-                        : vehicleDetails[itemIndex].amt}
+                          ? vehicleDetails[itemIndex].km
+                          : iconIndex === 2
+                            ? vehicleDetails[itemIndex].seat
+                            : vehicleDetails[itemIndex].amt}
                     </p>
                   </div>
                 ))}
               </div>
 
-               
+
 
               {/* Book Now Button */}
-              <button className="w-3/4 py-2 mb-4 text-white bg-[#070F4E] rounded-lg hover:bg-blue-700 transition-colors duration-300">
-                BOOK NOW
-              </button>
+              <a href="tel:+918680986987" className="w-3/4 mx-auto text-center">
+                <button className="w-3/4 py-2 mb-4 text-white bg-[#070F4E] rounded-lg hover:bg-blue-700 transition-colors duration-300">
+                  BOOK NOW
+                </button>
+              </a>
             </div>
           ))}
         </div>
