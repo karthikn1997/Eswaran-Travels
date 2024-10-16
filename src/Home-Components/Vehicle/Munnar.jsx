@@ -13,25 +13,25 @@ const Vehicledetails = () => {
     {
       id: 1,
       title: "SEDAN",
-      description: "One Day",
+      description: "2 Days / 1 Night",
       image: sedan,
     },
     {
       id: 2,
       title: "INNOVA",
-      description: "One Day",
+      description: "2 Days / 1 Night",
       image: innova,
     },
     {
       id: 3,
       title: "INNOVA CRYSTA",
-      description: "One Day",
+      description: "2 Days / 1 Night",
       image: innovacrs,
     },
     {
       id: 4,
       title: "TEMPO TRAVELLER",
-      description: "One Day",
+      description: "2 Days / 1 Night",
       image: tempo,
     },
   ];
@@ -45,10 +45,10 @@ const Vehicledetails = () => {
 
   // Values corresponding to each vehicle
   const vehicleDetails = [
-    { detail: "Madurai", km: "120 km", seat: "4+1", amt: "Rs.3000" },
-    { detail: "Madurai", km: "120 km", seat: "6+1", amt: "Rs.3850" },
-    { detail: "Madurai", km: "120 km", seat: "6+1", amt: "Rs.4850" },
-    { detail: "Madurai", km: "120 km", seat: "12+1", amt: "Rs.5200" },
+    {detail: "Munnar", km: "430 km", seat: "4+1", amt: "Rs.8700" },
+    { detail: "Munnar", km: "430 km", seat: "6+1", amt: "Rs.11000" },
+    {detail: "Munnar",  km: "430 km", seat: "6+1", amt: "Rs.14900" },
+    { detail: "Munnar", km: "430 km", seat: "12+1", amt: "Rs.15500" },
   ];
 
   return (
@@ -115,9 +115,9 @@ const Vehicledetails = () => {
                   </div>
                 
                 </div>
-                <div className="w-[80%] py-5 lg:px-0 px-5 text-center">
-                    <h2 className="lg:border-b-2 lg:border-secondary pb-1 tracking-wider font-medium text-primary">
-                      Fuel cost , Driver betta , Toll , Parking included.
+                <div className="w-[80%] py-5 lg:px-0 px-4 text-center">
+                    <h2 className=" pb-1 tracking-wider font-medium text-primary">
+                      Fuel cost , Driver bata , Toll , Parking ,Night halt ,Kerala hills permit included.
                     </h2> 
                   </div>
                 <button className="text-center w-[80%] py-2 lg:text-base text-md font-semibold text-white bg-[#070F4E] rounded-lg lg:mb-8 tracking-wider hover:bg-blue-500 transform transition-all duration-500 active:bg-[#050c3a] shadow-lg sm:mb-5">
@@ -133,9 +133,5 @@ const Vehicledetails = () => {
 };
 
 export default Vehicledetails;
-// const vehicleDetails1 = [
-//   { km: "300 km", seat: "4+1", amt: "Rs.7000" },
-//   { km: "300 km", seat: "6+1", amt: "Rs.9000" },
-//   { km: "300 km", seat: "6+1", amt: "Rs.11500" },
-//   { km: "300 km", seat: "12+1", amt: "Rs.12000" },
-// ];
+
+

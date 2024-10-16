@@ -21,28 +21,37 @@ const Vehicledetails = () => {
     { id: 3, icon: <GiTakeMyMoney />, label: "Price" },
   ];
 
-  const vehicleDetails = [
-    { km: "430 km", seat: "4+1", amt: "Rs.6000" },
-    { km: "430 km", seat: "6+1", amt: "Rs.7800" },
-    { km: "430 km", seat: "6+1", amt: "Rs.9900" },
-    { km: "430 km", seat: "12+1", amt: "Rs.10800" },
-  ];
 
+  const vehicleDetails = [
+    {detail: "Rameshwaram", km: "430 km", seat: "4+1", amt: "Rs.6000" },
+    { detail: "Rameshwaram",km: "430 km", seat: "6+1", amt: "Rs.7800" },
+    { detail: "Rameshwaram",km: "430 km", seat: "6+1", amt: "Rs.9900" },
+    {detail: "Rameshwaram", km: "430 km", seat: "12+1", amt: "Rs.10800" },
+  ]
+  
   const vehicleDetails1 = [
-    { km: "450 km", seat: "4+1", amt: "Rs.8200" },
-    { km: "450 km", seat: "6+1", amt: "Rs.10200" },
-    { km: "450 km", seat: "6+1", amt: "Rs.13000" },
-    { km: "450 km", seat: "12+1", amt: "Rs.13500" },
+    {detail: "Rameshwaram", km: "450 km", seat: "4+1", amt: "Rs.8200" },
+    { detail: "Rameshwaram", km: "450 km", seat: "6+1", amt: "Rs.10200" },
+    {detail: "Rameshwaram",  km: "450 km", seat: "6+1", amt: "Rs.13000" },
+    { detail: "Rameshwaram", km: "450 km", seat: "12+1", amt: "Rs.13500" },
   ];
 
   return (
     <section className="w-full lg:py-10 lg:px-10 ">
-      <div className="mx-auto lg:pt-10">
+      <div className="mx-auto">
+      {/* <h2
+          className="lg:text-4xl text-2xl font-bold text-center lg:mb-6 text-primary py-6 lg:py-8 sm:py-5 tracking-wide"
+          style={{ textShadow: "0px 2px 2px rgba(0,0,0,0.7)" }}
+          data-aos="fade-up"
+          data-aos-delay="300"
+        >
+          Madurai to Rameshwaram to Kanyakumari 
+        </h2> */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
           {items.map((item, itemIndex) => (
             <div
               key={item.id}
-              className="bg-white hover:shadow-xl shadow-lg rounded-lg lg:hover:scale-[1.02] transition-transform duration-300 border border-gray-200 flex flex-col items-center p-3"
+              className="bg-white hover:shadow-xl shadow-lg rounded-lg duration-500 border-2  hover:border-2 hover:border-[#070F4E] border-gray-200 flex flex-col items-center p-3"
             >
               {/* Title Section */}
               <div className="bg-yellow-300 w-full rounded-t-lg py-2 text-center">
@@ -63,7 +72,7 @@ const Vehicledetails = () => {
                 {/* One Day Package */}
                 <div className="w-full lg:w-1/2 flex flex-col items-center border-b lg:border-b-0 lg:border-r border-secondary">
                   <h4 className="lg:text-lg lg:font-semibold font-bold text-center text-[#070F4E] mb-5 border-b-2 border-secondary pb-1">
-                    One Day
+                  One day
                   </h4>
 
                   {icons1.map((iconItem, iconIndex) => (
@@ -101,9 +110,10 @@ const Vehicledetails = () => {
                 </div>
               </div>
               <div className="py-5 text-center">
-                    <h2 className="lg:border-b-2 lg:border-secondary pb-1 tracking-wider font-medium text-primary">
-                      Fuel cost , Driver betta , Toll , Parking included.
+                    <h2 className="lg:border-b-2 lg:border-secondary pb-1 tracking-wider font-medium text-primary mb-2">
+                      Fuel cost , Driver bata ,Night halt charges included.
                     </h2> 
+                  
                   </div>
               {/* Book Now Button */}
               <button className="w-3/4 py-2 my-4 text-white bg-[#070F4E] rounded-lg hover:bg-blue-700 transition-colors duration-300 font-semibold">
@@ -118,3 +128,6 @@ const Vehicledetails = () => {
 };
 
 export default Vehicledetails;
+
+
+

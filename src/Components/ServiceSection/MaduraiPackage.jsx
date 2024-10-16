@@ -118,7 +118,9 @@ const MaduraiPackage = () => {
         </h2>
         <Gallery />
       </div>
-
+  <div>
+    
+  </div>
       <div>
         <TermsCondition/>
       </div>

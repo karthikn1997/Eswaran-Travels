@@ -21,32 +21,31 @@ const Vehicledetails = () => {
     { id: 3, icon: <GiTakeMyMoney />, label: "Price" },
   ];
 
-
   const vehicleDetails = [
-    {detail: "Kodaikanal", km: "280 km", seat: "4+1", amt: "Rs.5400" },
-    { detail: "Kodaikanal",km: "280 km", seat: "6+1", amt: "Rs.6600" },
-    { detail: "Kodaikanal",km: "280 km", seat: "6+1", amt: "Rs.8400" },
-    {detail: "Kodaikanal", km: "280 km", seat: "12+1", amt: "Rs.9200" },
-  ]
-  
-const vehicleDetails1 = [
-  {detail: "Kodaikanal", km: "300 km", seat: "4+1", amt: "Rs.7000" },
-  { detail: "Kodaikanal",km: "300 km", seat: "6+1", amt: "Rs.9000" },
-  { detail: "Kodaikanal",km: "300 km", seat: "6+1", amt: "Rs.11500" },
-  {detail: "Kodaikanal", km: "300 km", seat: "12+1", amt: "Rs.12000" },
-];
+    { km: "1150 km", seat: "4+1", amt: "Rs.17900" },
+    { km: "1150 km", seat: "6+1", amt: "Rs.22600" },
+    { km: "1150 km", seat: "6+1", amt: "Rs.28800" },
+    { km: "1150 km", seat: "12+1", amt: "Rs.30400" },
+  ];
+
+  const vehicleDetails1 = [
+    { km: "1150 km", seat: "4+1", amt: "Rs.19500" },
+    { km: "1150 km", seat: "6+1", amt: "Rs.24800" },
+    { km: "1150km", seat: "6+1", amt: "Rs.31400" },
+    { km: "1150 km", seat: "12+1", amt: "Rs.33100"},
+  ];
 
   return (
-    <section className="w-full lg:py-10 lg:px-10 ">
+    <section className="w-full lg:py-10 lg:px-10 p-5">
       <div className="mx-auto">
-      {/* <h2
-          className="lg:text-4xl text-2xl font-bold text-center lg:mb-6 text-primary py-6 lg:py-8 sm:py-5 tracking-wide"
+      <h2
+          className="lg:text-4xl text-2xl font-bold text-center lg:mb-6 text-primary pb-6 lg:py-8 sm:py-5 tracking-wide"
           style={{ textShadow: "0px 2px 2px rgba(0,0,0,0.7)" }}
           data-aos="fade-up"
           data-aos-delay="300"
         >
-          Madurai to Rameshwaram to Kanyakumari 
-        </h2> */}
+          Madurai to Rameshwaram to Kanyakumari to Thiruvananthapuram 
+        </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
           {items.map((item, itemIndex) => (
             <div
@@ -72,7 +71,7 @@ const vehicleDetails1 = [
                 {/* One Day Package */}
                 <div className="w-full lg:w-1/2 flex flex-col items-center border-b lg:border-b-0 lg:border-r border-secondary">
                   <h4 className="lg:text-lg lg:font-semibold font-bold text-center text-[#070F4E] mb-5 border-b-2 border-secondary pb-1">
-                  One day
+                   4 Days / 3 Nights
                   </h4>
 
                   {icons1.map((iconItem, iconIndex) => (
@@ -92,7 +91,7 @@ const vehicleDetails1 = [
                 {/* 2 Days/1 Night Package */}
                 <div className="w-full lg:w-1/2 flex flex-col items-center">
                   <h4 className="lg:text-lg lg:font-semibold font-bold text-center text-[#070F4E] mb-5 border-b-2 border-secondary pb-1">
-                    2 Days / 1 Night
+                    5 Days / 4 Nights
                   </h4>
 
                   {icons1.map((iconItem, iconIndex) => (
@@ -113,7 +112,9 @@ const vehicleDetails1 = [
                     <h2 className="lg:border-b-2 lg:border-secondary pb-1 tracking-wider font-medium text-primary mb-2">
                       Fuel cost , Driver bata ,Night halt charges included.
                     </h2> 
-                  
+                    <h2 className="pb-1 tracking-wider font-medium text-primary">
+                     Toll , Parking , Kerala permit excluded.
+                    </h2> 
                   </div>
               {/* Book Now Button */}
               <button className="w-3/4 py-2 my-4 text-white bg-[#070F4E] rounded-lg hover:bg-blue-700 transition-colors duration-300 font-semibold">
@@ -128,11 +129,3 @@ const vehicleDetails1 = [
 };
 
 export default Vehicledetails;
-
-
-const vehicleDetails = [
-  {detail: "Rameshwaram", km: "450 km", seat: "4+1", amt: "Rs.8200" },
-  { detail: "Rameshwaram", km: "450 km", seat: "6+1", amt: "Rs.10200" },
-  {detail: "Rameshwaram",  km: "450 km", seat: "6+1", amt: "Rs.13000" },
-  { detail: "Rameshwaram", km: "450 km", seat: "12+1", amt: "Rs.13500" },
-];

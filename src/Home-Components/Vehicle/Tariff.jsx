@@ -15,7 +15,7 @@ const Vehicledetails = () => {
   const icons1 = [
     { id: 1, icon: "Per km -", label: "Distance" },
     { id: 2, icon: "Seats -", label: "Seats" },
-    { id: 3, icon: "Driver Betta -", label: "Price" },
+    { id: 3, icon: "Driver Bata -", label: "Price" },
   ];
 
   const icons2 = [
@@ -39,11 +39,11 @@ const Vehicledetails = () => {
   ];
 
   return (
-    <section className="w-full lg:px-10 px-4">
+    <section className="w-full lg:px-10 lg:pb-20 pb-10 px-4">
       <div className="mx-auto">
         {/* Title */}
         <h2
-          className="lg:text-4xl text-3xl font-bold text-center lg:mb-6 text-primary py-6 lg:py-8 sm:py-5 tracking-wide"
+          className="lg:text-4xl text-2xl font-bold text-center lg:mb-6 text-primary py-6 lg:py-8 sm:py-5 tracking-wide"
           style={{ textShadow: "0px 2px 2px rgba(0,0,0,0.7)" }}
           data-aos="fade-up"
           data-aos-delay="300"
@@ -56,7 +56,7 @@ const Vehicledetails = () => {
           {items.map((item, itemIndex) => (
             <div
               key={item.id}
-              className="hover:shadow-xl shadow-lg rounded-lg lg:hover:scale-[1.01] transition-transform duration-300 border-2 border-gray-200 flex flex-col items-center p-3 bg-[rgba(249,249,249)] hover:border-primary h0ver:border-2"
+              className="hover:shadow-xl shadow-lg rounded-lg lg:hover:scale-[1.01] transition-transform duration-300 border-2 border-gray-200 flex flex-col items-center p-3 bg-[rgba(249,249,249)] hover:border-primary hover:border-2"
             >
               {/* Title Section */}
               <div className="bg-yellow-300 w-full rounded-t-lg py-2 text-center">
@@ -76,8 +76,10 @@ const Vehicledetails = () => {
               <div className="w-[90%] flex flex-col xl:flex-row items-center justify-between px-4 py-4 border-[1px] border-secondary rounded-lg bg-white">
                 {/* Above 300 Km Details */}
                 <div className="w-full xl:w-1/2 flex flex-col items-center lg:border-r-[1px] lg:border-secondary text-[#070F4E] hover:bg-primary hover:text-white transform transition-all duration-500">
-                  <h4 className="lg:text-lg font-bold lg:font-semibold text-center mb-5 border-b-2 border-secondary pb-1">
-                    Above 300 Km (Per day)
+                  <h4 className="lg:text-lg font-bold lg:font-semibold text-center mb-5 border-b-2 border-secondary pb-1 tracking-wide">
+                  {item.id === 3 || item.id === 4
+                      ? "Above 350 Km (Per day)" 
+                      : "Above 300 Km (Per day)"}
                   </h4>
 
                   {icons1.map((iconItem, iconIndex) => (
@@ -99,7 +101,7 @@ const Vehicledetails = () => {
 
                 {/* Below 300 Km Details */}
                 <div className="w-full xl:w-1/2 flex flex-col items-center text-[#070F4E] hover:bg-primary hover:text-white transform transition-all duration-500">
-                  <h4 className="lg:text-lg font-bold lg:font-semibold text-center mb-5 border-b-2 border-secondary pb-1">
+                  <h4 className="lg:text-lg font-bold lg:font-semibold text-center mb-5 border-b-2 border-secondary pb-1 tracking-wide">
                     Below 300 Km (Per day)
                   </h4>
 
@@ -122,9 +124,9 @@ const Vehicledetails = () => {
               </div>
 
               {/* Toll and Charges Section */}
-              <div className="py-5 text-center">
+              <div className="px-5 py-5 text-center">
                 <h2 className="lg:border-b-2 lg:border-secondary pb-1 tracking-wider font-medium text-primary">
-                  Toll, Parking, Hill Station charges extra
+                  Toll, Parking, Hill station charges extra.
                 </h2>
               </div>
 
@@ -141,3 +143,5 @@ const Vehicledetails = () => {
 };
 
 export default Vehicledetails;
+
+

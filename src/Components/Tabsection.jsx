@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import FirstTabVehicle from "../Home-Components/Vehicle/FirstTabVehicle";
 import SecondTabVehicle from "../Home-Components/Vehicle/SecondTabVehicle";
 import ThirdTabVehicle from "../Home-Components/Vehicle/ThirdTabVehicle";
+import PalaniTab from "../Home-Components/Vehicle/PalaniTab";
+import ThiruchendurTab from "../Home-Components/Vehicle/ThiruchendurTab"
+import TrichyTab from "../Home-Components/Vehicle/TrichyTab"
 
 const Tab = () => {
   const [activeTab, setActiveTab] = useState(1);
@@ -25,32 +28,43 @@ const Tab = () => {
         <button
           className={
             activeTab === 1
-              ? " bg-[#070F4E] border sm:border-2 border-[#070F4E] p-1 sm:p-2 px-2 sm:px-4 rounded-3xl text-white"
-              : "hover:text-secondary border sm:border-2 border-[#070F4E] p-1 sm:p-2 px-2 sm:px-4 rounded-3xl"
+              ? " bg-[#070F4E] border sm:border-2 border-[#070F4E] p-1 sm:p-2 px-2 sm:px-4 rounded-3xl text-white font-semibold tracking-wider"
+              : "hover:text-secondary border sm:border-2 border-[#070F4E] p-1 sm:p-2 px-2 sm:px-4 rounded-3xl font-semibold text-primary"
           }
           onClick={() => handleChangeTab(1)}
         >
           Madurai
         </button>
+       
         <button
           className={
             activeTab === 2
-              ? "  bg-[#070F4E] border sm:border-2 border-[#070F4E] p-1 sm:p-2 px-2 sm:px-4 rounded-3xl text-white"
-              : "hover:text-secondary border sm:border-2 border-[#070F4E] p-1 sm:p-2 px-2 sm:px-4 rounded-3xl"
+              ? " bg-[#070F4E] border sm:border-2 border-[#070F4E] p-1 sm:p-2 px-2 sm:px-4 rounded-3xl text-white font-semibold tracking-wider"
+              : "hover:text-secondary border sm:border-2 border-[#070F4E] p-1 sm:p-2 px-2 sm:px-4 rounded-3xl font-semibold text-primary"
           }
           onClick={() => handleChangeTab(2)}
         >
-          Madurai-Kodaikanal
+          Madurai-Palani
         </button>
         <button
           className={
             activeTab === 3
-              ? " bg-[#070F4E] border sm:border-2 border-[#070F4E] p-1 sm:p-2 px-2 sm:px-4 rounded-3xl text-white"
-              : "hover:text-secondary border sm:border-2 border-[#070F4E] p-1 sm:p-2 px-2 sm:px-4 rounded-3xl"
+             ? " bg-[#070F4E] border sm:border-2 border-[#070F4E] p-1 sm:p-2 px-2 sm:px-4 rounded-3xl text-white font-semibold tracking-wider"
+              : "hover:text-secondary border sm:border-2 border-[#070F4E] p-1 sm:p-2 px-2 sm:px-4 rounded-3xl font-semibold text-primary"
           }
           onClick={() => handleChangeTab(3)}
         >
-          Madurai-Rameshwaram
+          Madurai-Thiruchendur
+        </button>
+        <button
+          className={
+            activeTab === 4
+              ? " bg-[#070F4E] border sm:border-2 border-[#070F4E] p-1 sm:p-2 px-2 sm:px-4 rounded-3xl text-white font-semibold tracking-wider"
+              : "hover:text-secondary border sm:border-2 border-[#070F4E] p-1 sm:p-2 px-2 sm:px-4 rounded-3xl font-semibold text-primary"
+          }
+          onClick={() => handleChangeTab(4)}
+        >
+          Madurai-Trichy
         </button>
       </div>
 
@@ -62,12 +76,17 @@ const Tab = () => {
         </div>
         <div className={activeTab === 2 ? "block" : "hidden"}>
           <h2>
-            <SecondTabVehicle />
+            <PalaniTab/>
           </h2>
         </div>
         <div className={activeTab === 3 ? "block" : "hidden"}>
           <h2>
-            <ThirdTabVehicle />
+            <ThiruchendurTab/>
+          </h2>
+        </div>
+        <div className={activeTab === 4 ? "block" : "hidden"}>
+          <h2>
+            <TrichyTab/>
           </h2>
         </div>
       </div>

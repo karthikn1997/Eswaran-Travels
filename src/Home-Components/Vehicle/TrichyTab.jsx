@@ -45,12 +45,11 @@ const Vehicledetails = () => {
 
   // Values corresponding to each vehicle
   const vehicleDetails = [
-    { detail: "Madurai", km: "120 km", seat: "4+1", amt: "Rs.3000" },
-    { detail: "Madurai", km: "120 km", seat: "6+1", amt: "Rs.3850" },
-    { detail: "Madurai", km: "120 km", seat: "6+1", amt: "Rs.4850" },
-    { detail: "Madurai", km: "120 km", seat: "12+1", amt: "Rs.5200" },
-  ];
-
+    { detail: "Trichy", km: "350 km", seat: "4+1", amt: "Rs.5100" },
+    { detail: "Trichy", km: "350 km", seat: "6+1", amt: "Rs.6800" },
+    { detail: "Trichy", km: "350 km", seat: "6+1", amt: "Rs.8200" },
+    { detail: "Trichy", km: "350 km", seat: "12+1", amt: "Rs.9100" },
+  ]
   return (
     <>
       <section className="lg:w-full lg:h-auto lg:py-5 sm:py-5 px-2 sm:px-10">
@@ -86,7 +85,7 @@ const Vehicledetails = () => {
 
                     {icons1.map((iconItem, iconIndex) => (
                       <div
-                        className="flex items-center gap-3"
+                        className="flex items-center gap-3 px-5 lg:px-0"
                         key={iconIndex}
                         data-aos="fade-up"
                         duration-aos-delay="300"
@@ -117,7 +116,7 @@ const Vehicledetails = () => {
                 </div>
                 <div className="w-[80%] py-5 lg:px-0 px-5 text-center">
                     <h2 className="lg:border-b-2 lg:border-secondary pb-1 tracking-wider font-medium text-primary">
-                      Fuel cost , Driver betta , Toll , Parking included.
+                      Fuel cost , Driver bata , Toll , Parking included.
                     </h2> 
                   </div>
                 <button className="text-center w-[80%] py-2 lg:text-base text-md font-semibold text-white bg-[#070F4E] rounded-lg lg:mb-8 tracking-wider hover:bg-blue-500 transform transition-all duration-500 active:bg-[#050c3a] shadow-lg sm:mb-5">
@@ -133,9 +132,3 @@ const Vehicledetails = () => {
 };
 
 export default Vehicledetails;
-// const vehicleDetails1 = [
-//   { km: "300 km", seat: "4+1", amt: "Rs.7000" },
-//   { km: "300 km", seat: "6+1", amt: "Rs.9000" },
-//   { km: "300 km", seat: "6+1", amt: "Rs.11500" },
-//   { km: "300 km", seat: "12+1", amt: "Rs.12000" },
-// ];
