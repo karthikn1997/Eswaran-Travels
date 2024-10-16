@@ -1,7 +1,7 @@
 import { MdLocationPin } from "react-icons/md";
 import { IoMdMail } from "react-icons/io";
 import { FaPhone } from "react-icons/fa6";
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -11,6 +11,11 @@ import ContactBg from "../assets/car.jpg"
 const ContactPage = () => {
   const form = useRef();
   const [loading, setLoading] = useState(false); // Loading state
+
+   // Scroll to the top of the page when the component is mounted
+   useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const sendEmail = (e) => {
     e.preventDefault();

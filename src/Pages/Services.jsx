@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Banner from "../Home-Components/Banner";
 import Tabsection from "../Components/Tabsection"
 import TabsectionCopy from "../Components/TabsectionCopy";
@@ -9,6 +9,11 @@ import { Link } from 'react-router-dom';
 import { FaLongArrowAltLeft, FaStar, FaStarHalfAlt } from "react-icons/fa";
 
 const Services = () => {
+  // Scroll to the top of the page when the component is mounted
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="w-full h-auto flex flex-col justify-center items-center overflow-hidden">
       <Banner />

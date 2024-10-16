@@ -82,8 +82,8 @@ const Vehicledetails = () => {
                         {iconIndex === 0
                           ? vehicleDetails[itemIndex].km
                           : iconIndex === 1
-                          ? vehicleDetails[itemIndex].seat
-                          : vehicleDetails[itemIndex].amt}
+                            ? vehicleDetails[itemIndex].seat
+                            : vehicleDetails[itemIndex].amt}
                       </p>
                     </div>
                   ))}
@@ -102,23 +102,24 @@ const Vehicledetails = () => {
                         {iconIndex === 0
                           ? vehicleDetails1[itemIndex].km
                           : iconIndex === 1
-                          ? vehicleDetails1[itemIndex].seat
-                          : vehicleDetails1[itemIndex].amt}
+                            ? vehicleDetails1[itemIndex].seat
+                            : vehicleDetails1[itemIndex].amt}
                       </p>
                     </div>
                   ))}
                 </div>
               </div>
               <div className="py-5 text-center">
-                    <h2 className="lg:border-b-2 lg:border-secondary pb-1 tracking-wider font-medium text-primary mb-2">
-                      Fuel cost , Driver bata ,Night halt charges included.
-                    </h2> 
-                  
-                  </div>
+                <h2 className="lg:border-b-2 lg:border-secondary pb-1 tracking-wider font-medium text-primary">
+                  Fuel cost , Driver betta , Toll , Parking included.
+                </h2>
+              </div>
               {/* Book Now Button */}
-              <button className="w-3/4 py-2 my-4 text-white bg-[#070F4E] rounded-lg hover:bg-blue-700 transition-colors duration-300 font-semibold">
-                BOOK NOW
-              </button>
+              <a href="tel:+918680986987" className="w-3/4 mx-auto text-center">
+                <button className="w-3/4 mx-auto py-2 my-4 text-white bg-[#070F4E] rounded-lg hover:bg-blue-700 transition-colors duration-300 font-semibold">
+                  BOOK NOW
+                </button>
+              </a>
             </div>
           ))}
         </div>

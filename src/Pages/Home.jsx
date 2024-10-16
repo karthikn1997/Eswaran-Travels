@@ -12,6 +12,11 @@ import { FaArrowCircleDown, FaArrowCircleRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const Home = () => {
+  // Scroll to the top of the page when the component is mounted
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div
       className="flex flex-col justify-center items-center overflow-hidden"

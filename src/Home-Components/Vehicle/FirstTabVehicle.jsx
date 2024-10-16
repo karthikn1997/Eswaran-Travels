@@ -105,24 +105,26 @@ const Vehicledetails = () => {
                           {iconIndex === 0
                             ? vehicleDetails[itemIndex].detail
                             : iconIndex === 1
-                            ? vehicleDetails[itemIndex].km
-                            : iconIndex === 2
-                            ? vehicleDetails[itemIndex].seat
-                            : vehicleDetails[itemIndex].amt}
+                              ? vehicleDetails[itemIndex].km
+                              : iconIndex === 2
+                                ? vehicleDetails[itemIndex].seat
+                                : vehicleDetails[itemIndex].amt}
                         </p>
                       </div>
                     ))}
                   </div>
-                
+
                 </div>
                 <div className="w-[80%] py-5 lg:px-0 px-5 text-center">
-                    <h2 className="lg:border-b-2 lg:border-secondary pb-1 tracking-wider font-medium text-primary">
-                      Fuel cost , Driver betta , Toll , Parking included.
-                    </h2> 
-                  </div>
-                <button className="text-center w-[80%] py-2 lg:text-base text-md font-semibold text-white bg-[#070F4E] rounded-lg lg:mb-8 tracking-wider hover:bg-blue-500 transform transition-all duration-500 active:bg-[#050c3a] shadow-lg sm:mb-5">
-                  BOOK NOW
-                </button>
+                  <h2 className="lg:border-b-2 lg:border-secondary pb-1 tracking-wider font-medium text-primary">
+                    Fuel cost , Driver betta , Toll , Parking included.
+                  </h2>
+                </div>
+                <a href="tel:+918680986987" className="w-3/4 mx-auto text-center">
+                  <button className="text-center w-[80%] py-2 lg:text-base text-md font-semibold text-white bg-[#070F4E] rounded-lg lg:mb-8 tracking-wider hover:bg-blue-500 transform transition-all duration-500 active:bg-[#050c3a] shadow-lg sm:mb-5">
+                    BOOK NOW
+                  </button>
+                </a>
               </div>
             ))}
           </div>

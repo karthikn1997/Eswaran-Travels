@@ -23,7 +23,7 @@ const Topbar = () => {
                             <div className="flex items-center gap-1 hover:text-white">
                                 <IoMdMail className="text-yellow-400 w-4 h-4 rounded-full " />
                                 <a href="#" className="hover:underline underline-offset-4  text-white font-light tracking-wider">
-                                    admin@eswarantravels.com
+                                    maduraieswarantravels@gmail.com
                                 </a>
                             </div>
                             <div className="flex items-center gap-1 hover:text-white">

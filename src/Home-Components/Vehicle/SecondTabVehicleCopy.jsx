@@ -23,18 +23,18 @@ const Vehicledetails = () => {
 
 
   const vehicleDetails = [
-    {detail: "Kodaikanal", km: "280 km", seat: "4+1", amt: "Rs.5400" },
-    { detail: "Kodaikanal",km: "280 km", seat: "6+1", amt: "Rs.6600" },
-    { detail: "Kodaikanal",km: "280 km", seat: "6+1", amt: "Rs.8400" },
-    {detail: "Kodaikanal", km: "280 km", seat: "12+1", amt: "Rs.9200" },
-  ]
-  
-const vehicleDetails1 = [
-  {detail: "Kodaikanal", km: "300 km", seat: "4+1", amt: "Rs.7000" },
-  { detail: "Kodaikanal",km: "300 km", seat: "6+1", amt: "Rs.9000" },
-  { detail: "Kodaikanal",km: "300 km", seat: "6+1", amt: "Rs.11500" },
-  {detail: "Kodaikanal", km: "300 km", seat: "12+1", amt: "Rs.12000" },
-];
+    { km: "280 km", seat: "4+1", amt: "Rs.5000" },
+    { km: "280 km", seat: "6+1", amt: "Rs.6600" },
+    { km: "280 km", seat: "6+1", amt: "Rs.8400" },
+    { km: "280 km", seat: "12+1", amt: "Rs.9200" },
+  ];
+
+  const vehicleDetails1 = [
+    { km: "300 km", seat: "4+1", amt: "Rs.7000" },
+    { km: "300 km", seat: "6+1", amt: "Rs.9000" },
+    { km: "300 km", seat: "6+1", amt: "Rs.11500" },
+    { km: "300 km", seat: "12+1", amt: "Rs.12000" },
+  ];
 
   return (
     <section className="w-full lg:py-10 lg:px-10 ">
@@ -82,8 +82,8 @@ const vehicleDetails1 = [
                         {iconIndex === 0
                           ? vehicleDetails[itemIndex].km
                           : iconIndex === 1
-                          ? vehicleDetails[itemIndex].seat
-                          : vehicleDetails[itemIndex].amt}
+                            ? vehicleDetails[itemIndex].seat
+                            : vehicleDetails[itemIndex].amt}
                       </p>
                     </div>
                   ))}
@@ -102,37 +102,33 @@ const vehicleDetails1 = [
                         {iconIndex === 0
                           ? vehicleDetails1[itemIndex].km
                           : iconIndex === 1
-                          ? vehicleDetails1[itemIndex].seat
-                          : vehicleDetails1[itemIndex].amt}
+                            ? vehicleDetails1[itemIndex].seat
+                            : vehicleDetails1[itemIndex].amt}
                       </p>
                     </div>
                   ))}
                 </div>
+
               </div>
               <div className="py-5 text-center">
-                    <h2 className="lg:border-b-2 lg:border-secondary pb-1 tracking-wider font-medium text-primary mb-2">
-                      Fuel cost , Driver bata ,Night halt charges included.
-                    </h2> 
-                  
-                  </div>
+                <h2 className="lg:border-b-2 lg:border-secondary pb-1 tracking-wider font-medium text-primary">
+                  Fuel cost , Driver betta , Toll , Parking , Hills charges included.
+                </h2>
+              </div>
               {/* Book Now Button */}
-              <button className="w-3/4 py-2 my-4 text-white bg-[#070F4E] rounded-lg hover:bg-blue-700 transition-colors duration-300 font-semibold">
-                BOOK NOW
-              </button>
+              <a href="tel:+918680986987" className="w-3/4 mx-auto text-center">
+                <button className="w-3/4 py-2 my-4 text-white bg-[#070F4E] rounded-lg hover:bg-blue-700 font-semibold transition-colors duration-300">
+                  BOOK NOW
+                </button>
+              </a>
             </div>
           ))}
         </div>
+
       </div>
+
     </section>
   );
 };
 
 export default Vehicledetails;
-
-
-const vehicleDetails = [
-  {detail: "Rameshwaram", km: "450 km", seat: "4+1", amt: "Rs.8200" },
-  { detail: "Rameshwaram", km: "450 km", seat: "6+1", amt: "Rs.10200" },
-  {detail: "Rameshwaram",  km: "450 km", seat: "6+1", amt: "Rs.13000" },
-  { detail: "Rameshwaram", km: "450 km", seat: "12+1", amt: "Rs.13500" },
-];
