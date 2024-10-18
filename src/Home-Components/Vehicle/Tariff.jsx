@@ -102,7 +102,9 @@ const Vehicledetails = () => {
                 {/* Below 300 Km Details */}
                 <div className="w-full xl:w-1/2 flex flex-col items-center text-[#070F4E] hover:bg-primary hover:text-white transform transition-all duration-500">
                   <h4 className="lg:text-lg font-bold lg:font-semibold text-center mb-5 border-b-2 border-secondary pb-1 tracking-wide">
-                    Below 300 Km (Per day)
+                  {item.id === 3 || item.id === 4
+                      ? "Below 350 Km (Per day)" 
+                      : "Below 300 Km (Per day)"}
                   </h4>
 
                   {icons2.map((iconItem, iconIndex) => (

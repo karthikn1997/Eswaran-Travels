@@ -3,13 +3,14 @@ import Hero from "../Home-Components/Hero";
 import AboutTravel from "../Home-Components/AboutTravel";
 import Packagedetails from "../Home-Components/Packagedetails";
 import Banner from "../Home-Components/Banner";
-// import Tabsection from "../Components/Tabsection";
+import Packages from "../Home-Components/Packages";
 import Tariff from "../Home-Components/Vehicle/Tariff";
 import ChooseUs from "../Home-Components/ChooseUs";
 import Testimonial from "../Home-Components/Testimonial";
 
 import { FaArrowCircleDown, FaArrowCircleRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 const Home = () => {
   // Scroll to the top of the page when the component is mounted
@@ -26,6 +27,7 @@ const Home = () => {
       <AboutTravel />
       <Packagedetails />
       <Banner />
+      <Packages/>
       <Tariff />
       <Link
         to="/services"
