@@ -166,7 +166,7 @@ const Packagedetails = () => {
   
 
   return (
-    <div className="w-full mx-auto p-4 lg:py-20">
+    <div className="w-full mx-auto p-4 lg:py-10">
       <h2
         className="text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-wider text-secondary bg-gradient-to-b from-blue-400 via-blue-200 to-blue-400 py-5 lg:py-3 px-4 lg:px-8 mb-6 lg:mb-16 text-center rounded-3xl shadow-md"
         style={{ textShadow: "2px 2px 2px rgba(0, 0, 0, 0.7)" }}
@@ -175,7 +175,7 @@ const Packagedetails = () => {
       </h2>
 
       <div
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:px-5"
         data-aos="fade-up"
         data-aos-delay="300"
         data-aos-easing="ease-in-sine"
@@ -188,20 +188,6 @@ const Packagedetails = () => {
           >
             <Link to={item.link}>
               <div className="relative w-full overflow-hidden">
-                {/* Uncomment to use images */}
-                {/* <img
-                  className="w-full h-52 object-cover transition-transform duration-300 lg:hover:scale-105"
-                  src={item.img}
-                  alt=""
-                /> */}
-                {/* <div className="absolute bottom-0 left-0 w-full bg-opacity-40 bg-black p-2 flex justify-between items-center">
-                  <h1 className="text-lg font-semibold text-white flex items-center gap-3">
-                    {item.car} {item.title}
-                  </h1>
-                  <span className="text-white font-semibold flex items-center gap-2">
-                    ₹ {item.price} <GoPerson/>
-                  </span>
-                </div> */}
               </div>
 
               <div className="px-3 sm:px-6 h-auto mt-2">

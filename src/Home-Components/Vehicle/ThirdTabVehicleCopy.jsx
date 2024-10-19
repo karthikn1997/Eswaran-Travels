@@ -95,13 +95,13 @@ const Vehicledetails = () => {
               </div>
 
               <div className="w-[90%] py-3 text-center ">
-                <h2 className="w-full bg-gray-200 py-1 tracking-wider font-medium text-primary rounded-md text-sm sm:text-md px-2 sm:px-4">
-                  Fuel cost, Driver bata, Toll, Parking, Hills charges included.
+                <h2 className="w-full bg-green-200 py-1 tracking-wider font-medium text-primary rounded-md text-sm sm:text-md px-2 sm:px-4">
+                  Fuel cost, Driver bata, Toll, Parking, Night halt included.
                 </h2>
               </div>
 
               {/* Book Now Button */}
-              <a href="tel:+918680986987" className="w-[90%] mx-auto text-center">
+              <a href="tel:+918680986987" className="w-[90%] mx-auto text-center  ">
                 <button className="w-full py-2 my-2 text-white bg-[#070F4E] rounded-lg hover:bg-blue-700 font-semibold transition-colors duration-300">
                   BOOK NOW
                 </button>

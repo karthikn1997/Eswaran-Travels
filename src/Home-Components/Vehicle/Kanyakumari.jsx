@@ -115,11 +115,14 @@ const Vehicledetails = () => {
                   </div>
 
                 </div>
-                <div className="w-[90%] py-5 lg:px-0 text-center">
-                  <h2 className="w-full bg-gray-200 py-1 tracking-wider font-medium text-primary rounded-md text-sm sm:text-md px-2">
-                    Fuel cost , Driver bata , Toll , Parking ,Night halt ,Kerala hills permit included.
-                  </h2>
-                </div>
+                <div className="w-[90%] py-3 text-center">
+                <h2 className="w-full bg-green-200  py-1 tracking-wider font-medium text-primary rounded-md text-sm sm:text-md px-2 sm:px-4 mb-2">
+                  Fuel cost, Driver bata, Night halt charges included.
+                </h2>
+                <h2 className=" w-full bg-orange-200 py-1 tracking-wider font-medium text-primary rounded-md text-sm sm:text-md px-2 sm:px-4">
+                 Toll, Parking excluded.
+                </h2>
+              </div>
                 <a href="tel:+918680986987" className="w-[90%] mx-auto text-center">
                   <button className="text-center w-full py-2 lg:text-base text-md font-semibold text-white bg-[#070F4E] rounded-lg lg:mb-8 tracking-wider hover:bg-blue-500 transform transition-all duration-500 active:bg-[#050c3a] shadow-lg sm:mb-5">
                     BOOK NOW

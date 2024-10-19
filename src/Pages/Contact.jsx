@@ -80,13 +80,50 @@ const ContactPage = () => {
         pauseOnFocusLoss
       />
 
-      <div className="lg:py-20 py-5">
-        <h1 className="lg:text-3xl text-xl font-bold mb-6 text-center text-primary tracking-wider">
+      <div className="lg:py-10 py-5">
+        
+
+        <div className="lg:py-5 mb-8 flex flex-col justify-center items-center" data-aos="fade-up"
+          data-aos-duration="800"
+          data-aos-delay="300">
+          <p className="lg:text-lg text-sm px-5 mb-4 font-semibold text-center text-primary tracking-wider">
+            We'd love to hear from you! Here’s how you can reach us:
+          </p>
+
+          <div className="grid grid-cols-1 lg:grid-cols-3 lg:pt-10 gap-16 lg:px-20 py-3">
+            <div className="flex flex-col justify-center items-center">
+              <MdLocationPin className="lg:text-5xl text-3xl text-secondary text-center mb-5" />
+              <p className="text-primary text-sm font-medium text-center">
+                Location
+                <br />
+                Sarada Nagar, Madurai - 625017
+              </p>
+            </div>
+
+            <div className="flex flex-col justify-center items-center">
+              <FaPhone className="lg:text-5xl text-3xl text-secondary mb-5" />
+              <p className="text-primary text-sm font-medium text-center tracking-wider">
+                Phone
+                <br />
+                8680986987
+              </p>
+            </div>
+
+            <div className="flex flex-col justify-center items-center">
+              <IoMdMail className="lg:text-5xl text-3xl text-secondary text-center mb-5 " />
+              <p className="text-primary text-sm font-medium text-center tracking-wider">
+                Email
+                <br />
+                maduraieswarantravels@gmail.com
+              </p>
+            </div>
+          </div>
+        </div>
+        {/* Form Section */}
+        <h1 className="lg:text-3xl text-xl font-bold  text-center text-primary tracking-wider">
           Get In Touch
         </h1>
-
-        {/* Form Section */}
-        <div className="w-full lg:w-[60%] mx-auto mb-8 px-8">
+        <div className="w-full lg:w-[60%] mx-auto my-8 px-8">
           <form ref={form} onSubmit={sendEmail} className="space-y-6">
             <div>
               <label className="block text-gray-700 font-medium mb-1">Name</label>
@@ -133,41 +170,7 @@ const ContactPage = () => {
           </form>
         </div>
 
-        <div className="mb-8 flex flex-col justify-center items-center" data-aos="fade-up"
-          data-aos-duration="800"
-          data-aos-delay="300">
-          <p className="lg:text-base text-sm px-5 mb-4 text-center text-primary tracking-wider">
-            We'd love to hear from you! Here’s how you can reach us:
-          </p>
-          <div className="grid grid-cols-1 lg:grid-cols-3 lg:py-10 gap-16 lg:px-20 py-3">
-            <div className="flex flex-col justify-center items-center">
-              <MdLocationPin className="lg:text-5xl text-3xl text-secondary text-center mb-5" />
-              <p className="text-primary text-sm font-medium text-center">
-                Location
-                <br />
-                Sarada Nagar, Madurai - 625017
-              </p>
-            </div>
-
-            <div className="flex flex-col justify-center items-center">
-              <FaPhone className="lg:text-5xl text-3xl text-secondary mb-5" />
-              <p className="text-primary text-sm font-medium text-center tracking-wider">
-                Phone
-                <br />
-                8680986987
-              </p>
-            </div>
-
-            <div className="flex flex-col justify-center items-center">
-              <IoMdMail className="lg:text-5xl text-3xl text-secondary text-center mb-5" />
-              <p className="text-primary text-sm font-medium text-center tracking-wider">
-                Email
-                <br />
-                maduraieswarantravels@gmail.com
-              </p>
-            </div>
-          </div>
-        </div>
+        
       </div>
 
     </div>

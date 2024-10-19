@@ -3,6 +3,10 @@ import sedan from "../../assets/sedan.png";
 import innova from "../../assets/innova.png";
 import innovacrs from "../../assets/innovacrs.png";
 import tempo from "../../assets/tempo1.png";
+import { MdOutlineAirlineSeatReclineExtra } from "react-icons/md";
+import { FaRoad } from "react-icons/fa";
+import { GiTakeMyMoney } from "react-icons/gi";
+import { RiArrowLeftRightLine } from "react-icons/ri";
 
 const Vehicledetails = () => {
   const items = [
@@ -12,59 +16,51 @@ const Vehicledetails = () => {
     { id: 4, title: "TEMPO TRAVELLER", image: tempo },
   ];
 
-  const icons1 = [
-    { id: 1, icon: "Per km -", label: "Distance" },
-    { id: 2, icon: "Seats -", label: "Seats" },
-    { id: 3, icon: "Driver Bata -", label: "Price" },
-  ];
-
-  const icons2 = [
-    { id: 1, icon: "Fuel cost /km -", label: "Distance" },
-    { id: 2, icon: "Seats -", label: "Seats" },
-    { id: 3, icon: "Rent / day -", label: "Price" },
+  const icons = [
+    // { id: 1, icon: <RiArrowLeftRightLine />, label: "Destination" },
+    { id: 1, icon: <FaRoad />, label: "Distance" },
+    { id: 2, icon: <MdOutlineAirlineSeatReclineExtra />, label: "Seat" },
+    { id: 3, icon: <GiTakeMyMoney />, label: "Price" },
   ];
 
   const vehicleDetails = [
-    { km: "Rs.13 ", seat: "4+1", amt: "Rs.400" },
-    { km: "Rs.18 ", seat: "6+1", amt: "Rs.500" },
-    { km: "Rs.22 ", seat: "6+1", amt: "Rs.500" },
-    { km: "Rs.23 ", seat: "12+1", amt: "Rs.600" }
+    { km: "Rs.13 / km ", seat: "4+1", amt: "Rs.400 (Driver Bata)" },
+    { km: "Rs.18 / km ", seat: "6+1", amt: "Rs.500 (Driver Bata)" },
+    { km: "Rs.22 / km", seat: "6+1", amt: "Rs.500 (Driver Bata)" },
+    { km: "Rs.23 / km", seat: "12+1", amt: "Rs.600 (Driver Bata)" }
   ];
-
+  
   const vehicleDetails1 = [
-    { km: "Rs.10 ", seat: "4+1", amt: "Rs.1600" },
-    { km: "Rs.12 ", seat: "6+1", amt: "Rs.2200" },
-    { km: "Rs.16 ", seat: "6+1", amt: "Rs.2600" },
-    { km: "Rs.17 ", seat: "12+1", amt: "Rs.2700" },
+    { km: "Rs.10 / km", seat: "4+1", amt: "Rs.1600 (Driver Bata)" },
+    { km: "Rs.12 / km", seat: "6+1", amt: "Rs.2200 (Driver Bata)" },
+    { km: "Rs.16 / km", seat: "6+1", amt: "Rs.2600 (Driver Bata)" },
+    { km: "Rs.17 / km", seat: "12+1", amt: "Rs.2700 (Driver Bata)" },
   ];
 
   return (
-    <section className="w-full lg:px-10 lg:pb-20 pb-10 px-4">
+    <section className="w-full lg:py-10 lg:px-10 p-2">
       <div className="mx-auto">
-        {/* Title */}
-        <h2
-          className="lg:text-4xl text-2xl font-bold text-center lg:mb-6 text-primary py-6 lg:py-8 sm:py-5 tracking-wide"
-          style={{ textShadow: "0px 2px 2px rgba(0,0,0,0.7)" }}
-          data-aos="fade-up"
-          data-aos-delay="300"
-        >
-          Vehicle Tariff Details
-        </h2>
-
-        {/* Vehicle Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 ">
+      <h2
+        className="text-center lg:text-4xl text-3xl font-bold tracking-wider text-primary lg:mb-10 py-5"
+        style={{ textShadow: "0px 2px 2px rgba(0, 0, 0, 0.7)" }}
+        data-aos="fade-up"
+          data-aos-duration="800"
+      >
+         Vehicle Tariff
+      </h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
           {items.map((item, itemIndex) => (
             <div
               key={item.id}
-              className="hover:shadow-xl shadow-lg rounded-lg lg:hover:scale-[1.01] transition-transform duration-300 border-2 border-gray-200 flex flex-col items-center p-3 bg-[rgba(249,249,249)] hover:border-primary hover:border-2"
+              className="bg-white hover:shadow-xl shadow-lg rounded-lg duration-500 border-2  hover:border-2 hover:border-[#070F4E] border-gray-200 flex flex-col items-center p-3"
             >
               {/* Title Section */}
               <div className="bg-yellow-300 w-full rounded-t-lg py-2 text-center">
-                <h3 className="text-xl font-bold ">{item.title}</h3>
+                <h3 className="text-xl font-bold text-[#070F4E]">{item.title}</h3>
               </div>
 
               {/* Image Section */}
-              <div className="w-full p-4">
+              <div className="w-full py-10 p-4 flex justify-center">
                 <img
                   src={item.image}
                   alt={item.title}
@@ -72,69 +68,52 @@ const Vehicledetails = () => {
                 />
               </div>
 
-              {/* Pricing Details Section */}
-              <div className="w-[90%] flex flex-col xl:flex-row items-center justify-between px-4 py-4 border-[1px] border-secondary rounded-lg bg-white">
-                {/* Above 300 Km Details */}
-                <div className="w-full xl:w-1/2 flex flex-col items-center lg:border-r-[1px] lg:border-secondary text-[#070F4E] hover:bg-primary hover:text-white transform transition-all duration-500">
-                  <h4 className="lg:text-lg font-bold lg:font-semibold text-center mb-5 border-b-2 border-secondary pb-1 tracking-wide">
-                  {item.id === 3 || item.id === 4
-                      ? "Above 350 Km (Per day)" 
-                      : "Above 300 Km (Per day)"}
+              {/* One Day and 2 Days/1 Night Details Section */}
+              <div className="w-[90%] flex flex-col lg:flex-row items-center justify-between gap-6 px-4 py-4 border-[2px] border-secondary rounded-lg">
+                {/* One Day Package */}
+                <div className="w-full lg:w-1/2 flex flex-col border-b lg:border-b-0 ">
+                <h4 className="lg:text-md lg:font-bold font-bold text-[#070F4E] mb-5 bg-yellow-100 py-1 px-4 rounded-sm uppercase">
+                  {
+                    item.id === 3 || item.id ===4 ? "Above 350 km" :"Above 300 km"
+                  }
                   </h4>
-
-                  {icons1.map((iconItem, iconIndex) => (
-                    <div
-                      className="flex items-center gap-3 font-medium mb-3 px-4 tracking-wide"
-                      key={iconIndex}
-                    >
-                      <span className="lg:text-lg">{iconItem.icon}</span>
-                      <p>
-                        {iconIndex === 0
-                          ? vehicleDetails[itemIndex].km
-                          : iconIndex === 1
-                            ? vehicleDetails[itemIndex].seat
-                            : vehicleDetails[itemIndex].amt}
-                      </p>
+                  {icons.map((iconItem, iconIndex) => (
+                    <div className="flex items-center gap-3 text-[#070F4E] font-medium mb-3 px-4 border py-1 rounded-sm" key={iconIndex}>
+                      <span className="lg:text-lg border p-1 rounded-full bg-gray-200">{iconItem.icon}</span>
+                      <span>
+                        {vehicleDetails[itemIndex][Object.keys(vehicleDetails[itemIndex])[iconIndex]]}
+                      </span>
                     </div>
                   ))}
                 </div>
 
-                {/* Below 300 Km Details */}
-                <div className="w-full xl:w-1/2 flex flex-col items-center text-[#070F4E] hover:bg-primary hover:text-white transform transition-all duration-500">
-                  <h4 className="lg:text-lg font-bold lg:font-semibold text-center mb-5 border-b-2 border-secondary pb-1 tracking-wide">
-                  {item.id === 3 || item.id === 4
-                      ? "Below 350 Km (Per day)" 
-                      : "Below 300 Km (Per day)"}
+                {/* 2 Days/1 Night Package */}
+                <div className="w-full lg:w-1/2 flex flex-col">
+                  <h4 className="lg:text-md lg:font-bold font-bold text-[#070F4E] mb-5 bg-yellow-100 py-1 px-4 rounded-sm uppercase">
+                  {
+                    item.id === 3 || item.id ===4 ? "Below 350 km" :"Below 300 km"
+                  }
                   </h4>
-
-                  {icons2.map((iconItem, iconIndex) => (
-                    <div
-                      className="flex items-center gap-3 font-medium mb-3 px-4 tracking-wide"
-                      key={iconIndex}
-                    >
-                      <span className="lg:text-lg">{iconItem.icon}</span>
-                      <p>
-                        {iconIndex === 0
-                          ? vehicleDetails1[itemIndex].km
-                          : iconIndex === 1
-                            ? vehicleDetails1[itemIndex].seat
-                            : vehicleDetails1[itemIndex].amt}
-                      </p>
+                  {icons.map((iconItem, iconIndex) => (
+                    <div className="flex items-center gap-3 text-[#070F4E] font-medium mb-3 px-4 border py-1 rounded-sm" key={iconIndex}>
+                      <span className="lg:text-lg border p-1 rounded-full bg-gray-200">{iconItem.icon}</span>
+                      <span>
+                        {vehicleDetails1[itemIndex][Object.keys(vehicleDetails1[itemIndex])[iconIndex]]}
+                      </span>
                     </div>
                   ))}
                 </div>
               </div>
 
-              {/* Toll and Charges Section */}
-              <div className="px-5 py-5 text-center">
-                <h2 className="lg:border-b-2 lg:border-secondary pb-1 tracking-wider font-medium text-primary">
-                  Toll, Parking, Hill station charges extra.
+              {/* <div className="w-[90%] py-3 text-center ">
+                <h2 className="w-full bg-gray-200 py-1 tracking-wider font-medium text-primary rounded-md text-sm sm:text-md px-2 sm:px-4">
+                  Fuel cost, Driver bata, Toll, Parking, Hills charges included.
                 </h2>
-              </div>
+              </div> */}
 
               {/* Book Now Button */}
-              <a href="tel:+918680986987" className="w-3/4 mx-auto text-center">
-                <button className="w-3/4 py-2 lg:my-4 text-white bg-[#070F4E] rounded-lg hover:bg-blue-700 transition-colors duration-300">
+              <a href="tel:+918680986987" className="w-[90%] mx-auto text-center py-3">
+                <button className="w-full py-2 my-2 text-white bg-[#070F4E] rounded-lg hover:bg-blue-700 font-semibold transition-colors duration-300">
                   BOOK NOW
                 </button>
               </a>

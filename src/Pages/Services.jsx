@@ -17,7 +17,7 @@ const Services = () => {
   return (
     <div className="w-full h-auto flex flex-col justify-center items-center overflow-hidden">
       <Banner />
-      <h2 className='lg:w-full my-5 text-2xl md:text-4xl p-4 text-center font-bold tracking-wider text-white bg-gradient-to-r from-blue-500 to-blue-300 rounded-md' style={{textShadow:"0px 2px 2px rgba(0,0,0,0.7)"}}>
+      <h2 className='lg:w-full my-5 text-2xl md:text-4xl p-2 text-center font-bold tracking-wider text-white bg-gradient-to-r from-blue-500 to-blue-300 rounded-md' style={{textShadow:"0px 2px 2px rgba(0,0,0,0.7)"}}>
           Private Vehicle Packages
         </h2>
       <div className="lg:w-full h-auto">

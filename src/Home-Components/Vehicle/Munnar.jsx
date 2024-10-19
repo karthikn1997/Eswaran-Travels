@@ -116,7 +116,7 @@ const Vehicledetails = () => {
 
                 </div>
                 <div className="w-[90%] py-5 lg:px-0 text-center">
-                  <h2 className="w-full bg-gray-200 py-1 tracking-wider font-medium text-primary rounded-md text-sm sm:text-md px-2">
+                  <h2 className="w-full bg-green-200 py-1 tracking-wider font-medium text-primary rounded-md text-sm sm:text-md px-2">
                     Fuel cost , Driver bata , Toll , Parking ,Night halt ,Kerala hills permit included.
                   </h2>
                 </div>

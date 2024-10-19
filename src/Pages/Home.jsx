@@ -9,6 +9,7 @@ import ChooseUs from "../Home-Components/ChooseUs";
 import Testimonial from "../Home-Components/Testimonial";
 import { FaArrowCircleDown, FaArrowCircleRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 
 const Home = () => {
@@ -30,7 +31,7 @@ const Home = () => {
       <Tariff />
       <Link
         to="/services"
-        className="text-center sm:w-[60%] md:w-[40%] lg:w-[20%] py-2 px-4 lg:py-3 lg:text-lg text-md font-medium text-white bg-[#070F4E] rounded-lg tracking-wider hover:bg-blue-500 transition-all duration-500 active:bg-[#050c3a] flex justify-center items-center gap-3 lg:gap-5 shadow-lg lg:mb-16 mb-7  animate-bounce animate-duration-200 "
+        className="text-center sm:w-[60%] md:w-[40%] lg:w-[20%] py-2 px-4 lg:py-3 lg:text-lg text-md font-medium text-white bg-[#070F4E] rounded-lg tracking-wider hover:bg-blue-500 transition-all duration-500 active:bg-[#050c3a] flex justify-center items-center gap-3 lg:gap-5 shadow-lg lg:mb-16 my-7  animate-bounce animate-duration-200 "
       >
         Explore Packages <FaArrowCircleRight className="text-md lg:text-xl " />
       </Link>

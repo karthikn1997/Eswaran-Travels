@@ -69,7 +69,7 @@ const Packagedetails = () => {
   return (
     <div className="w-full mx-auto p-4 pb-10 lg:py-20 px-4 sm:px-10">
       <h2
-        className="text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-wider text-secondary bg-gradient-to-b from-blue-400 via-blue-200 to-blue-400 py-5 lg:py-3 px-4 lg:px-8 mb-6 lg:mb-16 text-center lg:rounded-ss-full rounded-ss-3xl lg:rounded-ee-full rounded-ee-3xl"
+        className="text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-wider text-secondary bg-gradient-to-b from-blue-400 via-blue-200 to-blue-400 py-3 lg:py-3 px-4 lg:px-8 mb-6 lg:mb-16 text-center lg:rounded-ss-full rounded-ss-3xl lg:rounded-ee-full rounded-ee-3xl"
         style={{ textShadow: "2px 2px 2px rgba(0, 0, 0, 0.7)" }}
       >
         Our Popular Packages

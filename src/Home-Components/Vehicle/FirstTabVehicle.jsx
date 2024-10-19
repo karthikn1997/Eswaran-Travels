@@ -80,7 +80,7 @@ const Vehicledetails = () => {
                     data-aos-easing="ease-in-sine"
                     data-aos-duration="300"
                   >
-                    <p className="xl:w-full text-center xl:text-left w-[90%] flex-wrap xl:block lg:text-lg font-bold bg-yellow-100 text-primary rounded py-1 xl:px-3 border border-primary border-opacity-20">
+                    <p className="xl:w-full text-center xl:text-center w-[90%] flex-wrap xl:block lg:text-lg font-bold bg-yellow-100 text-primary rounded py-1 xl:px-3 border border-primary border-opacity-20">
                       {item.description}
                     </p>
 
@@ -116,8 +116,8 @@ const Vehicledetails = () => {
 
                 </div>
                 <div className="w-[90%] py-5 lg:px-0 text-center">
-                  <h2 className="w-full bg-gray-200 py-1 tracking-wider font-medium text-primary rounded-md text-sm sm:text-md">
-                    Fuel cost , Driver betta , Toll , Parking included.
+                  <h2 className="w-full bg-green-200 py-1 tracking-wider font-medium text-primary rounded-md text-sm sm:text-md">
+                    Toll , Parking included.
                   </h2>
                 </div>
                 <a href="tel:+918680986987" className="w-[90%] mx-auto text-center">

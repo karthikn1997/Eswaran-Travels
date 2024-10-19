@@ -24,22 +24,30 @@ const Vehicledetails = () => {
   ];
 
   const vehicleDetails = [
-    { detail: "Rameshwaram, Kanniyakumari", km: "900 km", seat: "4+1", amt: "Rs.13500" },
-    { detail: "Rameshwaram, Kanniyakumari", km: "900 km", seat: "6+1", amt: "Rs.17400" },
-    { detail: "Rameshwaram, Kanniyakumari", km: "900 km", seat: "6+1", amt: "Rs.22200" },
-    { detail: "Rameshwaram, Kanniyakumari", km: "900 km", seat: "12+1", amt: "Rs.23400" },
+    { detail: "Madurai, Rameshwaram, Kanniyakumari", km: "900 km", seat: "4+1", amt: "Rs.13500" },
+    { detail: "Madurai, Rameshwaram, Kanniyakumari", km: "900 km", seat: "6+1", amt: "Rs.17400" },
+    { detail: "Madurai, Rameshwaram, Kanniyakumari", km: "900 km", seat: "6+1", amt: "Rs.22200" },
+    { detail: "Madurai, Rameshwaram, Kanniyakumari", km: "900 km", seat: "12+1", amt: "Rs.23400" },
   ];
 
   const vehicleDetails1 = [
-    { detail: "Rameshwaram, Kanniyakumari", km: "950 km", seat: "4+1", amt: "Rs.15900" },
-    { detail: "Rameshwaram, Kanniyakumari", km: "950 km", seat: "6+1", amt: "Rs.20200" },
-    { detail: "Rameshwaram, Kanniyakumari", km: "950 km", seat: "6+1", amt: "Rs.25600" },
-    { detail: "Rameshwaram, Kanniyakumari", km: "950 km", seat: "12+1", amt: "Rs.27000" },
+    { detail: "Madurai, Rameshwaram, Kanniyakumari", km: "950 km", seat: "4+1", amt: "Rs.15900" },
+    { detail: "Madurai, Rameshwaram, Kanniyakumari", km: "950 km", seat: "6+1", amt: "Rs.20200" },
+    { detail: "Madurai, Rameshwaram, Kanniyakumari", km: "950 km", seat: "6+1", amt: "Rs.25600" },
+    { detail: "Madurai, Rameshwaram, Kanniyakumari", km: "950 km", seat: "12+1", amt: "Rs.27000" },
   ];
 
   return (
     <section className="w-full lg:py-10 lg:px-10 p-2">
       <div className="mx-auto">
+      <h2
+        className="text-center lg:text-4xl text-2xl font-bold tracking-wider text-primary lg:mb-10 py-5"
+        style={{ textShadow: "0px 2px 2px rgba(0, 0, 0, 0.7)" }}
+        data-aos="fade-up"
+          data-aos-duration="800"
+      >
+        Madurai to Rameshwaram to Kanyakumari
+      </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
           {items.map((item, itemIndex) => (
             <div
@@ -93,9 +101,12 @@ const Vehicledetails = () => {
                 </div>
               </div>
 
-              <div className="w-[90%] py-3 text-center ">
-                <h2 className="w-full bg-gray-200 py-1 tracking-wider font-medium text-primary rounded-md text-sm sm:text-md px-2 sm:px-4">
-                  Fuel cost, Driver bata, Toll, Parking, Hills charges included.
+              <div className="w-[90%] py-3 text-center">
+                <h2 className="w-full bg-green-200  py-1 tracking-wider font-medium text-primary rounded-md text-sm sm:text-md px-2 sm:px-4 mb-2">
+                  Fuel cost, Driver bata, Night halt charges included.
+                </h2>
+                <h2 className=" w-full bg-orange-200 py-1 tracking-wider font-medium text-primary rounded-md text-sm sm:text-md px-2 sm:px-4">
+                 Toll, Parking excluded.
                 </h2>
               </div>
 

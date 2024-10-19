@@ -24,22 +24,30 @@ const Vehicledetails = () => {
   ];
 
   const vehicleDetails = [
-    { detail: "Rameshwaram, Kanniyakumari, Thiruvanandhapuram", km: "1150 km", seat: "4+1", amt: "Rs.17900" },
-    { detail: "Rameshwaram, Kanniyakumari, Thiruvanandhapuram", km: "1150 km", seat: "6+1", amt: "Rs.22600" },
-    { detail: "Rameshwaram, Kanniyakumari, Thiruvanandhapuram", km: "1150 km", seat: "6+1", amt: "Rs.28800" },
-    { detail: "Rameshwaram, Kanniyakumari, Thiruvanandhapuram", km: "1150 km", seat: "12+1", amt: "Rs.30400" },
+    { detail: "Madurai, Rameshwaram, Kanniyakumari, Thiruvanandhapuram", km: "1150 km", seat: "4+1", amt: "Rs.17900" },
+    { detail: "Madurai, Rameshwaram, Kanniyakumari, Thiruvanandhapuram", km: "1150 km", seat: "6+1", amt: "Rs.22600" },
+    { detail: "Madurai, Rameshwaram, Kanniyakumari, Thiruvanandhapuram", km: "1150 km", seat: "6+1", amt: "Rs.28800" },
+    { detail: "Madurai, Rameshwaram, Kanniyakumari, Thiruvanandhapuram", km: "1150 km", seat: "12+1", amt: "Rs.30400" },
   ];
 
   const vehicleDetails1 = [
-    { detail: "Rameshwaram, Kanniyakumari, Thiruvanandhapuram", km: "1150 km", seat: "4+1", amt: "Rs.19500" },
-    { detail: "Rameshwaram, Kanniyakumari, Thiruvanandhapuram", km: "1150 km", seat: "6+1", amt: "Rs.24800" },
-    { detail: "Rameshwaram, Kanniyakumari, Thiruvanandhapuram", km: "1150km", seat: "6+1", amt: "Rs.31400" },
-    { detail: "Rameshwaram, Kanniyakumari, Thiruvanandhapuram", km: "1150 km", seat: "12+1", amt: "Rs.33100" },
+    { detail: "Madurai, Rameshwaram, Kanniyakumari, Thiruvanandhapuram", km: "1150 km", seat: "4+1", amt: "Rs.19500" },
+    { detail: "Madurai, Rameshwaram, Kanniyakumari, Thiruvanandhapuram", km: "1150 km", seat: "6+1", amt: "Rs.24800" },
+    { detail: "Madurai, Rameshwaram, Kanniyakumari, Thiruvanandhapuram", km: "1150km", seat: "6+1", amt: "Rs.31400" },
+    { detail: "Madurai, Rameshwaram, Kanniyakumari, Thiruvanandhapuram", km: "1150 km", seat: "12+1", amt: "Rs.33100" },
   ];
 
   return (
     <section className="w-full lg:py-10 lg:px-10 p-2">
       <div className="mx-auto">
+      <h2
+        className="text-center lg:text-4xl text-3xl font-bold tracking-wider text-primary lg:mb-10 py-5"
+        style={{ textShadow: "0px 2px 2px rgba(0, 0, 0, 0.7)" }}
+        data-aos="fade-up"
+          data-aos-duration="800"
+      >
+        Madurai to Rameshwaram to Kanyakumari to Thiruvanandapuram
+      </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
           {items.map((item, itemIndex) => (
             <div
@@ -93,9 +101,13 @@ const Vehicledetails = () => {
                 </div>
               </div>
 
-              <div className="w-[90%] py-3 text-center ">
-                <h2 className="w-full bg-gray-200 py-1 tracking-wider font-medium text-primary rounded-md text-sm sm:text-md px-2 sm:px-4">
-                  Fuel cost, Driver bata, Toll, Parking, Hills charges included.
+              
+              <div className="w-[90%] py-3 text-center">
+                <h2 className="w-full bg-green-200  py-1 tracking-wider font-medium text-primary rounded-md text-sm sm:text-md px-2 sm:px-4 mb-2">
+                  Fuel cost, Driver bata, Night halt charges included.
+                </h2>
+                <h2 className=" w-full bg-orange-200 py-1 tracking-wider font-medium text-primary rounded-md text-sm sm:text-md px-2 sm:px-4">
+                 Toll, Parking, Kerala permit excluded.
                 </h2>
               </div>
 

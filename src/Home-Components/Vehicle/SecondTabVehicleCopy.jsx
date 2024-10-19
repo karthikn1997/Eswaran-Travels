@@ -94,8 +94,8 @@ const Vehicledetails = () => {
               </div>
 
               <div className="w-[90%] py-3 text-center ">
-                <h2 className="w-full bg-gray-200 py-1 tracking-wider font-medium text-primary rounded-md text-sm sm:text-md px-2 sm:px-4">
-                  Fuel cost, Driver bata, Toll, Parking, Hills charges included.
+                <h2 className="w-full bg-green-200 py-1 tracking-wider font-medium text-primary rounded-md text-sm sm:text-md px-2 sm:px-4">
+                  Fuel cost, Driver bata, Toll, Parking,Night halt, Hills charges included.
                 </h2>
               </div>
 
@@ -114,3 +114,5 @@ const Vehicledetails = () => {
 };
 
 export default Vehicledetails;
+
+
