@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import sedan from "../../assets/sedan.png";
 import innova from "../../assets/innova.png";
 import innovacrs from "../../assets/innovacrs.png";
@@ -9,6 +9,11 @@ import { FaLocationDot } from "react-icons/fa6";
 import { GiTakeMyMoney } from "react-icons/gi";
 
 const Vehicledetails = () => {
+  // Scroll to the top of the page when the component is mounted
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const items = [
     {
       id: 1,
@@ -81,7 +86,7 @@ const Vehicledetails = () => {
                     data-aos-easing="ease-in-sine"
                     data-aos-duration="600"
                   >
-                   <button className="lg:w-full w-[80%] flex-wrap  xl:block lg:text-lg font-bold border-2 border-primary text-primary rounded py-1 xl:mr-3 xl:mb-3 text-center">{item.description}</button>
+                    <button className="lg:w-full w-[80%] flex-wrap  xl:block lg:text-lg font-bold border-2 border-primary text-primary rounded py-1 xl:mr-3 xl:mb-3 text-center">{item.description}</button>
 
                     {icons1.map((iconItem, iconIndex) => (
                       <div
@@ -114,12 +119,12 @@ const Vehicledetails = () => {
                   </div>
                 </div>
                 <div className=" w-[80%] py-5 lg:px-0 px-8 text-center">
-                    <h2 className="lg:border-b-2 lg:border-secondary pb-1 tracking-wider font-medium text-primary">
-                      Fuel cost , Driver betta , Toll, Parking included.
-                    </h2> 
-                  </div>
-                  <a href="tel:+918680986987" className="w-3/4 mx-auto text-center">
-                <button className="text-center w-[80%] py-2 lg:text-base text-md font-semibold text-white bg-[#070F4E] rounded-lg lg:mb-8 tracking-wider hover:bg-blue-500 transform transition-all duration-500 shadow-lg" >BOOK NOW</button></a>
+                  <h2 className="lg:border-b-2 lg:border-secondary pb-1 tracking-wider font-medium text-primary">
+                    Fuel cost , Driver betta , Toll, Parking included.
+                  </h2>
+                </div>
+                <a href="tel:+918680986987" className="w-3/4 mx-auto text-center">
+                  <button className="text-center w-[80%] py-2 lg:text-base text-md font-semibold text-white bg-[#070F4E] rounded-lg lg:mb-8 tracking-wider hover:bg-blue-500 transform transition-all duration-500 shadow-lg" >BOOK NOW</button></a>
               </div>
 
             ))}

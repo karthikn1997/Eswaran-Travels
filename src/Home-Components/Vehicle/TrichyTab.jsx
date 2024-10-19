@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import sedan from "../../assets/sedan.png";
 import innova from "../../assets/innova.png";
 import innovacrs from "../../assets/innovacrs.png";
@@ -9,6 +9,11 @@ import { FaLocationDot } from "react-icons/fa6";
 import { GiTakeMyMoney } from "react-icons/gi";
 
 const Vehicledetails = () => {
+  // Scroll to the top of the page when the component is mounted
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const items = [
     {
       id: 1,

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import sedan from "../../assets/sedan.png";
 import innova from "../../assets/innova.png";
 import innovacrs from "../../assets/innovacrs.png";
@@ -9,6 +9,11 @@ import { GiTakeMyMoney } from "react-icons/gi";
 import { RiArrowLeftRightLine } from "react-icons/ri";
 
 const Vehicledetails = () => {
+  // Scroll to the top of the page when the component is mounted
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const items = [
     { id: 1, title: "SEDAN", image: sedan },
     { id: 2, title: "INNOVA", image: innova },
@@ -40,14 +45,14 @@ const Vehicledetails = () => {
   return (
     <section className="w-full lg:py-10 lg:px-10 p-2">
       <div className="mx-auto">
-      <h2
-        className="text-center lg:text-4xl text-2xl font-bold tracking-wider text-primary lg:mb-10 py-5"
-        style={{ textShadow: "0px 2px 2px rgba(0, 0, 0, 0.7)" }}
-        data-aos="fade-up"
+        <h2
+          className="text-center lg:text-4xl text-2xl font-bold tracking-wider text-primary lg:mb-10 py-5"
+          style={{ textShadow: "0px 2px 2px rgba(0, 0, 0, 0.7)" }}
+          data-aos="fade-up"
           data-aos-duration="800"
-      >
-        Madurai to Rameshwaram to Kanyakumari
-      </h2>
+        >
+          Madurai to Rameshwaram to Kanyakumari
+        </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
           {items.map((item, itemIndex) => (
             <div
@@ -106,7 +111,7 @@ const Vehicledetails = () => {
                   Fuel cost, Driver bata, Night halt charges included.
                 </h2>
                 <h2 className=" w-full bg-orange-200 py-1 tracking-wider font-medium text-primary rounded-md text-sm sm:text-md px-2 sm:px-4">
-                 Toll, Parking excluded.
+                  Toll, Parking excluded.
                 </h2>
               </div>
 
