@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Hero from "../Home-Components/Hero";
 import AboutTravel from "../Home-Components/AboutTravel";
 import Packagedetails from "../Home-Components/Packagedetails";
