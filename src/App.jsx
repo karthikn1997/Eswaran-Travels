@@ -12,8 +12,8 @@ import MaduraiPackage from './Components/ServiceSection/MaduraiPackage';
 import KodaikanalPackage from './Components/ServiceSection/KodaikanalPackage';
 import RameshwaramPackage from './Components/ServiceSection/RameshwaramPackage';
 import FirstTabVehicle from './Home-Components/Vehicle/FirstTabVehicle';
-import SecondTabVehicle from './Home-Components/Vehicle/SecondTabVehicle';
-import ThirdTabVehicle from './Home-Components/Vehicle/ThirdTabVehicle';
+import SecondTabVehicleCopy from './Home-Components/Vehicle/SecondTabVehicleCopy';
+import ThirdTabVehicleCopy from './Home-Components/Vehicle/ThirdTabVehicleCopy';
 import PalaniTab from './Home-Components/Vehicle/PalaniTab';
 import ThiruchendurTab from './Home-Components/Vehicle/ThiruchendurTab';
 import TrichyTab from './Home-Components/Vehicle/TrichyTab';
@@ -66,8 +66,8 @@ function App() {
           <Route path="/kodaikanalpackage" element={<KodaikanalPackage/>} />
           <Route path="/rameshwarampackage" element={<RameshwaramPackage/>} />
           <Route path="/firstTabVehicle" element={<FirstTabVehicle/>} />
-          <Route path="/secondTabVehicle" element={<SecondTabVehicle/>} />
-          <Route path="/thirdTabVehicle" element={<ThirdTabVehicle/>} />
+          <Route path="/secondTabVehicleCopy" element={<SecondTabVehicleCopy/>} />
+          <Route path="/thirdTabVehicleCopy" element={<ThirdTabVehicleCopy/>} />
           <Route path="/palaniTab" element={<PalaniTab/>} />
           <Route path="/thiruchendurTab" element={<ThiruchendurTab/>} />
           <Route path="/TrichyTab" element={<TrichyTab/>} />

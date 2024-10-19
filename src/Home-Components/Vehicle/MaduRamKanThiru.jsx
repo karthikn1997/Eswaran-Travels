@@ -6,6 +6,7 @@ import tempo from "../../assets/tempo1.png";
 import { MdOutlineAirlineSeatReclineExtra } from "react-icons/md";
 import { FaRoad } from "react-icons/fa";
 import { GiTakeMyMoney } from "react-icons/gi";
+import { RiArrowLeftRightLine } from "react-icons/ri";
 
 const Vehicledetails = () => {
   const items = [
@@ -15,37 +16,30 @@ const Vehicledetails = () => {
     { id: 4, title: "TEMPO TRAVELLER", image: tempo },
   ];
 
-  const icons1 = [
-    { id: 1, icon: <FaRoad />, label: "Distance" },
-    { id: 2, icon: <MdOutlineAirlineSeatReclineExtra />, label: "Seats" },
-    { id: 3, icon: <GiTakeMyMoney />, label: "Price" },
+  const icons = [
+    { id: 1, icon: <RiArrowLeftRightLine />, label: "Destination" },
+    { id: 2, icon: <FaRoad />, label: "Distance" },
+    { id: 3, icon: <MdOutlineAirlineSeatReclineExtra />, label: "Seats" },
+    { id: 4, icon: <GiTakeMyMoney />, label: "Price" },
   ];
 
   const vehicleDetails = [
-    { km: "1150 km", seat: "4+1", amt: "Rs.17900" },
-    { km: "1150 km", seat: "6+1", amt: "Rs.22600" },
-    { km: "1150 km", seat: "6+1", amt: "Rs.28800" },
-    { km: "1150 km", seat: "12+1", amt: "Rs.30400" },
+    { detail: "Rameshwaram, Kanniyakumari, Thiruvanandhapuram", km: "1150 km", seat: "4+1", amt: "Rs.17900" },
+    { detail: "Rameshwaram, Kanniyakumari, Thiruvanandhapuram", km: "1150 km", seat: "6+1", amt: "Rs.22600" },
+    { detail: "Rameshwaram, Kanniyakumari, Thiruvanandhapuram", km: "1150 km", seat: "6+1", amt: "Rs.28800" },
+    { detail: "Rameshwaram, Kanniyakumari, Thiruvanandhapuram", km: "1150 km", seat: "12+1", amt: "Rs.30400" },
   ];
 
   const vehicleDetails1 = [
-    { km: "1150 km", seat: "4+1", amt: "Rs.19500" },
-    { km: "1150 km", seat: "6+1", amt: "Rs.24800" },
-    { km: "1150km", seat: "6+1", amt: "Rs.31400" },
-    { km: "1150 km", seat: "12+1", amt: "Rs.33100"},
+    { detail: "Rameshwaram, Kanniyakumari, Thiruvanandhapuram", km: "1150 km", seat: "4+1", amt: "Rs.19500" },
+    { detail: "Rameshwaram, Kanniyakumari, Thiruvanandhapuram", km: "1150 km", seat: "6+1", amt: "Rs.24800" },
+    { detail: "Rameshwaram, Kanniyakumari, Thiruvanandhapuram", km: "1150km", seat: "6+1", amt: "Rs.31400" },
+    { detail: "Rameshwaram, Kanniyakumari, Thiruvanandhapuram", km: "1150 km", seat: "12+1", amt: "Rs.33100" },
   ];
 
   return (
-    <section className="w-full lg:py-10 lg:px-10 p-5">
+    <section className="w-full lg:py-10 lg:px-10 p-2">
       <div className="mx-auto">
-      <h2
-          className="lg:text-4xl text-2xl font-bold text-center lg:mb-6 text-primary pb-6 lg:py-8 sm:py-5 tracking-wide"
-          style={{ textShadow: "0px 2px 2px rgba(0,0,0,0.7)" }}
-          data-aos="fade-up"
-          data-aos-delay="300"
-        >
-          Madurai to Rameshwaram to Kanyakumari to Thiruvananthapuram 
-        </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
           {items.map((item, itemIndex) => (
             <div
@@ -58,7 +52,7 @@ const Vehicledetails = () => {
               </div>
 
               {/* Image Section */}
-              <div className="w-full  p-4 flex justify-center">
+              <div className="w-full py-10 p-4 flex justify-center">
                 <img
                   src={item.image}
                   alt={item.title}
@@ -67,59 +61,50 @@ const Vehicledetails = () => {
               </div>
 
               {/* One Day and 2 Days/1 Night Details Section */}
-              <div className="w-[90%] flex flex-col lg:flex-row items-center justify-between gap-6 px-4 py-4 border-[1px] border-secondary rounded-lg">
+              <div className="w-[90%] flex flex-col lg:flex-row items-center justify-between gap-6 px-4 py-4 border-[2px] border-secondary rounded-lg">
                 {/* One Day Package */}
-                <div className="w-full lg:w-1/2 flex flex-col items-center border-b lg:border-b-0 lg:border-r border-secondary">
-                  <h4 className="lg:text-lg lg:font-semibold font-bold text-center text-[#070F4E] mb-5 border-b-2 border-secondary pb-1">
-                   4 Days / 3 Nights
+                <div className="w-full lg:w-1/2 flex flex-col border-b lg:border-b-0 ">
+                  <h4 className="lg:text-md lg:font-bold font-bold  text-[#070F4E] mb-5 bg-yellow-100 py-1 px-4 rounded-sm uppercase">
+                    4 Days / 3 Night
                   </h4>
-
-                  {icons1.map((iconItem, iconIndex) => (
-                    <div className="flex items-center gap-3 text-[#070F4E] font-medium mb-3 px-4" key={iconIndex}>
-                      <span className="text-xl border p-1 rounded-full">{iconItem.icon}</span>
-                      <p>
-                        {iconIndex === 0
-                          ? vehicleDetails[itemIndex].km
-                          : iconIndex === 1
-                          ? vehicleDetails[itemIndex].seat
-                          : vehicleDetails[itemIndex].amt}
-                      </p>
+                  {icons.map((iconItem, iconIndex) => (
+                    <div className="flex items-center gap-3 text-[#070F4E] font-medium mb-3 px-4 border py-1 rounded-sm" key={iconIndex}>
+                      <span className="lg:text-lg border p-1 rounded-full bg-gray-200">{iconItem.icon}</span>
+                      <span>
+                        {vehicleDetails[itemIndex][Object.keys(vehicleDetails[itemIndex])[iconIndex]]}
+                      </span>
                     </div>
                   ))}
                 </div>
 
                 {/* 2 Days/1 Night Package */}
-                <div className="w-full lg:w-1/2 flex flex-col items-center">
-                  <h4 className="lg:text-lg lg:font-semibold font-bold text-center text-[#070F4E] mb-5 border-b-2 border-secondary pb-1">
-                    5 Days / 4 Nights
+                <div className="w-full lg:w-1/2 flex flex-col">
+                  <h4 className="lg:text-md lg:font-bold font-bold text-[#070F4E] mb-5 bg-yellow-100 py-1 px-4 rounded-sm uppercase">
+                    5 Days / 4 Night
                   </h4>
-
-                  {icons1.map((iconItem, iconIndex) => (
-                    <div className="flex items-center gap-3 text-[#070F4E] font-medium mb-3 px-4" key={iconIndex}>
-                      <span className="lg:text-lg border p-1 rounded-full">{iconItem.icon}</span>
-                      <p>
-                        {iconIndex === 0
-                          ? vehicleDetails1[itemIndex].km
-                          : iconIndex === 1
-                          ? vehicleDetails1[itemIndex].seat
-                          : vehicleDetails1[itemIndex].amt}
-                      </p>
+                  {icons.map((iconItem, iconIndex) => (
+                    <div className="flex items-center gap-3 text-[#070F4E] font-medium mb-3 px-4 border py-1 rounded-sm" key={iconIndex}>
+                      <span className="lg:text-lg border p-1 rounded-full bg-gray-200">{iconItem.icon}</span>
+                      <span>
+                        {vehicleDetails1[itemIndex][Object.keys(vehicleDetails1[itemIndex])[iconIndex]]}
+                      </span>
                     </div>
                   ))}
                 </div>
               </div>
-              <div className="py-5 text-center">
-                    <h2 className="lg:border-b-2 lg:border-secondary pb-1 tracking-wider font-medium text-primary mb-2">
-                      Fuel cost , Driver bata ,Night halt charges included.
-                    </h2> 
-                    <h2 className="pb-1 tracking-wider font-medium text-primary">
-                     Toll , Parking , Kerala permit excluded.
-                    </h2> 
-                  </div>
+
+              <div className="w-[90%] py-3 text-center ">
+                <h2 className="w-full bg-gray-200 py-1 tracking-wider font-medium text-primary rounded-md text-sm sm:text-md px-2 sm:px-4">
+                  Fuel cost, Driver bata, Toll, Parking, Hills charges included.
+                </h2>
+              </div>
+
               {/* Book Now Button */}
-              <button className="w-3/4 py-2 my-4 text-white bg-[#070F4E] rounded-lg hover:bg-blue-700 transition-colors duration-300 font-semibold">
-                BOOK NOW
-              </button>
+              <a href="tel:+918680986987" className="w-[90%] mx-auto text-center">
+                <button className="w-full py-2 my-2 text-white bg-[#070F4E] rounded-lg hover:bg-blue-700 font-semibold transition-colors duration-300">
+                  BOOK NOW
+                </button>
+              </a>
             </div>
           ))}
         </div>
