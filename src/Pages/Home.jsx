@@ -7,10 +7,9 @@ import Packages from "../Home-Components/Packages";
 import Tariff from "../Home-Components/Vehicle/Tariff";
 import ChooseUs from "../Home-Components/ChooseUs";
 import Testimonial from "../Home-Components/Testimonial";
-
 import { FaArrowCircleDown, FaArrowCircleRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import { useEffect } from "react";
+
 
 const Home = () => {
   // Scroll to the top of the page when the component is mounted

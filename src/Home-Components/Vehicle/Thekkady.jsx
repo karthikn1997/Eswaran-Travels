@@ -45,9 +45,9 @@ const Vehicledetails = () => {
 
   // Values corresponding to each vehicle
   const vehicleDetails = [
-    {detail: "Thekkady", km: "350 km", seat: "4+1", amt: "Rs.7900" },
+    { detail: "Thekkady", km: "350 km", seat: "4+1", amt: "Rs.7900" },
     { detail: "Thekkady", km: "350 km", seat: "6+1", amt: "Rs.10200" },
-    {detail: "Thekkady",  km: "350 km", seat: "6+1", amt: "Rs.12600" },
+    { detail: "Thekkady", km: "350 km", seat: "6+1", amt: "Rs.12600" },
     { detail: "Thekkady", km: "350 km", seat: "12+1", amt: "Rs.13200" },
   ];
 
@@ -67,26 +67,26 @@ const Vehicledetails = () => {
                   </h3>
                 </div>
 
-                <div className="w-full min-h-64 flex  xl:flex-row flex-col justify-center items-center xl:gap-10 ">
+                <div className="w-full min-h-64 flex  xl:flex-row flex-col justify-center items-center ">
                   <img
                     src={item.image}
                     alt=""
-                    className="w-[80%] sm:w-[60%] bg-center bg-cover object-contain rounded-l-lg hover:rounded-none lg:p-5 xl:ml-8"
+                    className="w-[80%] sm:w-[60%] bg-center bg-cover object-contain rounded-l-lg hover:rounded-none lg:p-5 xl:ml-8 "
                   />
                   <div
-                    className="w-full xl:w-[40%] flex  xl:flex-col justify-center items-left gap-4 rounded-r-lg py-3 whitespace-nowrap flex-wrap px-4"
+                    className="w-full xl:w-[40%] flex  xl:flex-col justify-center items-left gap-4 rounded-r-lg py-3 whitespace-nowrap flex-wrap xl:px-4"
                     data-aos="fade-up"
                     duration-aos-delay="300"
                     data-aos-easing="ease-in-sine"
                     data-aos-duration="300"
                   >
-                    <button className="lg:w-full w-[80%]  flex-wrap xl:block lg:text-lg font-bold border-2 border-primary text-primary rounded py-1 xl:mr-3 xl:mb-3 text-center">
+                    <p className="xl:w-full text-center xl:text-left w-[90%] flex-wrap xl:block lg:text-lg font-bold bg-yellow-100 text-primary rounded py-1 xl:px-3 border border-primary border-opacity-20">
                       {item.description}
-                    </button>
+                    </p>
 
                     {icons1.map((iconItem, iconIndex) => (
                       <div
-                        className="flex items-center gap-3"
+                        className="flex flex-col xl:flex-row items-center gap-3 px-2"
                         key={iconIndex}
                         data-aos="fade-up"
                         duration-aos-delay="300"
@@ -96,7 +96,7 @@ const Vehicledetails = () => {
                           {iconItem.icon}
                         </span>
                         <p
-                          className="text-base text-gray-600 tracking-wide font-medium"
+                          className="text-sm sm:text-base text-gray-600 tracking-wide font-medium"
                           data-aos="fade-up"
                           duration-aos-delay="300"
                           data-aos-easing="ease-in-sine"
@@ -105,24 +105,26 @@ const Vehicledetails = () => {
                           {iconIndex === 0
                             ? vehicleDetails[itemIndex].detail
                             : iconIndex === 1
-                            ? vehicleDetails[itemIndex].km
-                            : iconIndex === 2
-                            ? vehicleDetails[itemIndex].seat
-                            : vehicleDetails[itemIndex].amt}
+                              ? vehicleDetails[itemIndex].km
+                              : iconIndex === 2
+                                ? vehicleDetails[itemIndex].seat
+                                : vehicleDetails[itemIndex].amt}
                         </p>
                       </div>
                     ))}
                   </div>
-                
+
                 </div>
-                <div className="w-[80%] py-5 lg:px-0 px-4 text-center">
-                    <h2 className=" pb-1 tracking-wider font-medium text-primary">
-                      Fuel cost , Driver bata , Toll , Parking ,Night halt ,Kerala hills permit included.
-                    </h2> 
-                  </div>
-                <button className="text-center w-[80%] py-2 lg:text-base text-md font-semibold text-white bg-[#070F4E] rounded-lg lg:mb-8 tracking-wider hover:bg-blue-500 transform transition-all duration-500 active:bg-[#050c3a] shadow-lg sm:mb-5">
-                  BOOK NOW
-                </button>
+                <div className="w-[90%] py-5 lg:px-0 text-center">
+                  <h2 className="w-full bg-gray-200 py-1 tracking-wider font-medium text-primary rounded-md text-sm sm:text-md px-2">
+                    Fuel cost , Driver bata , Toll , Parking ,Night halt ,Kerala hills permit included.
+                  </h2>
+                </div>
+                <a href="tel:+918680986987" className="w-[90%] mx-auto text-center">
+                  <button className="text-center w-full py-2 lg:text-base text-md font-semibold text-white bg-[#070F4E] rounded-lg lg:mb-8 tracking-wider hover:bg-blue-500 transform transition-all duration-500 active:bg-[#050c3a] shadow-lg sm:mb-5">
+                    BOOK NOW
+                  </button>
+                </a>
               </div>
             ))}
           </div>
