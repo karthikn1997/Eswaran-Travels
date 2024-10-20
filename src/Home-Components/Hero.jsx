@@ -65,21 +65,23 @@ const Hero = () => {
           >
             Discover iconic landmarks with our personalized travel packages.
           </p>
-          <button
-            onClick={scrollToSection}
-            className=" sm:w-auto bg-gradient-to-r from-[#005AB3] via-gray-900 to-black hover:bg-gradient-to-l text-white font-semibold py-2 sm:py-3 px-4 sm:px-8 rounded-xl transition duration-300 border-[1px] border-gray-800 whitespace-nowrap mb-5"
-            data-aos="flip-left"
-            data-aos-delay="300"
-          >
-            <div className="flex items-center gap-3 font-bold text-lg sm:text-xl text-white hover:text-black">
-              <span className="text-base sm:text-lg lg:text-2xl text-white">
-                Book Now
-              </span>
-              <span className="text-xl sm:text-2xl animate-bounce">
-                <FaRegArrowAltCircleDown className="text-yellow-400" />
-              </span>
-            </div>
-          </button>
+          <a href="tel:+918680986987" className="w-[90%] mx-auto text-center">
+            <button
+              onClick={scrollToSection}
+              className=" sm:w-auto bg-gradient-to-r from-[#005AB3] via-gray-900 to-black hover:bg-gradient-to-l text-white font-semibold py-2 sm:py-3 px-4 sm:px-8 rounded-xl transition duration-300 border-[1px] border-gray-800 whitespace-nowrap mb-5"
+              data-aos="flip-left"
+              data-aos-delay="300"
+            >
+              <div className="flex items-center gap-3 font-bold text-lg sm:text-xl text-white hover:text-black">
+                <span className="text-base sm:text-lg lg:text-2xl text-white">
+                  Book Now
+                </span>
+                <span className="text-xl sm:text-2xl animate-bounce">
+                  <FaRegArrowAltCircleDown className="text-yellow-400" />
+                </span>
+              </div>
+            </button>
+          </a>
         </div>
 
         <div
