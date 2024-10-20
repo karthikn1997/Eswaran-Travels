@@ -10,14 +10,14 @@ const Topbar = () => {
         <>
             <div className="flex flex-col">
                 <div className="w-full bg-[#070f4e] text-white md:px-20 text-xs tracking-wider py-1.5">
-                    <div className="flex flex-col md:flex-row items-center justify-between">
+                    <div className="flex flex-col md:flex-row items-center xl:justify-between justify-center">
 
                         {/* Left Side: Address and Email */}
-                        <div className=" hidden md:flex md:justify-evenly lg:justify-center items-center md:gap-6">
+                        <div className=" hidden xl:flex justify-center items-center md:gap-6">
                             <div className="hidden lg:flex items-center gap-1 text-white">
                                 <MdLocationPin className="text-yellow-400 w-4 h-4 rounded-full " />
                                 <a href="#" className="text-white font-light tracking-wider">
-                                    Sarada Nagar, Madurai - 625017
+                                    2/80 D, Sarada Nagar, Mela Palangadi, Madurai - 625017
                                 </a>
                             </div>
                             <div className="flex items-center gap-1 hover:text-white">

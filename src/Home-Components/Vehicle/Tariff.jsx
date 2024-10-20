@@ -24,29 +24,29 @@ const Vehicledetails = () => {
   ];
 
   const vehicleDetails = [
-    { km: "Rs.13 / km ", seat: "4+1", amt: "Rs.400 (Driver Bata)" },
-    { km: "Rs.18 / km ", seat: "6+1", amt: "Rs.500 (Driver Bata)" },
-    { km: "Rs.22 / km", seat: "6+1", amt: "Rs.500 (Driver Bata)" },
-    { km: "Rs.23 / km", seat: "12+1", amt: "Rs.600 (Driver Bata)" }
+    { km: "Per km - Rs.13", seat: "4+1", amt: "Driver Bata - Rs.400" },
+    { km: "Per km - Rs.18", seat: "6+1", amt: "Driver Bata - Rs.500" },
+    { km: "Per km - Rs.22", seat: "6+1", amt: "Driver Bata - Rs.500" },
+    { km: "Per km - Rs.23", seat: "12+1", amt: "Driver Bata - Rs.600" }
   ];
-  
+
   const vehicleDetails1 = [
-    { km: "Rs.10 / km", seat: "4+1", amt: "Rs.1600 (Driver Bata)" },
-    { km: "Rs.12 / km", seat: "6+1", amt: "Rs.2200 (Driver Bata)" },
-    { km: "Rs.16 / km", seat: "6+1", amt: "Rs.2600 (Driver Bata)" },
-    { km: "Rs.17 / km", seat: "12+1", amt: "Rs.2700 (Driver Bata)" },
+    { km: "Fuel cost/km - Rs.10", seat: "4+1", amt: "Rent / day - Rs.1600" },
+    { km: "Fuel cost/km - Rs.12", seat: "6+1", amt: "Rent / day - Rs.2200" },
+    { km: "Fuel cost/km - Rs.16", seat: "6+1", amt: "Rent / day - Rs.2600" },
+    { km: "Fuel cost/km - Rs.17", seat: "12+1", amt: "Rent / day - Rs.2700" },
   ];
 
   return (
     <section className="w-full lg:py-10 lg:px-10 p-2">
       <div className="mx-auto">
-      <h2
-        className="text-center lg:text-4xl text-2xl xxs:text-3xl font-bold tracking-wider text-primary lg:mb-10 py-5 uppercase"
-        data-aos="fade-up"
+        <h2
+          className="text-center lg:text-4xl text-2xl xxs:text-3xl font-bold tracking-wider text-primary lg:mb-10 py-5 uppercase"
+          data-aos="fade-up"
           data-aos-duration="800"
-      >
-         Vehicle Tariff
-      </h2>
+        >
+          Vehicle Tariff
+        </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
           {items.map((item, itemIndex) => (
             <div
@@ -71,10 +71,10 @@ const Vehicledetails = () => {
               <div className="w-[90%] flex flex-col lg:flex-row items-center justify-between gap-6 px-4 py-4 border-[2px] border-secondary rounded-lg">
                 {/* One Day Package */}
                 <div className="w-full lg:w-1/2 flex flex-col border-b lg:border-b-0 ">
-                <h4 className="lg:text-md lg:font-bold font-bold text-[#070F4E] mb-5 bg-yellow-100 py-1 px-4 rounded-sm uppercase">
-                  {
-                    item.id === 3 || item.id ===4 ? "Above 350 km" :"Above 300 km"
-                  }
+                  <h4 className="lg:text-md lg:font-bold font-bold text-[#070F4E] mb-5 bg-yellow-100 py-1 px-4 rounded-sm uppercase">
+                    {
+                      item.id === 3 || item.id === 4 ? "Above 350 km" : "Above 300 km"
+                    }
                   </h4>
                   {icons.map((iconItem, iconIndex) => (
                     <div className="flex items-center gap-3 text-[#070F4E] font-medium mb-3 px-4 border py-1 rounded-sm" key={iconIndex}>
@@ -89,9 +89,9 @@ const Vehicledetails = () => {
                 {/* 2 Days/1 Night Package */}
                 <div className="w-full lg:w-1/2 flex flex-col">
                   <h4 className="lg:text-md lg:font-bold font-bold text-[#070F4E] mb-5 bg-yellow-100 py-1 px-4 rounded-sm uppercase">
-                  {
-                    item.id === 3 || item.id ===4 ? "Below 350 km" :"Below 300 km"
-                  }
+                    {
+                      item.id === 3 || item.id === 4 ? "Below 350 km" : "Below 300 km"
+                    }
                   </h4>
                   {icons.map((iconItem, iconIndex) => (
                     <div className="flex items-center gap-3 text-[#070F4E] font-medium mb-3 px-4 border py-1 rounded-sm" key={iconIndex}>
@@ -104,11 +104,11 @@ const Vehicledetails = () => {
                 </div>
               </div>
 
-              {/* <div className="w-[90%] py-3 text-center ">
+              <div className="w-[90%] py-3 text-center ">
                 <h2 className="w-full bg-gray-200 py-1 tracking-wider font-medium text-primary rounded-md text-sm sm:text-md px-2 sm:px-4">
-                  Fuel cost, Driver bata, Toll, Parking, Hills charges included.
+                  Toll, Parking, Hills Station Charges Extra.
                 </h2>
-              </div> */}
+              </div>
 
               {/* Book Now Button */}
               <a href="tel:+918680986987" className="w-[90%] mx-auto text-center py-3">

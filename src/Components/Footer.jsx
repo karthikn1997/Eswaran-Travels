@@ -55,7 +55,7 @@ function Footer() {
                                 </li>
                                 <li className="flex items-center space-x-2">
                                     <FaPhone className="text-yellow-400" />
-                                    <Link to="/contact" onClick={scrollToTop} className="hover:underline hover:text-yellow-300">
+                                    <Link to="/services" onClick={scrollToTop} className="hover:underline hover:text-yellow-300">
                                         Services Page
                                     </Link>
                                 </li>
@@ -113,7 +113,7 @@ function Footer() {
                         <div className="flex flex-col col-span-2 xs:col-span-1 justify-center items-center xs:justify-start xs:items-start" data-aos="fade-right ">
                             <h2 className="text-lg font-semibold float-left mb-2 text-yellow-500">Address</h2>
                             <address className="sm:w-[200px] not-italic mb-2 text-center xs:text-left">
-                                Sarada Nagar, Madurai - 625017
+                                2/80 D, Sarada Nagar, Mela Palangadi, Madurai - 625017
                             </address>
                         </div>
                     </div>
