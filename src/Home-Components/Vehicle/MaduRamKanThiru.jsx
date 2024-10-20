@@ -44,9 +44,9 @@ const Vehicledetails = () => {
 
   return (
     <section className="w-full lg:py-10 lg:px-10 p-2">
-      <div className="mx-auto">
+      <div className="mx-auto px-2">
         <h2
-          className="text-center lg:text-4xl text-3xl font-bold tracking-wider text-primary lg:mb-10 py-5 px-4"
+          className="text-center lg:text-4xl text-2xl xxs:text-3xl font-bold tracking-wider text-primary lg:mb-10 py-5 px-4"
           data-aos="fade-up"
           data-aos-duration="800"
         >
