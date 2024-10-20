@@ -10,10 +10,10 @@ const EswaranTravelsSection = () => {
   }, []);
 
   return (
-    <div className="bg-gradient-to-r from-blue-50 via-white to-blue-50 lg:py-20 py-10 px-4 sm:px-10">
+    <div className="bg-gradient-to-r from-blue-50 via-white to-blue-50 lg:py-20 py-10 px-2 xxs:px-4 sm:px-10">
       {/* Section Title */}
-      <h2 
-        className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-center text-[#070F4E] pb-8 sm:pb-10"
+      <h2
+        className="text-2xl xxs:text-3xl sm:text-4xl lg:text-5xl font-extrabold text-center text-[#070F4E] pb-8 sm:pb-10"
         data-aos="fade-up"
       >
         Welcome to Eswaran Travels
@@ -21,12 +21,12 @@ const EswaranTravelsSection = () => {
 
       {/* Container */}
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-8 sm:gap-12 lg:gap-20 px-4">
-        
+
         {/* Image Section */}
         <div className="w-full lg:w-1/2" data-aos="fade-right">
-          <img 
-            src={travels1} 
-            alt="Eswaran Travels" 
+          <img
+            src={travels1}
+            alt="Eswaran Travels"
             className="w-full h-auto max-h-[500px] object-cover rounded-lg shadow-2xl transform hover:scale-105 transition-transform duration-500"
           />
         </div>
@@ -45,7 +45,7 @@ const EswaranTravelsSection = () => {
 
           {/* Call to Action Button */}
           <div className="mt-8">
-            <a 
+            <a
               href="/contact" // Replace with the actual contact link
               className="inline-block bg-[#FACC15] text-[#070F4E] text-sm sm:text-base lg:text-lg px-8 py-3 sm:px-10 sm:py-4 rounded-full shadow-xl hover:bg-[#070F4E] hover:text-white transition-all duration-300 ease-in-out transform hover:scale-110"
             >

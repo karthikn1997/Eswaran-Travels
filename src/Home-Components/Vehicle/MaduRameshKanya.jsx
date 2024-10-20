@@ -44,16 +44,15 @@ const Vehicledetails = () => {
 
   return (
     <section className="w-full lg:py-10 lg:px-10 p-2">
-      <div className="mx-auto">
+      <div className="mx-auto px-2">
         <h2
-          className="text-center lg:text-4xl text-2xl font-bold tracking-wider text-primary lg:mb-10 py-5"
-          style={{ textShadow: "0px 2px 2px rgba(0, 0, 0, 0.7)" }}
+          className="text-center lg:text-4xl text-2xl font-bold tracking-wider text-primary lg:mb-10 py-5 px-3"
           data-aos="fade-up"
           data-aos-duration="800"
         >
           Madurai to Rameshwaram to Kanyakumari
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 px-2">
           {items.map((item, itemIndex) => (
             <div
               key={item.id}
@@ -93,7 +92,7 @@ const Vehicledetails = () => {
                 {/* 2 Days/1 Night Package */}
                 <div className="w-full lg:w-1/2 flex flex-col">
                   <h4 className="lg:text-md lg:font-bold font-bold text-[#070F4E] mb-5 bg-yellow-100 py-1 px-4 rounded-sm uppercase">
-                    4 Days / 2 Night
+                    4 Days / 3 Night
                   </h4>
                   {icons.map((iconItem, iconIndex) => (
                     <div className="flex items-center gap-3 text-[#070F4E] font-medium mb-3 px-4 border py-1 rounded-sm" key={iconIndex}>
@@ -131,10 +130,3 @@ const Vehicledetails = () => {
 
 export default Vehicledetails;
 
-
-// const vehicleDetails = [
-//   {detail: "Kodaikanal", km: "300 km", seat: "4+1", amt: "Rs.7000" },
-//   { detail: "Kodaikanal",km: "300 km", seat: "6+1", amt: "Rs.9000" },
-//   { detail: "Kodaikanal",km: "300 km", seat: "6+1", amt: "Rs.11500" },
-//   {detail: "Kodaikanal", km: "300 km", seat: "12+1", amt: "Rs.12000" },
-// ];

@@ -46,8 +46,7 @@ const Vehicledetails = () => {
     <section className="w-full lg:py-10 lg:px-10 p-2">
       <div className="mx-auto">
         <h2
-          className="text-center lg:text-4xl text-3xl font-bold tracking-wider text-primary lg:mb-10 py-5"
-          style={{ textShadow: "0px 2px 2px rgba(0, 0, 0, 0.7)" }}
+          className="text-center lg:text-4xl text-3xl font-bold tracking-wider text-primary lg:mb-10 py-5 px-4"
           data-aos="fade-up"
           data-aos-duration="800"
         >

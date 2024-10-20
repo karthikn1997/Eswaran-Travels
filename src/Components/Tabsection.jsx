@@ -14,10 +14,9 @@ const Tab = () => {
   };
 
   return (
-    <div className="max-w-fit mx-auto ">
+    <div className="max-w-fit mx-auto px-2">
       <h2
         className="text-center lg:text-4xl text-3xl font-bold tracking-wider text-primary  lg:py-5 lg:mb-10 py-5"
-        style={{ textShadow: "0px 2px 2px rgba(0, 0, 0, 0.7)" }}
         data-aos="fade-up"
           data-aos-duration="800"
       >

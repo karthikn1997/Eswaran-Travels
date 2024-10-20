@@ -125,7 +125,7 @@ const Packagedetails = () => {
       price: "Package starting from ₹ 13500",
       rating: "4.5",
       day: "3 D - 2 N",
-      night: "4 D - 2 N",
+      night: "4 D - 3 N",
       destination: "Madurai to Rameshwaram to Kanyakumari",
       link: "/maduRameshKanya",
     },
@@ -168,8 +168,7 @@ const Packagedetails = () => {
   return (
     <div className="w-full mx-auto p-4 lg:py-10">
       <h2
-        className="text-xl xxs:text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-wider text-secondary bg-gradient-to-b from-blue-400 via-blue-200 to-blue-400 py-2 xxs:py-5 lg:py-3 px-2 xxs:px-4 lg:px-8 mb-6 lg:mb-16 text-center rounded-lg shadow-md"
-        style={{ textShadow: "2px 2px 2px rgba(0, 0, 0, 0.7)" }}
+        className="text-xl xxs:text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-wider text-primary bg-gradient-to-b from-blue-400 via-blue-200 to-blue-400 py-2 xxs:py-5 lg:py-3 px-2 xxs:px-4 lg:px-8 mb-6 lg:mb-16 text-center rounded-lg shadow-md"
       >
         Private Vehicle Packages
       </h2>

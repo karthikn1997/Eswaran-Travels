@@ -14,11 +14,10 @@ const Tab = () => {
   };
 
   return (
-    <div className="w-full flex flex-col items-center px-5 lg:px-0">
+    <div className="w-full flex flex-col items-center px-2 xxs:px-5 lg:px-0">
       {/* Title */}
       <h2
         className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center lg:mb-6 text-primary py-6 lg:py-5 tracking-wide"
-        style={{ textShadow: "0px 2px 3px rgba(0,0,0,0.7)" }}
         data-aos="fade-up"
         data-aos-delay="300"
       >
@@ -80,7 +79,7 @@ const Tab = () => {
       </div>
 
       {/* Tab Content */}
-      <div className="flex flex-col justify-center items-center gap-10 w-full ">
+      <div className="flex flex-col justify-center items-center gap-10 w-full px-2">
 
         {/* Second Tab Content */}
         <div className={activeTab === 1 ? "block w-full" : "hidden"}>

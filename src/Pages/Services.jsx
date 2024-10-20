@@ -15,21 +15,21 @@ const Services = () => {
   }, []);
 
   return (
-    <div className="w-full h-auto flex flex-col justify-center items-center overflow-hidden">
+    <div className="w-full h-auto flex flex-col justify-center items-center overflow-hidden ">
       <Banner />
-      <h2 className='lg:w-full my-5 text-2xl md:text-4xl p-2 text-center font-bold tracking-wider text-white bg-gradient-to-r from-blue-500 to-blue-300 rounded-md' style={{textShadow:"0px 2px 2px rgba(0,0,0,0.7)"}}>
-          Private Vehicle Packages
-        </h2>
+      <h2 className='w-[95%] my-5 text-2xl md:text-4xl p-2 text-center font-bold tracking-wider text-white bg-gradient-to-r from-blue-500 to-blue-300 rounded-md' style={{ textShadow: "2px 2px 0px rgba(0,0,0,0.7)" }}>
+        Private Vehicle Packages
+      </h2>
       <div className="lg:w-full h-auto">
         <Tabsection />
 
         <TabsectionCopy />
 
-        <MaduRameshKanya/>
+        <MaduRameshKanya />
 
-        <MaduRamKanThiru/>
+        <MaduRamKanThiru />
 
-        <PrivatePackageTerms/>
+        <PrivatePackageTerms />
 
         <div className="flex justify-center items-center">
           <button className="my-5 lg:my-10 bg-primary text-white font-semibold py-2 px-6 sm:px-8 rounded-lg shadow-md hover:bg-blue-600 transition duration-200 ease-in-out">
@@ -39,7 +39,7 @@ const Services = () => {
             </Link>
           </button>
         </div>
- 
+
       </div>
     </div>
   );
