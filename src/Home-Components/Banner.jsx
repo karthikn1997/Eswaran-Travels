@@ -4,8 +4,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import pac1Image from "../assets/traditional.jpeg";
-import pac2Image from "../assets/pac-2.jpeg";
+import pac1Image from "../assets/madurai.jpg";
+import pac2Image from "../assets/kodai2.jpg";
 import pac3Image from "../assets/bamban.jpeg";
 
 
@@ -65,7 +65,7 @@ const Banner = () => {
             <div className="absolute inset-0 opacity-90 bg-cover bg-center w-full  h-[500px]"style={{backgroundImage:`url(${slide.img})`}}></div>
             
             {/* Content */}
-            <div className="relative z-10 w-full h-full flex flex-col items-center justify-center  text-white px-4"style={{textShadow:"2px 2px 4px rgba(0,0,0,0.7)"}}>
+            <div className="relative z-10 w-full h-full flex flex-col items-center justify-center text-white px-4"style={{textShadow:"2px 2px 0px rgba(0,0,0,0.7)"}}>
               <h1 className="text-4xl md:text-6xl font-bold leading-tight max-w-2xl text-center tracking-wide">
                 {slide.heading}
               </h1>

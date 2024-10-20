@@ -90,17 +90,6 @@ const MaduraiPackage = () => {
                 Book Now
               </button>
             </a>
-            {/* <h2 className="font-medium pt-3 mb-3 lg:mb-0 text-gray-600">Package includes:</h2>
-            <div className="w-full tracking-wide text-white lg:px-5 lg:py-1 lg:my-2 bg-gradient-to-b from-blue-500 to-blue-400 shadow-md  rounded-md">
-             
-              <ul className="list-disc flex lg:flex-row flex-col items-center gap-3 lg:gap-10 p-3 text-base">
-                <li>Fuel Cost</li>
-                <li>Toll</li>
-                <li>Parking</li>
-                <li>Driver Beta</li>
-                <li>Hills Charges</li>
-              </ul>
-            </div> */}
           </div>
         ))}
 

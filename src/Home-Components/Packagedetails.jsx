@@ -1,7 +1,8 @@
 import React from "react";
 import { FaLongArrowAltRight, FaStar, FaStarHalfAlt } from "react-icons/fa";
 import pac1Image from "../assets/pac-1.jpeg";
-import pac2Image from "../assets/pac-2.jpeg";
+import pac2Image from "../assets/kodai.jpg";
+import pac3Image from "../assets/ramesh.jpg";
 import { RiPoliceCarLine } from "react-icons/ri";
 import { PiCarProfileLight } from "react-icons/pi";
 import { FaArrowRightLong } from "react-icons/fa6";
@@ -40,7 +41,7 @@ const Packagedetails = () => {
       title: "Rameshwaram",
       price: "1400",
       destination: "Madurai to Rameshwaram",
-      img: pac1Image,
+      img: pac3Image,
       rating: 4.5,
       link: "/rameshwarampackage",
     },
