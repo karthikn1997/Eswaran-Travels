@@ -17,7 +17,6 @@ const Vehicledetails = () => {
   ];
 
   const icons = [
-    // { id: 1, icon: <RiArrowLeftRightLine />, label: "Destination" },
     { id: 1, icon: <FaRoad />, label: "Distance" },
     { id: 2, icon: <MdOutlineAirlineSeatReclineExtra />, label: "Seat" },
     { id: 3, icon: <GiTakeMyMoney />, label: "Price" },
@@ -36,6 +35,7 @@ const Vehicledetails = () => {
     { km: "Fuel cost/km - Rs.16", seat: "6+1", amt: "Rent / day - Rs.2600" },
     { km: "Fuel cost/km - Rs.17", seat: "12+1", amt: "Rent / day - Rs.2700" },
   ];
+
 
   return (
     <section className="w-full lg:py-10 lg:px-10 p-2">
@@ -69,12 +69,9 @@ const Vehicledetails = () => {
 
               {/* One Day and 2 Days/1 Night Details Section */}
               <div className="w-[90%] flex flex-col lg:flex-row items-center justify-between gap-6 px-4 py-4 border-[2px] border-secondary rounded-lg">
-                {/* One Day Package */}
                 <div className="w-full lg:w-1/2 flex flex-col border-b lg:border-b-0 ">
                   <h4 className="lg:text-md lg:font-bold font-bold text-[#070F4E] mb-5 bg-yellow-100 py-1 px-4 rounded-sm uppercase">
-                    {
-                      item.id === 3 || item.id === 4 ? "Above 350 km" : "Above 300 km"
-                    }
+                    {item.id === 3 || item.id === 4 ? "Above 350 km" : "Above 300 km"}
                   </h4>
                   {icons.map((iconItem, iconIndex) => (
                     <div className="flex items-center gap-3 text-[#070F4E] font-medium mb-3 px-4 border py-1 rounded-sm" key={iconIndex}>
@@ -85,13 +82,9 @@ const Vehicledetails = () => {
                     </div>
                   ))}
                 </div>
-
-                {/* 2 Days/1 Night Package */}
                 <div className="w-full lg:w-1/2 flex flex-col">
                   <h4 className="lg:text-md lg:font-bold font-bold text-[#070F4E] mb-5 bg-yellow-100 py-1 px-4 rounded-sm uppercase">
-                    {
-                      item.id === 3 || item.id === 4 ? "Below 350 km" : "Below 300 km"
-                    }
+                    {item.id === 3 || item.id === 4 ? "Below 350 km" : "Below 300 km"}
                   </h4>
                   {icons.map((iconItem, iconIndex) => (
                     <div className="flex items-center gap-3 text-[#070F4E] font-medium mb-3 px-4 border py-1 rounded-sm" key={iconIndex}>
@@ -112,7 +105,10 @@ const Vehicledetails = () => {
 
               {/* Book Now Button */}
               <a href="tel:+918680986987" className="w-[90%] mx-auto text-center py-3">
-                <button className="w-full py-2 my-2 text-white bg-[#070F4E] rounded-lg hover:bg-blue-700 font-semibold transition-colors duration-300">
+                <button
+                  className="w-full py-2 my-2 text-white bg-[#070F4E] rounded-lg hover:bg-blue-700 font-semibold transition-colors duration-300"
+                  onClick={() => window.trackConversion()}  // Add conversion tracking here
+                >
                   BOOK NOW
                 </button>
               </a>
@@ -125,5 +121,3 @@ const Vehicledetails = () => {
 };
 
 export default Vehicledetails;
-
-

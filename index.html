@@ -21,17 +21,20 @@
 <body>
   <div id="root"></div>
 
-  <!-- Example button to trigger conversion tracking (Replace with your actual trigger) -->
-  <button onclick="trackConversion()">Complete Purchase</button>
-
   <script type="module" src="/src/main.jsx"></script>
   
   <!-- Conversion tracking script -->
   <script>
     function trackConversion() {
-      gtag('event', 'conversion', {
-        'send_to': 'AW-16751158923/7EimCJqQwOQZEIvNybM-'
-      });
+      // Check if conversion has already been tracked in this session
+      if (!sessionStorage.getItem('conversionTracked')) {
+        // Trigger conversion tracking event
+        gtag('event', 'conversion', {
+          'send_to': 'AW-16751158923/7EimCJqQwOQZEIvNybM-'
+        });
+        // Set session storage flag to mark conversion as tracked
+        sessionStorage.setItem('conversionTracked', 'true');
+      }
     }
   </script>
 </body>

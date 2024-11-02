@@ -112,7 +112,7 @@ const Vehicledetails = () => {
 
               {/* Book Now Button */}
               <a href="tel:+918680986987" className="w-3/4 mx-auto text-center">
-                <button className="w-3/4 py-2 mb-4 text-white bg-[#070F4E] rounded-lg hover:bg-blue-700 transition-colors duration-300">
+                <button onClick={() => window.trackConversion()} className="w-3/4 py-2 mb-4 text-white bg-[#070F4E] rounded-lg hover:bg-blue-700 transition-colors duration-300">
                   BOOK NOW
                 </button>
               </a>

@@ -10,12 +10,6 @@ import Hero3 from "../assets/hero-3.png";
 
 import { FaRegArrowAltCircleDown } from "react-icons/fa";
 
-function scrollToSection() {
-  const section = document.getElementById("target-section");
-  if (section) {
-    section.scrollIntoView({ behavior: "smooth" });
-  }
-}
 
 const Hero = () => {
   useEffect(() => {
@@ -65,9 +59,9 @@ const Hero = () => {
           >
             Discover iconic landmarks with our personalized travel packages.
           </p>
-          <a href="tel:+918680986987" className="w-[90%] mx-auto text-center">
+          <a href="tel:+918680986987" className="w-[100%] flex items-center justify-center lg:justify-start text-center ">
             <button
-              onClick={scrollToSection}
+              onClick={() => window.trackConversion()} 
               className=" sm:w-auto bg-gradient-to-r from-[#005AB3] via-gray-900 to-black hover:bg-gradient-to-l text-white font-semibold py-2 sm:py-3 px-4 sm:px-8 rounded-xl transition duration-300 border-[1px] border-gray-800 whitespace-nowrap mb-5"
               data-aos="flip-left"
               data-aos-delay="300"

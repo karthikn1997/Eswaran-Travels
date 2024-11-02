@@ -76,72 +76,83 @@ const Packagedetails = () => {
         Our Popular Packages
       </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6"data-aos="fade-up"
-            duration-aos-delay="300"
-            data-aos-easing="ease-in-sine"
-            data-aos-duration="400">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6" data-aos="fade-up"
+        duration-aos-delay="300"
+        data-aos-easing="ease-in-sine"
+        data-aos-duration="400">
         {gridItems.map((item) => (
           <div
             key={item.id}
             className="relative bg-white shadow-md rounded overflow-hidden border border-secondary"
-            
+
           >
             <Link to={item.link}>
-            <div className="relative w-full overflow-hidden">
-              <img
-                className="w-full h-52 object-cover transform transition-all duration-300 lg:hover:scale-[1.02]"
-                src={item.img}
-                alt=""
-              />
-              <div className="absolute bottom-0 left-0 w-full bg-opacity-40 bg-black p-2 px-6 flex justify-between items-center">
-                <h1 className="text-lg font-semibold text-white flex items-center gap-3">
-                  {item.car} {item.title}
-                </h1>
-                <span className="text-white font-semibold flex justify-center items-center gap-2">
-                  ₹ {item.price} <GoPerson />
-                </span>
+              <div className="relative w-full overflow-hidden">
+                <img
+                  className="w-full h-52 object-cover transform transition-all duration-300 lg:hover:scale-[1.02]"
+                  src={item.img}
+                  alt=""
+                />
+                <div className="absolute bottom-0 left-0 w-full bg-opacity-40 bg-black p-2 px-6 flex justify-between items-center">
+                  <h1 className="text-lg font-semibold text-white flex items-center gap-3">
+                    {item.car} {item.title}
+                  </h1>
+                  <span className="text-white font-semibold flex justify-center items-center gap-2">
+                    ₹ {item.price} <GoPerson />
+                  </span>
+                </div>
               </div>
-            </div>
 
-            <div className="px-3 sm:px-6 h-auto mt-2">
-              <h3 className="text-base font-semibold flex justify-left items-center gap-5 text-primary mb-1">
-                {item.destination}
-                <span className="text-black font-semibold text-2xl mt-1">
-                  {item.icon}
-                </span>
-              </h3>
-              <div className="flex items-center gap-2 pt-2">
-                {renderStars(item.rating)}
-                <span className="font-thin text-sm">( Top Rating )</span>
+              <div className="px-3 sm:px-6 h-auto mt-2">
+                <h3 className="text-base font-semibold flex justify-left items-center gap-5 text-primary mb-1">
+                  {item.destination}
+                  <span className="text-black font-semibold text-2xl mt-1">
+                    {item.icon}
+                  </span>
+                </h3>
+                <div className="flex items-center gap-2 pt-2">
+                  {renderStars(item.rating)}
+                  <span className="font-thin text-sm">( Top Rating )</span>
+                </div>
               </div>
-            </div>
 
-            <div className="p-2 px-3 sm:px-6 h-auto text-sm flex flex-col gap-2 sm:gap-4 my-2 whitespace-nowrap tracking-wide">
-              <span></span>
-              <div className="flex flex-wrap gap-1 xl:gap-3">
-                <span className="border px-2">1 Day</span>
-                <span className="border px-2">AC Vehicle only </span>
-                <span className="border px-2">A complete guidence</span>
-            
+              <div className="p-2 px-3 sm:px-6 h-auto text-sm flex flex-col gap-2 sm:gap-4 my-2 whitespace-nowrap tracking-wide">
+                <span></span>
+                <div className="flex flex-wrap gap-1 xl:gap-3">
+                  <span className="border px-2">1 Day</span>
+                  <span className="border px-2">AC Vehicle only </span>
+                  <span className="border px-2">A complete guidence</span>
+
+                </div>
               </div>
-            </div>
 
-            <div className="w-full flex justify-center items-center mb-0 p-1">
-              <button className="w-full px-5 py-2 text-center lg:text-base text-sm font-semibold bg-[#070F4E] rounded text-secondary lg:hover:scale-[1.02] transform transition-all tracking-wider ">
-                <Link
-                  to={item.link}
-                  className="flex justify-center items-center gap-3"
-                >
-                  {" "}
-                  More Details <FaArrowRightLong className="mt-1 text-white" />
-                </Link>
+              <div className="w-full flex justify-center items-center mb-0 px-2">
+                <button className="w-full px-5 py-2 text-center lg:text-base text-sm font-semibold bg-[#070F4E] rounded text-secondary lg:hover:scale-[1.02] transform transition-all tracking-wider ">
+                  <Link
+                    to={item.link}
+                    className="flex justify-center items-center gap-3"
+                  >
+                    {" "}
+                    More Details <FaArrowRightLong className="mt-1 text-white" />
+                  </Link>
+                </button>
+              </div>
+            </Link>
+
+            {/* Book Now Button */}
+            <a href="tel:+918680986987" className="w-full flex justify-center items-center mb-0 px-2">
+              <button
+                className="w-full py-2 my-2 text-primary bg-secondary rounded hover:bg-blue-700 font-bold transition-colors duration-300 hover:text-white shadow shadow-primary"
+                onClick={() => window.trackConversion()}  // Add conversion tracking here
+              >
+                BOOK NOW
               </button>
-            </div>
+            </a>
 
             <div className="absolute z-10 top-2 left-2">
               <img src={Offer} className="w-14 h-14" alt="" />
             </div>
-            </Link>
+
           </div>
         ))}
       </div>

@@ -86,7 +86,7 @@ const MaduraiPackage = () => {
             </p>
             
             <a href="tel:+918680986987">
-              <button className="bg-primary hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg">
+              <button onClick={() => window.trackConversion()} className="bg-primary hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg">
                 Book Now
               </button>
             </a>

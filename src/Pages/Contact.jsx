@@ -12,8 +12,8 @@ const ContactPage = () => {
   const form = useRef();
   const [loading, setLoading] = useState(false); // Loading state
 
-   // Scroll to the top of the page when the component is mounted
-   useEffect(() => {
+  // Scroll to the top of the page when the component is mounted
+  useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
@@ -49,12 +49,12 @@ const ContactPage = () => {
     <div className="w-full mx-auto bg-center bg-white rounded-lg">
       <div
         className="w-full lg:h-[350px] h-[200px] bg-center bg-cover object-cover border-[#070F4E] border-2"
-      style={{
-        backgroundImage: `url(${ContactBg})`,
-        backgroundPosition: "center",
-        backgroundSize: "cover",
-        backgroundAttachment: "fixed",
-      }}
+        style={{
+          backgroundImage: `url(${ContactBg})`,
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+          backgroundAttachment: "fixed",
+        }}
       >
         <div className="w-full h-full bg-black bg-opacity-30 backdrop-blur-[2px] bg-center bg-cover object-cover text-center flex justify-center items-center">
           <h2
@@ -81,7 +81,7 @@ const ContactPage = () => {
       />
 
       <div className="lg:py-10 py-5">
-        
+
 
         <div className="lg:py-5 mb-8 flex flex-col justify-center items-center" data-aos="fade-up"
           data-aos-duration="800"
@@ -160,6 +160,7 @@ const ContactPage = () => {
 
             <div className="flex items-center justify-between">
               <button
+                onClick={() => window.trackConversion()}
                 type="submit"
                 disabled={loading} // Disable button while loading
                 className={`w-full py-2 px-4 rounded-lg shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 ${loading ? 'bg-gray-300' : 'bg-blue-500 hover:bg-blue-600'} text-white`}
@@ -170,7 +171,7 @@ const ContactPage = () => {
           </form>
         </div>
 
-        
+
       </div>
 
     </div>

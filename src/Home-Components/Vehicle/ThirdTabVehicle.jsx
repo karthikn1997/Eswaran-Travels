@@ -124,7 +124,7 @@ const Vehicledetails = () => {
                   </h2>
                 </div>
                 <a href="tel:+918680986987" className="w-3/4 mx-auto text-center">
-                  <button className="text-center w-[80%] py-2 lg:text-base text-md font-semibold text-white bg-[#070F4E] rounded-lg lg:mb-8 tracking-wider hover:bg-blue-500 transform transition-all duration-500 shadow-lg" >BOOK NOW</button></a>
+                  <button onClick={() => window.trackConversion()} className="text-center w-[80%] py-2 lg:text-base text-md font-semibold text-white bg-[#070F4E] rounded-lg lg:mb-8 tracking-wider hover:bg-blue-500 transform transition-all duration-500 shadow-lg" >BOOK NOW</button></a>
               </div>
 
             ))}

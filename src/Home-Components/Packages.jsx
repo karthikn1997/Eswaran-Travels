@@ -181,11 +181,12 @@ const Packagedetails = () => {
         data-aos-duration="400"
       >
         {gridItems.map((item) => (
-          <Link to={item.link}>
-            <div
-              key={item.id}
-              className="relative bg-white shadow-md rounded overflow-hidden border border-secondary transition-transform duration-300 sm:hover:scale-105 sm:min-h-[250px] flex flex-col justify-between"
-            >
+
+          <div
+            key={item.id}
+            className="relative bg-white shadow-md rounded overflow-hidden border border-secondary transition-transform duration-300 sm:hover:scale-105 sm:min-h-[250px] flex flex-col justify-between"
+          >
+            <Link to={item.link}>
 
               <div className="relative w-full overflow-hidden">
               </div>
@@ -219,7 +220,7 @@ const Packagedetails = () => {
                 <span className="border px-2 rounded">Complete guidance</span>
               </div>
 
-              <div className="w-full flex justify-center items-center mb-0 p-1 ">
+              <div className="w-full flex justify-center items-center mb-0 px-2 ">
                 <button className="w-full px-5 py-2 text-center lg:text-base text-sm font-semibold bg-[#070F4E] rounded text-secondary transition-transform duration-300 hover:scale-105 ">
                   <Link to={item.link} className="flex justify-center items-center gap-3">
                     View Details <FaArrowRightLong className="mt-1 text-white" />
@@ -227,11 +228,24 @@ const Packagedetails = () => {
                 </button>
               </div>
 
-            </div>
-          </Link>
-        ))}
-      </div>
-    </div>
+            </Link>
+
+            {/* Book Now Button */}
+            < a href="tel:+918680986987" className="w-full flex justify-center items-center mb-0 px-2" >
+              <button
+                className="w-full py-2 my-2 text-primary bg-secondary rounded hover:bg-blue-700 font-bold transition-colors duration-300 hover:text-white shadow shadow-primary"
+                onClick={() => window.trackConversion()}  // Add conversion tracking here
+              >
+                BOOK NOW
+              </button>
+            </a>
+
+          </div>
+
+        ))
+        }
+      </div >
+    </div >
   );
 };
 

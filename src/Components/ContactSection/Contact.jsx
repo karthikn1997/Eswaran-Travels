@@ -72,17 +72,17 @@ const ContactPage = () => {
         </div>
 
         {/* Google Form Embed */}
-<div 
-  className="max-w-4xl mx-auto shadow-md shadow-primary border-2 lg:py-10 lg:px-10 py-5 px-0 rounded-lg border-primary mb-5 bg-slate-300 "
-  data-aos="fade-right"
-  data-aos-duration="800"
-  data-aos-delay="300"
-  style={{ height: "100%", overflow: "visible" }} // Full height container, allow overflow for page scrolling
->
-  <h2 className="lg:text-2xl text-xl font-semibold mb-4 text-primary text-center tracking-wider">
-    Send Us a Message
-  </h2>
-  {/* <div className="w-full h-full">
+        <div
+          className="max-w-4xl mx-auto shadow-md shadow-primary border-2 lg:py-10 lg:px-10 py-5 px-0 rounded-lg border-primary mb-5 bg-slate-300 "
+          data-aos="fade-right"
+          data-aos-duration="800"
+          data-aos-delay="300"
+          style={{ height: "100%", overflow: "visible" }} // Full height container, allow overflow for page scrolling
+        >
+          <h2 className="lg:text-2xl text-xl font-semibold mb-4 text-primary text-center tracking-wider">
+            Send Us a Message
+          </h2>
+          {/* <div className="w-full h-full">
     <iframe
       src="https://docs.google.com/forms/d/e/1FAIpQLScNwRqQbyrLG29_3vE-2fa6LU6kLRF_BcwZk0rcxdZ-qLv2gw/viewform?embedded=true"
       width="100%" // Full width on all screen sizes
@@ -93,7 +93,7 @@ const ContactPage = () => {
       Loading…
     </iframe>
   </div> */}
-</div>
+        </div>
 
       </div>
     </div>
