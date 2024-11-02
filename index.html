@@ -1,27 +1,38 @@
 <!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="icon" type="image/svg+xml" href="/es.jpeg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Eswaran-Travels</title>
 
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16751158923">
-  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16751158923"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
+    // Google Ads conversion ID
     gtag('config', 'AW-16751158923');
   </script>
 </head>
 
 <body>
   <div id="root"></div>
-  <script type="module" src="/src/main.jsx"></script>
-</body>
 
+  <!-- Example button to trigger conversion tracking (Replace with your actual trigger) -->
+  <button onclick="trackConversion()">Complete Purchase</button>
+
+  <script type="module" src="/src/main.jsx"></script>
+  
+  <!-- Conversion tracking script -->
+  <script>
+    function trackConversion() {
+      gtag('event', 'conversion', {
+        'send_to': 'AW-16751158923/7EimCJqQwOQZEIvNybM-'
+      });
+    }
+  </script>
+</body>
 </html>
