@@ -23,9 +23,6 @@ import Kanyakumari from './Home-Components/Vehicle/Kanyakumari';
 import MaduRameshKanya from './Home-Components/Vehicle/MaduRameshKanya';
 import MaduRamKanThiru from './Home-Components/Vehicle/MaduRamKanThiru';
 
-
-
-
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Loading from './Components/Loading';
@@ -55,28 +52,28 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route element={<Layout />}>
-          <Route path="/" element={<Home/>}/>
-          <Route path="/about" element={<About />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/tariff" element={<Tariff/>} />
-          <Route path="/tabsection" element={<Tabsection/>} />
-          <Route path="/packagedetails" element={<Packagedetails/>} />
-          <Route path="/vehicledetails" element={<Vehicledetails/>} />
-          <Route path="/maduraipackage" element={<MaduraiPackage/>} />
-          <Route path="/kodaikanalpackage" element={<KodaikanalPackage/>} />
-          <Route path="/rameshwarampackage" element={<RameshwaramPackage/>} />
-          <Route path="/firstTabVehicle" element={<FirstTabVehicle/>} />
-          <Route path="/secondTabVehicleCopy" element={<SecondTabVehicleCopy/>} />
-          <Route path="/thirdTabVehicleCopy" element={<ThirdTabVehicleCopy/>} />
-          <Route path="/palaniTab" element={<PalaniTab/>} />
-          <Route path="/thiruchendurTab" element={<ThiruchendurTab/>} />
-          <Route path="/TrichyTab" element={<TrichyTab/>} />
-          <Route path="/munnar" element={<Munnar/>} />
-          <Route path="/thekkady" element={<Thekkady/>} />
-          <Route path="/kanyakumari" element={<Kanyakumari/>} />
-          <Route path="/maduRameshKanya" element={<MaduRameshKanya/>} />
-          <Route path="/maduRamKanThiru" element={<MaduRamKanThiru/>} />
-          <Route path="/contact" element={<Contact />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/tariff" element={<Tariff />} />
+            <Route path="/tabsection" element={<Tabsection />} />
+            <Route path="/packagedetails" element={<Packagedetails />} />
+            <Route path="/vehicledetails" element={<Vehicledetails />} />
+            <Route path="/maduraipackage" element={<MaduraiPackage />} />
+            <Route path="/kodaikanalpackage" element={<KodaikanalPackage />} />
+            <Route path="/rameshwarampackage" element={<RameshwaramPackage />} />
+            <Route path="/firstTabVehicle" element={<FirstTabVehicle />} />
+            <Route path="/secondTabVehicleCopy" element={<SecondTabVehicleCopy />} />
+            <Route path="/thirdTabVehicleCopy" element={<ThirdTabVehicleCopy />} />
+            <Route path="/palaniTab" element={<PalaniTab />} />
+            <Route path="/thiruchendurTab" element={<ThiruchendurTab />} />
+            <Route path="/TrichyTab" element={<TrichyTab />} />
+            <Route path="/munnar" element={<Munnar />} />
+            <Route path="/thekkady" element={<Thekkady />} />
+            <Route path="/kanyakumari" element={<Kanyakumari />} />
+            <Route path="/maduRameshKanya" element={<MaduRameshKanya />} />
+            <Route path="/maduRamKanThiru" element={<MaduRamKanThiru />} />
+            <Route path="/contact" element={<Contact />} />
           </Route>
         </Routes>
       </BrowserRouter>

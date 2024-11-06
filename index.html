@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/es.jpeg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Eswaran-Travels</title>
+  <title>Eswaran Travels</title>
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16751158923"></script>
@@ -12,9 +12,18 @@
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
-
-    // Google Ads conversion ID
     gtag('config', 'AW-16751158923');
+  </script>
+
+  <!-- Structured data for SEO (Name and Logo) -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Eswaran Travels",
+      "url": "https://www.eswarantravels.com", 
+      "logo": "https://www.eswarantravels.com/es.jpeg"
+    }
   </script>
 </head>
 
@@ -22,17 +31,14 @@
   <div id="root"></div>
 
   <script type="module" src="/src/main.jsx"></script>
-  
+
   <!-- Conversion tracking script -->
   <script>
     function trackConversion() {
-      // Check if conversion has already been tracked in this session
       if (!sessionStorage.getItem('conversionTracked')) {
-        // Trigger conversion tracking event
         gtag('event', 'conversion', {
           'send_to': 'AW-16751158923/7EimCJqQwOQZEIvNybM-'
         });
-        // Set session storage flag to mark conversion as tracked
         sessionStorage.setItem('conversionTracked', 'true');
       }
     }
